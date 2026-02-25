@@ -1,4 +1,6 @@
 import { Shield, Truck, Headphones, Award } from "lucide-react";
+import ScrollReveal from "./ScrollReveal";
+import { motion } from "framer-motion";
 
 const features = [
   { icon: Shield, title: "Certified Distributor", desc: "Official KLEIBERIT authorized partner with full product warranty." },
@@ -12,7 +14,7 @@ const AboutSection = () => {
     <section id="about" className="py-24 bg-muted">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div>
+          <ScrollReveal direction="left">
             <p className="text-secondary font-heading font-semibold tracking-widest uppercase text-sm mb-3">
               Why Choose Us
             </p>
@@ -28,15 +30,22 @@ const AboutSection = () => {
             >
               Partner With Us
             </a>
-          </div>
+          </ScrollReveal>
 
           <div className="grid sm:grid-cols-2 gap-6">
-            {features.map((f) => (
-              <div key={f.title} className="bg-card rounded-lg p-6 shadow-card border border-border">
+            {features.map((f, i) => (
+              <motion.div
+                key={f.title}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.45, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
+                className="bg-card rounded-lg p-6 shadow-card border border-border"
+              >
                 <f.icon className="h-8 w-8 text-secondary mb-4" />
                 <h3 className="font-heading text-lg font-bold text-foreground mb-2">{f.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{f.desc}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

@@ -1,10 +1,11 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import ScrollReveal from "./ScrollReveal";
 
 const ContactSection = () => {
   return (
     <section id="contact" className="py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <ScrollReveal className="text-center max-w-2xl mx-auto mb-16">
           <p className="text-secondary font-heading font-semibold tracking-widest uppercase text-sm mb-3">
             Get In Touch
           </p>
@@ -14,11 +15,10 @@ const ContactSection = () => {
           <p className="text-muted-foreground text-lg">
             Tell us about your project and we'll recommend the perfect KLEIBERIT adhesive solution.
           </p>
-        </div>
+        </ScrollReveal>
 
         <div className="grid lg:grid-cols-5 gap-10 max-w-5xl mx-auto">
-          {/* Contact info */}
-          <div className="lg:col-span-2 space-y-6">
+          <ScrollReveal direction="left" className="lg:col-span-2 space-y-6">
             {[
               { icon: MapPin, label: "Address", value: "123 Industrial Blvd, Suite 400\nManufacturing City, MC 12345" },
               { icon: Phone, label: "Phone", value: "+1 (234) 567-890" },
@@ -35,46 +35,24 @@ const ContactSection = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </ScrollReveal>
 
-          {/* Form */}
-          <form className="lg:col-span-3 space-y-5" onSubmit={(e) => e.preventDefault()}>
-            <div className="grid sm:grid-cols-2 gap-5">
-              <input
-                type="text"
-                placeholder="Full Name"
-                className="w-full px-4 py-3 rounded-md border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-secondary/50"
-              />
-              <input
-                type="text"
-                placeholder="Company"
-                className="w-full px-4 py-3 rounded-md border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-secondary/50"
-              />
-            </div>
-            <div className="grid sm:grid-cols-2 gap-5">
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="w-full px-4 py-3 rounded-md border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-secondary/50"
-              />
-              <input
-                type="tel"
-                placeholder="Phone Number"
-                className="w-full px-4 py-3 rounded-md border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-secondary/50"
-              />
-            </div>
-            <textarea
-              rows={5}
-              placeholder="Tell us about your adhesive requirements..."
-              className="w-full px-4 py-3 rounded-md border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-secondary/50 resize-none"
-            />
-            <button
-              type="submit"
-              className="w-full gradient-accent text-accent-foreground font-semibold py-4 rounded-md hover:opacity-90 transition-opacity text-lg"
-            >
-              Send Inquiry
-            </button>
-          </form>
+          <ScrollReveal direction="right" delay={0.15} className="lg:col-span-3">
+            <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+              <div className="grid sm:grid-cols-2 gap-5">
+                <input type="text" placeholder="Full Name" className="w-full px-4 py-3 rounded-md border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-secondary/50" />
+                <input type="text" placeholder="Company" className="w-full px-4 py-3 rounded-md border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-secondary/50" />
+              </div>
+              <div className="grid sm:grid-cols-2 gap-5">
+                <input type="email" placeholder="Email Address" className="w-full px-4 py-3 rounded-md border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-secondary/50" />
+                <input type="tel" placeholder="Phone Number" className="w-full px-4 py-3 rounded-md border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-secondary/50" />
+              </div>
+              <textarea rows={5} placeholder="Tell us about your adhesive requirements..." className="w-full px-4 py-3 rounded-md border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-secondary/50 resize-none" />
+              <button type="submit" className="w-full gradient-accent text-accent-foreground font-semibold py-4 rounded-md hover:opacity-90 transition-opacity text-lg">
+                Send Inquiry
+              </button>
+            </form>
+          </ScrollReveal>
         </div>
       </div>
     </section>

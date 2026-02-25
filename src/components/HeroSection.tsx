@@ -1,10 +1,10 @@
 import heroBg from "@/assets/hero-bg.jpg";
 import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-      {/* Background */}
       <div className="absolute inset-0">
         <img src={heroBg} alt="Industrial adhesive application" className="w-full h-full object-cover" />
         <div className="absolute inset-0 gradient-hero opacity-85" />
@@ -12,16 +12,36 @@ const HeroSection = () => {
       
       <div className="container mx-auto px-4 relative z-10 py-32">
         <div className="max-w-2xl">
-          <p className="text-secondary font-heading font-semibold tracking-widest uppercase text-sm mb-4 animate-fade-in-up">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-secondary font-heading font-semibold tracking-widest uppercase text-sm mb-4"
+          >
             Authorized KLEIBERIT Distributor
-          </p>
-          <h1 className="text-primary-foreground font-heading text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
+          </motion.p>
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.35 }}
+            className="text-primary-foreground font-heading text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6"
+          >
             Industrial Adhesive Solutions That Bond
-          </h1>
-          <p className="text-primary-foreground/75 text-lg md:text-xl leading-relaxed mb-10 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="text-primary-foreground/75 text-lg md:text-xl leading-relaxed mb-10"
+          >
             Premium KLEIBERIT adhesives for woodworking, packaging, automotive, and construction industries. Trusted performance, delivered with expertise.
-          </p>
-          <div className="flex flex-wrap gap-4 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.65 }}
+            className="flex flex-wrap gap-4"
+          >
             <a
               href="#products"
               className="gradient-accent text-accent-foreground font-semibold px-8 py-4 rounded-md flex items-center gap-2 hover:opacity-90 transition-opacity text-lg"
@@ -34,7 +54,7 @@ const HeroSection = () => {
             >
               Contact Us
             </a>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

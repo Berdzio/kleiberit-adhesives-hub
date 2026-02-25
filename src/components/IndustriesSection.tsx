@@ -1,14 +1,7 @@
 import ScrollReveal from "./ScrollReveal";
 import { motion } from "framer-motion";
-
-const industries = [
-  { name: "Furnitures", emoji: "🪑" },
-  { name: "Doors", emoji: "🚪" },
-  { name: "Windows", emoji: "🪟" },
-  { name: "Half-Products for Furnitures", emoji: "🪵" },
-  { name: "Montage", emoji: "🔧" },
-  { name: "Constructions", emoji: "🏗️" },
-];
+import { Link } from "react-router-dom";
+import { sectors } from "@/data/sectors";
 
 const IndustriesSection = () => {
   return (
@@ -23,17 +16,21 @@ const IndustriesSection = () => {
           </h2>
         </ScrollReveal>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-          {industries.map((ind, i) => (
+          {sectors.map((sector, i) => (
             <motion.div
-              key={ind.name}
+              key={sector.slug}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.45, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
-              className="bg-primary-foreground/10 backdrop-blur-sm rounded-lg p-6 hover:bg-primary-foreground/15 transition-colors border border-primary-foreground/10"
             >
-              <span className="text-4xl mb-3 block">{ind.emoji}</span>
-              <p className="text-primary-foreground font-heading font-semibold text-sm">{ind.name}</p>
+              <Link
+                to={`/sector/${sector.slug}`}
+                className="block bg-primary-foreground/10 backdrop-blur-sm rounded-lg p-6 hover:bg-primary-foreground/20 transition-colors border border-primary-foreground/10"
+              >
+                <span className="text-4xl mb-3 block">{sector.emoji}</span>
+                <p className="text-primary-foreground font-heading font-semibold text-sm">{sector.name}</p>
+              </Link>
             </motion.div>
           ))}
         </div>

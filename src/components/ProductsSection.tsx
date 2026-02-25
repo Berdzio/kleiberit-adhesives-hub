@@ -20,8 +20,8 @@ const categories = [
   },
   {
     icon: Package,
-    title: "Packaging Adhesives",
-    description: "Specialized adhesives for folding carton, case & carton sealing, and labeling applications across industries.",
+    title: "Montage Adhesives",
+    description: "High-strength montage adhesives for bonding, fixing, and assembly applications in construction and interior finishing.",
   },
 ];
 

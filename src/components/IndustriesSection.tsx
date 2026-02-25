@@ -2,12 +2,12 @@ import ScrollReveal from "./ScrollReveal";
 import { motion } from "framer-motion";
 
 const industries = [
-  { name: "Woodworking & Furniture", emoji: "🪵" },
-  { name: "Packaging", emoji: "📦" },
-  { name: "Automotive", emoji: "🚗" },
-  { name: "Construction", emoji: "🏗️" },
-  { name: "Textiles", emoji: "🧵" },
-  { name: "Electronics", emoji: "🔌" },
+  { name: "Furnitures", emoji: "🪑" },
+  { name: "Doors", emoji: "🚪" },
+  { name: "Windows", emoji: "🪟" },
+  { name: "Half-Products for Furnitures", emoji: "🪵" },
+  { name: "Montage", emoji: "🔧" },
+  { name: "Constructions", emoji: "🏗️" },
 ];
 
 const IndustriesSection = () => {

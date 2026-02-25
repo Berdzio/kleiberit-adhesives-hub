@@ -9,19 +9,23 @@ const Header = () => {
       {/* Top bar */}
       <div className="bg-primary text-primary-foreground">
         <div className="container mx-auto flex items-center justify-end gap-6 py-2 px-4 text-sm">
-          <a href="tel:+1234567890" className="flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-opacity">
-            <Phone className="h-3.5 w-3.5" /> +1 (234) 567-890
+          <a href="tel:+48512825215" className="flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-opacity">
+            <Phone className="h-3.5 w-3.5" /> +48 512-825-215
           </a>
-          <a href="mailto:info@adhesivepro.com" className="flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-opacity">
-            <Mail className="h-3.5 w-3.5" /> info@adhesivepro.com
+          <a href="mailto:info@klejeme.pl" className="flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-opacity">
+            <Mail className="h-3.5 w-3.5" /> info@klejeme.pl
           </a>
         </div>
       </div>
       {/* Main nav */}
       <nav className="bg-card/95 backdrop-blur-md border-b border-border">
         <div className="container mx-auto flex items-center justify-between px-4 py-4">
-          <a href="#" className="font-heading text-2xl font-bold text-foreground tracking-tight">
-            Adhesive<span className="text-secondary">Pro</span>
+          <a className="flex items-center">
+            <img
+              src="/src/assets/Klejber_logo.png"
+              alt="Klejber"
+              className="max-h-14 w-auto"
+            />
           </a>
           <div className="hidden md:flex items-center gap-8">
             {["Products", "About", "Industries", "Contact"].map((item) => (

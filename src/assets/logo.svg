@@ -1,0 +1,30 @@
+<svg width="435" height="185" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Kolory -->
+  <!-- Granat: #142B4D -->
+  <!-- Żółty: #F2B705 -->
+
+  <!-- LOGOTYP -->
+  <text x="0" y="110"
+        font-family="Montserrat, Arial, Helvetica, sans-serif"
+        font-size="72"
+        font-weight="700"
+        letter-spacing="2"
+        fill="#142B4D">
+    KLEJBER
+  </text>
+
+  <!-- Linia technologiczna -->
+  <rect x="0" y="135" width="350" height="10" fill="#F2B705"/>
+
+  <!-- Descriptor -->
+  <text x="0" y="185"
+        font-family="Montserrat, Arial, Helvetica, sans-serif"
+        font-size="30"
+        font-weight="500"
+        letter-spacing="6"
+        fill="#142B4D">
+    KLEJE PRZEMYSŁOWE
+  </text>
+
+</svg>

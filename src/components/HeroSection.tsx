@@ -18,7 +18,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-secondary font-heading font-semibold tracking-widest uppercase text-sm mb-4"
           >
-            Authorized KLEIBERIT Distributor
+            Autoryzowany dystrybutor KLEIBERIT
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -26,7 +26,7 @@ const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.35 }}
             className="text-primary-foreground font-heading text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6"
           >
-            Industrial Adhesive Solutions That Bond
+            Profesjonalne rozwiązania klejowe dla wymagających zastosowań
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -35,6 +35,7 @@ const HeroSection = () => {
             className="text-primary-foreground/75 text-lg md:text-xl leading-relaxed mb-10"
           >
             Premium KLEIBERIT adhesives for woodworking, packaging, automotive, and construction industries. Trusted performance, delivered with expertise.
+            Sprawdzone kleje KLEIBERIT dla stolarki wewnętrznej i zewnętrzenej oraz branży budowlanej. Niezawodność potwierdzona doświadczeniem.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -46,13 +47,13 @@ const HeroSection = () => {
               href="#products"
               className="gradient-accent text-accent-foreground font-semibold px-8 py-4 rounded-md flex items-center gap-2 hover:opacity-90 transition-opacity text-lg"
             >
-              Explore Products <ArrowRight className="h-5 w-5" />
+              Produkty <ArrowRight className="h-5 w-5" />
             </a>
             <a
               href="#contact"
               className="border-2 border-primary-foreground/30 text-primary-foreground font-semibold px-8 py-4 rounded-md hover:bg-primary-foreground/10 transition-colors text-lg"
             >
-              Contact Us
+              Napisz do nas
             </a>
           </motion.div>
         </div>

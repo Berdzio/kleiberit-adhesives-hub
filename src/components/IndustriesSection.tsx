@@ -28,7 +28,7 @@ const IndustriesSection = () => {
                 to={`/sector/${sector.slug}`}
                 className="block bg-primary-foreground/10 backdrop-blur-sm rounded-lg p-6 hover:bg-primary-foreground/20 transition-colors border border-primary-foreground/10"
               >
-                <span className="text-4xl mb-3 block">{sector.emoji}</span>
+                <img src={sector.icon} alt={sector.name} className="w-10 h-10 mb-3 mx-auto object-contain" />
                 <p className="text-primary-foreground font-heading font-semibold text-sm">{sector.name}</p>
               </Link>
             </motion.div>

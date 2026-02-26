@@ -40,7 +40,7 @@ const SectorPage = () => {
             Back to Home
           </Link>
           <ScrollReveal>
-            <span className="text-6xl mb-4 block">{sector.emoji}</span>
+            <img src={sector.icon} alt={sector.name} className="w-16 h-16 mb-4 object-contain" />
             <h1 className="font-heading text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
               {sector.headline}
             </h1>

@@ -12,39 +12,39 @@ export interface ProductCategory {
 export const productCategories: ProductCategory[] = [
   {
     slug: "pur-hot-melts",
-    title: "PUR Hot Melts",
+    title: "Termotopliwe kleje PUR",
     icon: Layers,
     description:
-      "Reactive polyurethane adhesives for high-performance edge banding and lamination with exceptional heat and moisture resistance.",
+      "Reaktywne kleje poliuretanowe – idealne do okleinowania krawędzi i laminowania, gwarantujące odporność na temperaturę i wilgoć.",
     matchTypes: ["PUR Hot Melt"],
   },
   {
     slug: "pvac",
-    title: "PVAc Adhesives",
+    title: "Kleje PVAc",
     icon: Droplets,
     description:
-      "White glues and D3/D4 adhesives for furniture, joinery, and wood assembly applications. Fast setting, strong bonds.",
+      "Białe kleje równiez z normą D3/D4 – idealne rozwiązania do montażu mebli i łączenia elementów drewnianych.",
     matchTypes: ["PVAc"],
   },
   {
     slug: "eva-hot-melts",
-    title: "EVA Hot Melts",
+    title: "Termotopliwe kleje EVA",
     icon: Flame,
     description:
-      "Versatile ethylene vinyl acetate hot melt adhesives for edge banding, flat lamination, and profile wrapping.",
+      "Uniwersalne kleje EVA do okleinowania, laminowania i formowania profili.",
     matchTypes: ["EVA Hot Melt"],
   },
   {
     slug: "montage",
-    title: "Montage Adhesives",
+    title: "Kleje i pianki montażowe",
     icon: Package,
     description:
-      "High-strength montage adhesives for bonding, fixing, and assembly applications in construction and interior finishing.",
+      "Kleje oraz pianki do montażu i łączenia elementów w budownictwie i aranżacji wnętrz – trwałość i niezawodność.",
     matchTypes: ["Montage"],
   },
   {
     slug: "pur",
-    title: "PUR Adhesives",
+    title: "Kleje poliuretanowe",
     icon: Layers,
     description:
       "One and two-component polyurethane adhesives for structural bonding, finger jointing, and lamination.",
@@ -52,11 +52,27 @@ export const productCategories: ProductCategory[] = [
   },
   {
     slug: "contact",
-    title: "Contact Adhesives",
+    title: "Kleje kontaktowe",
     icon: Package,
     description:
       "Contact adhesives for HPL/CPL lamination and surface bonding in furniture and panel production.",
     matchTypes: ["Contact Adhesive"],
+  },
+  {
+    slug: "cleaners",
+    title: "Czyściwa",
+    icon: Flame,
+    description:
+      "Versatile ethylene vinyl acetate hot melt adhesives for edge banding, flat lamination, and profile wrapping.",
+    matchTypes: ["EVA Hot Melt"],
+  },
+  {
+    slug: "primer",
+    title: "Primery",
+    icon: Flame,
+    description:
+      "Versatile ethylene vinyl acetate hot melt adhesives for edge banding, flat lamination, and profile wrapping.",
+    matchTypes: ["EVA Hot Melt"],
   },
 ];
 

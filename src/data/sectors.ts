@@ -8,7 +8,7 @@ export interface Product {
 export interface Sector {
   slug: string;
   name: string;
-  emoji: string;
+  icon: string;
   headline: string;
   description: string;
   products: Product[];
@@ -18,7 +18,7 @@ export const sectors: Sector[] = [
   {
     slug: "furnitures",
     name: "Furnitures",
-    emoji: "🪑",
+    icon: "/icons/furnitures.svg",
     headline: "Adhesive Solutions for Furniture Manufacturing",
     description:
       "High-performance adhesives for every step of furniture production — from panel assembly and edge banding to surface lamination and upholstery bonding.",
@@ -58,7 +58,7 @@ export const sectors: Sector[] = [
   {
     slug: "doors",
     name: "Doors",
-    emoji: "🚪",
+    icon: "/icons/doors.svg",
     headline: "Precision Adhesives for Door Production",
     description:
       "Reliable bonding solutions for solid wood, engineered, and composite door manufacturing — including frame assembly, panel gluing, and surface finishing.",
@@ -92,7 +92,7 @@ export const sectors: Sector[] = [
   {
     slug: "windows",
     name: "Windows",
-    emoji: "🪟",
+    icon: "/icons/windows.svg",
     headline: "High-Performance Adhesives for Window Manufacturing",
     description:
       "Weather-resistant adhesives engineered for wooden and composite window production, ensuring lasting bonds under extreme conditions.",
@@ -126,7 +126,7 @@ export const sectors: Sector[] = [
   {
     slug: "half-products",
     name: "Half-Products for Furnitures",
-    emoji: "🪵",
+    icon: "/icons/half-products.svg",
     headline: "Adhesives for Semi-Finished Furniture Components",
     description:
       "Industrial-grade adhesives for manufacturing boards, panels, laminates, and other semi-finished products used in furniture production.",
@@ -166,7 +166,7 @@ export const sectors: Sector[] = [
   {
     slug: "montage",
     name: "Montage",
-    emoji: "🔧",
+    icon: "/icons/montage.svg",
     headline: "Montage & Assembly Adhesives",
     description:
       "Strong, fast-curing montage adhesives for professional assembly, fixing, and installation work across multiple substrates.",
@@ -200,7 +200,7 @@ export const sectors: Sector[] = [
   {
     slug: "constructions",
     name: "Constructions",
-    emoji: "🏗️",
+    icon: "/icons/constructions.svg",
     headline: "Construction-Grade Adhesive Systems",
     description:
       "Durable, certified adhesives for structural timber construction, insulation bonding, and building element assembly.",

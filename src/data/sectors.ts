@@ -18,7 +18,7 @@ export const sectors: Sector[] = [
   {
     slug: "furnitures",
     name: "Furnitures",
-    icon: "/icons/furnitures.svg",
+    icon: "/icons/furnitures.png",
     headline: "Adhesive Solutions for Furniture Manufacturing",
     description:
       "High-performance adhesives for every step of furniture production — from panel assembly and edge banding to surface lamination and upholstery bonding.",
@@ -58,7 +58,7 @@ export const sectors: Sector[] = [
   {
     slug: "doors",
     name: "Doors",
-    icon: "/icons/doors.svg",
+    icon: "/icons/doors.png",
     headline: "Precision Adhesives for Door Production",
     description:
       "Reliable bonding solutions for solid wood, engineered, and composite door manufacturing — including frame assembly, panel gluing, and surface finishing.",
@@ -92,7 +92,7 @@ export const sectors: Sector[] = [
   {
     slug: "windows",
     name: "Windows",
-    icon: "/icons/windows.svg",
+    icon: "/icons/window.png",
     headline: "High-Performance Adhesives for Window Manufacturing",
     description:
       "Weather-resistant adhesives engineered for wooden and composite window production, ensuring lasting bonds under extreme conditions.",
@@ -126,7 +126,7 @@ export const sectors: Sector[] = [
   {
     slug: "half-products",
     name: "Half-Products for Furnitures",
-    icon: "/icons/half-products.svg",
+    icon: "/icons/half-products.png",
     headline: "Adhesives for Semi-Finished Furniture Components",
     description:
       "Industrial-grade adhesives for manufacturing boards, panels, laminates, and other semi-finished products used in furniture production.",
@@ -166,7 +166,7 @@ export const sectors: Sector[] = [
   {
     slug: "montage",
     name: "Montage",
-    icon: "/icons/montage.svg",
+    icon: "/icons/montage.png",
     headline: "Montage & Assembly Adhesives",
     description:
       "Strong, fast-curing montage adhesives for professional assembly, fixing, and installation work across multiple substrates.",
@@ -200,8 +200,8 @@ export const sectors: Sector[] = [
   {
     slug: "constructions",
     name: "Constructions",
-    icon: "/icons/constructions.svg",
-    headline: "Construction-Grade Adhesive Systems",
+    icon: "/icons/constructions.png",
+    headline: "floors",
     description:
       "Durable, certified adhesives for structural timber construction, insulation bonding, and building element assembly.",
     products: [

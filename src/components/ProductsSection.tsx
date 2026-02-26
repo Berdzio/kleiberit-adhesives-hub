@@ -1,29 +1,7 @@
-import { Layers, Droplets, Flame, Package } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 import { motion } from "framer-motion";
-
-const categories = [
-  {
-    icon: Layers,
-    title: "PUR Hot Melts",
-    description: "Reactive polyurethane adhesives for high-performance edge banding and lamination with exceptional heat and moisture resistance.",
-  },
-  {
-    icon: Droplets,
-    title: "PVAc Adhesives",
-    description: "White glues and D3/D4 adhesives for furniture, joinery, and wood assembly applications. Fast setting, strong bonds.",
-  },
-  {
-    icon: Flame,
-    title: "EVA Hot Melts",
-    description: "Versatile ethylene vinyl acetate hot melt adhesives for edge banding, flat lamination, and profile wrapping.",
-  },
-  {
-    icon: Package,
-    title: "Montage Adhesives",
-    description: "High-strength montage adhesives for bonding, fixing, and assembly applications in construction and interior finishing.",
-  },
-];
+import { Link } from "react-router-dom";
+import { productCategories } from "@/data/productCategories";
 
 const ProductsSection = () => {
   return (
@@ -42,20 +20,24 @@ const ProductsSection = () => {
         </ScrollReveal>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {categories.map((cat, i) => (
+          {productCategories.map((cat, i) => (
             <motion.div
-              key={cat.title}
+              key={cat.slug}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-              className="group bg-card rounded-lg p-8 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-border"
             >
-              <div className="w-14 h-14 rounded-lg gradient-accent flex items-center justify-center mb-6">
-                <cat.icon className="h-7 w-7 text-accent-foreground" />
-              </div>
-              <h3 className="font-heading text-xl font-bold text-foreground mb-3">{cat.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">{cat.description}</p>
+              <Link
+                to={`/products/${cat.slug}`}
+                className="group block bg-card rounded-lg p-8 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-border"
+              >
+                <div className="w-14 h-14 rounded-lg gradient-accent flex items-center justify-center mb-6">
+                  <cat.icon className="h-7 w-7 text-accent-foreground" />
+                </div>
+                <h3 className="font-heading text-xl font-bold text-foreground mb-3">{cat.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{cat.description}</p>
+              </Link>
             </motion.div>
           ))}
         </div>

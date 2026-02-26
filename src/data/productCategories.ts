@@ -58,14 +58,6 @@ export const productCategories: ProductCategory[] = [
       "Contact adhesives for HPL/CPL lamination and surface bonding in furniture and panel production.",
     matchTypes: ["Contact Adhesive"],
   },
-  {
-    slug: "stp",
-    title: "STP Adhesives",
-    icon: Droplets,
-    description:
-      "Silane-terminated polymer adhesives for elastic bonding applications including flooring installation.",
-    matchTypes: ["STP"],
-  },
 ];
 
 export interface ProductWithSector extends Product {

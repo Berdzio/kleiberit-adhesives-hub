@@ -3,6 +3,7 @@ export interface Product {
   code: string;
   description: string;
   type: string;
+  image?: string;
 }
 
 export interface Sector {

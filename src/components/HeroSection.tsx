@@ -26,7 +26,7 @@ const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.35 }}
             className="text-primary-foreground font-heading text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6"
           >
-            Profesjonalne rozwiązania klejowe dla wymagających zastosowań
+            Profesjonalne technologie klejenia dla wymagających zastosowań
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

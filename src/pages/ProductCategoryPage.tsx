@@ -107,16 +107,16 @@ const ProductCategoryPage = () => {
         <div className="container mx-auto px-4 text-center">
           <ScrollReveal>
             <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Need help choosing the right {category.title.toLowerCase()}?
+              Potrzebujesz pomocy w dobobrze odpowiedniego produktu?
             </h3>
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-              Our technical team can recommend the best KLEIBERIT solution for your specific application.
+              Dopasujemy odpowiednie produkty KLEIBERIT do twoich potrzeb.
             </p>
             <Link
               to="/#contact"
               className="inline-block bg-secondary text-secondary-foreground font-heading font-bold px-8 py-3 rounded-lg hover:bg-secondary/90 transition-colors"
             >
-              Request a Consultation
+              Wyślij zapytanie
             </Link>
           </ScrollReveal>
         </div>

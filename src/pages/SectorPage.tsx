@@ -15,9 +15,9 @@ const SectorPage = () => {
       <div className="min-h-screen bg-background">
         <Header />
         <div className="container mx-auto px-4 py-32 text-center">
-          <h1 className="font-heading text-4xl font-bold text-foreground mb-4">Sector not found</h1>
+          <h1 className="font-heading text-4xl font-bold text-foreground mb-4">Nie znaleziono</h1>
           <Link to="/" className="text-secondary hover:underline">
-            ← Back to home
+            ← Strona główna
           </Link>
         </div>
         <Footer />
@@ -37,7 +37,7 @@ const SectorPage = () => {
             className="inline-flex items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors mb-8 font-heading text-sm tracking-wide"
           >
             <ArrowLeft className="h-4 w-4" />
-            Back to Home
+            Strona główna
           </Link>
           <ScrollReveal>
             <img src={sector.icon} alt={sector.name} className="w-16 h-16 mb-4 object-contain" />
@@ -56,10 +56,10 @@ const SectorPage = () => {
         <div className="container mx-auto px-4">
           <ScrollReveal className="mb-12">
             <p className="text-secondary font-heading font-semibold tracking-widest uppercase text-sm mb-3">
-              Recommended Products
+              Rekomendowane produktu
             </p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
-              KLEIBERIT Solutions for {sector.name}
+              Rozwiązania KLEIBERIT do {sector.name}
             </h2>
           </ScrollReveal>
 
@@ -95,16 +95,16 @@ const SectorPage = () => {
         <div className="container mx-auto px-4 text-center">
           <ScrollReveal>
             <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Need help choosing the right adhesive?
+              Potrzebujesz pomocy w wyborze?
             </h3>
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-              Our technical team can recommend the best KLEIBERIT solution for your {sector.name.toLowerCase()} application.
+              Dopasujemy odpowiedni produkt do twoich wymagań.
             </p>
             <Link
               to="/#contact"
               className="inline-block bg-secondary text-secondary-foreground font-heading font-bold px-8 py-3 rounded-lg hover:bg-secondary/90 transition-colors"
             >
-              Request a Consultation
+              Wyślij zapytanie
             </Link>
           </ScrollReveal>
         </div>

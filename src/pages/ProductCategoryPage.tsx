@@ -71,21 +71,32 @@ const ProductCategoryPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.5, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
-                className="group bg-card rounded-lg p-8 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-border"
+                className="group bg-card rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-border"
               >
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="font-heading text-xl font-bold text-foreground">{product.name}</h3>
-                  <span className="text-xs font-heading font-semibold tracking-wider uppercase bg-secondary/10 text-secondary px-3 py-1 rounded-full">
-                    {product.type}
-                  </span>
+                {product.image && (
+                  <div className="aspect-[4/3] bg-muted overflow-hidden">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                )}
+                <div className="p-8">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="font-heading text-xl font-bold text-foreground">{product.name}</h3>
+                    <span className="text-xs font-heading font-semibold tracking-wider uppercase bg-secondary/10 text-secondary px-3 py-1 rounded-full">
+                      {product.type}
+                    </span>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed mb-4">{product.description}</p>
+                  <Link
+                    to={`/sector/${product.sectorSlug}`}
+                    className="text-secondary text-sm font-heading font-semibold hover:underline"
+                  >
+                    Used in: {product.sectorName} →
+                  </Link>
                 </div>
-                <p className="text-muted-foreground leading-relaxed mb-4">{product.description}</p>
-                <Link
-                  to={`/sector/${product.sectorSlug}`}
-                  className="text-secondary text-sm font-heading font-semibold hover:underline"
-                >
-                  Used in: {product.sectorName} →
-                </Link>
               </motion.div>
             ))}
           </div>

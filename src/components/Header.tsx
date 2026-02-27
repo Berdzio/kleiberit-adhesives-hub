@@ -50,30 +50,27 @@ const Header = () => {
       {/* Main nav */}
       <nav className="bg-card/95 backdrop-blur-md border-b border-border">
         <div className="container mx-auto flex items-center justify-between px-4 py-4">
-          <Link to="/" className="flex items-center">
+          <button onClick={() => isHome ? undefined : navigate("/")} className="flex items-center">
             <img
               src="/src/assets/Klejber_logo.png"
               alt="Klejber"
               className="max-h-14 w-auto"
             />
-          </Link>
+          </button>
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <NavAnchor
                 key={item.label}
                 item={item}
-                className="text-muted-foreground font-medium hover:text-foreground transition-colors"
+                className="text-muted-foreground font-medium hover:text-foreground transition-colors cursor-pointer"
               />
             ))}
-            {isHome ? (
-              <a href="#contact" className="gradient-accent text-accent-foreground font-semibold px-5 py-2.5 rounded-md hover:opacity-90 transition-opacity">
-                Zapytaj o ofertę
-              </a>
-            ) : (
-              <Link to="/#contact" className="gradient-accent text-accent-foreground font-semibold px-5 py-2.5 rounded-md hover:opacity-90 transition-opacity">
-                Zapytaj o ofertę
-              </Link>
-            )}
+            <button
+              onClick={() => handleNavClick("#contact")}
+              className="gradient-accent text-accent-foreground font-semibold px-5 py-2.5 rounded-md hover:opacity-90 transition-opacity"
+            >
+              Zapytaj o ofertę
+            </button>
           </div>
           <button className="md:hidden text-foreground" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -85,8 +82,7 @@ const Header = () => {
               <NavAnchor
                 key={item.label}
                 item={item}
-                className="block text-muted-foreground font-medium hover:text-foreground"
-                onClick={() => setMenuOpen(false)}
+                className="block text-muted-foreground font-medium hover:text-foreground cursor-pointer"
               />
             ))}
           </div>

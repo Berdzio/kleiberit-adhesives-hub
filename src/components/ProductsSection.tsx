@@ -9,13 +9,13 @@ const ProductsSection = () => {
       <div className="container mx-auto px-4">
         <ScrollReveal className="text-center max-w-2xl mx-auto mb-16">
           <p className="text-secondary font-heading font-semibold tracking-widest uppercase text-sm mb-3">
-            Our Products
+            Nasze produkty
           </p>
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
-            KLEIBERIT Adhesive Range
+            Asortyment klejów KLEIBERIT
           </h2>
           <p className="text-muted-foreground text-lg">
-            A comprehensive portfolio of adhesives engineered for demanding industrial applications.
+            Pełne portfolio produktów KLEIBERIT do profesjonalnych zastosowań przemysłowych
           </p>
         </ScrollReveal>
 

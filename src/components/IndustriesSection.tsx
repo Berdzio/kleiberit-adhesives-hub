@@ -9,10 +9,10 @@ const IndustriesSection = () => {
       <div className="container mx-auto px-4 text-center">
         <ScrollReveal>
           <p className="text-secondary font-heading font-semibold tracking-widest uppercase text-sm mb-3">
-            Industries We Serve
+            Sektory przemysłu, w których działamy
           </p>
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-primary-foreground mb-12">
-            Bonding Solutions Across Sectors
+            Technologie klejenia dla wielu sektorów przemysłu
           </h2>
         </ScrollReveal>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">

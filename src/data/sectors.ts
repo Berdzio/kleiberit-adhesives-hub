@@ -17,16 +17,16 @@ export interface Sector {
 export const sectors: Sector[] = [
   {
     slug: "furnitures",
-    name: "Furnitures",
+    name: "Meble",
     icon: "/icons/furnitures.png",
     headline: "Adhesive Solutions for Furniture Manufacturing",
     description:
-      "High-performance adhesives for every step of furniture production — from panel assembly and edge banding to surface lamination and upholstery bonding.",
+      "Kleje przemysłowe wspierające wszystkie etapy produkcji mebli — montaż paneli, okleinowanie krawędzi i laminowanie.",
     products: [
       {
         name: "KLEIBERIT 303",
         code: "303",
-        description: "D3 PVAc white glue for universal wood bonding in furniture assembly. Excellent initial tack, fast setting.",
+        description: "Biały klej D3 PVAc do uniwersalnego klejenia drewna w produkcji mebli. Doskonała przyczepność początkowa i szybki czas wiązania.",
         type: "PVAc",
       },
       {
@@ -39,13 +39,13 @@ export const sectors: Sector[] = [
         name: "KLEIBERIT 788",
         code: "788",
         description: "EVA hot melt for edge banding of furniture panels. Excellent adhesion on melamine, PVC and ABS edges.",
-        type: "EVA Hot Melt",
+        type: "Termotopliwe EVA",
       },
       {
         name: "KLEIBERIT 707.9",
         code: "707.9",
         description: "PUR hot melt for high-quality edge banding with outstanding heat and moisture resistance.",
-        type: "PUR Hot Melt",
+        type: "Termotopliwe PUR",
       },
       {
         name: "KLEIBERIT 435",
@@ -57,7 +57,7 @@ export const sectors: Sector[] = [
   },
   {
     slug: "doors",
-    name: "Doors",
+    name: "Drzwi",
     icon: "/icons/doors.png",
     headline: "Precision Adhesives for Door Production",
     description:
@@ -91,7 +91,7 @@ export const sectors: Sector[] = [
   },
   {
     slug: "windows",
-    name: "Windows",
+    name: "Okna",
     icon: "/icons/window.png",
     headline: "High-Performance Adhesives for Window Manufacturing",
     description:
@@ -125,7 +125,7 @@ export const sectors: Sector[] = [
   },
   {
     slug: "half-products",
-    name: "Half-Products for Furnitures",
+    name: "Półfabrykaty",
     icon: "/icons/half-products.png",
     headline: "Adhesives for Semi-Finished Furniture Components",
     description:
@@ -165,8 +165,8 @@ export const sectors: Sector[] = [
   },
   {
     slug: "montage",
-    name: "Montage",
-    icon: "/icons/montage-gen.png",
+    name: "Montaz",
+    icon: "/icons/montage.png",
     headline: "Montage & Assembly Adhesives",
     description:
       "Strong, fast-curing montage adhesives for professional assembly, fixing, and installation work across multiple substrates.",
@@ -199,8 +199,8 @@ export const sectors: Sector[] = [
   },
   {
     slug: "floors",
-    name: "Floors",
-    icon: "/icons/floors-gen.png",
+    name: "Podłogi ",
+    icon: "/icons/floors.png",
     headline: "Adhesive Solutions for Flooring",
     description:
       "Professional-grade adhesives for parquet, laminate, vinyl, and engineered wood flooring installation and manufacturing.",

@@ -34,7 +34,6 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-primary-foreground/75 text-lg md:text-xl leading-relaxed mb-10"
           >
-            Premium KLEIBERIT adhesives for woodworking, packaging, automotive, and construction industries. Trusted performance, delivered with expertise.
             Sprawdzone kleje KLEIBERIT dla stolarki wewnętrznej i zewnętrzenej oraz branży budowlanej. Niezawodność potwierdzona doświadczeniem.
           </motion.p>
           <motion.div

@@ -24,7 +24,7 @@ const ContactSection = () => {
               { icon: Phone, label: "Telefon", value: "+48 512-825-215" },
               { icon: Mail, label: "Email", value: "info@klejeme.pl" },
               { icon: Clock, label: "Godziny", value: "Pon–Pt: 8 – 16" },
-              { icon: Building, label: "NIP", value: "5242945025" },
+              { icon: Building, label: "NIP", value: "5273148477" },
             ].map((item) => (
               <div key={item.label} className="flex gap-4">
                 <div className="w-12 h-12 rounded-lg bg-muted flex items-center justify-center shrink-0">

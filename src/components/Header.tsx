@@ -1,25 +1,38 @@
 import { Phone, Mail, Menu, X } from "lucide-react";
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   const isHome = location.pathname === "/";
 
   const navItems = [
-    { label: "Produkty", href: isHome ? "#products" : "/#products" },
-    { label: "O nas", href: isHome ? "#about" : "/#about" },
-    { label: "Branże", href: isHome ? "#industries" : "/#industries" },
-    { label: "Kontakt", href: isHome ? "#contact" : "/#contact" },
+    { label: "Produkty", hash: "#products" },
+    { label: "O nas", hash: "#about" },
+    { label: "Branże", hash: "#industries" },
+    { label: "Kontakt", hash: "#contact" },
   ];
 
-  const NavAnchor = ({ item, className, onClick }: { item: typeof navItems[0]; className?: string; onClick?: () => void }) => {
+  const handleNavClick = (hash: string) => {
+    setMenuOpen(false);
     if (isHome) {
-      return <a href={item.href} className={className} onClick={onClick}>{item.label}</a>;
+      document.querySelector(hash)?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate("/");
+      // Wait for navigation then scroll
+      setTimeout(() => {
+        document.querySelector(hash)?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
     }
-    return <Link to={item.href} className={className} onClick={onClick}>{item.label}</Link>;
   };
+
+  const NavAnchor = ({ item, className }: { item: typeof navItems[0]; className?: string }) => (
+    <button onClick={() => handleNavClick(item.hash)} className={className}>
+      {item.label}
+    </button>
+  );
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">

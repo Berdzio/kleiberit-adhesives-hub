@@ -4,6 +4,7 @@ export interface Product {
   description: string;
   type: string;
   image?: string;
+  badge?: string;
 }
 
 export interface Sector {

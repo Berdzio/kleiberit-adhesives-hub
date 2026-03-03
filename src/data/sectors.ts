@@ -59,6 +59,7 @@ export const sectors: Sector[] = [
         description: "Reaktywny klej PUR do okleinowania krawędzi o najwyższej jakości. Certyfikat mikroemisyjności – spełnia najwyższe normy emisji szkodliwych substancji. Doskonała odporność na temperaturę i wilgoć.",
         type: "PUR Hot Melt",
         image: "/placeholder.svg",
+        badge: "Mikroemisyjny",
       },
       {
         name: "KLEIBERIT 706.2.50",

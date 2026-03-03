@@ -4,7 +4,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import { motion } from "framer-motion";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Leaf } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 const ProductCategoryPage = () => {
   const { slug } = useParams<{ slug: string }>();

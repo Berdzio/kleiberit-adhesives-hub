@@ -124,6 +124,27 @@ export const sectors: Sector[] = [
         type: "Contact Adhesive",
         image: "/products/501.jpg",
       },
+      {
+        name: "KLEIBERIT 114.5",
+        code: "114.5",
+        description: "Klej kontaktowy na bazie rozpuszczalnika do laminowania HPL i CPL. Wysoka odporność termiczna i szybkie wiązanie.",
+        type: "Contact Adhesive",
+        image: "/placeholder.svg",
+      },
+      {
+        name: "KLEIBERIT 152.0",
+        code: "152.0",
+        description: "Klej kontaktowy rozpuszczalnikowy do oklejania powierzchni meblowych i paneli dekoracyjnych. Wysoka przyczepność do laminatów i fornirów.",
+        type: "Contact Adhesive",
+        image: "/placeholder.svg",
+      },
+      {
+        name: "KLEIBERIT 257.0",
+        code: "257.0",
+        description: "Wodny klej kontaktowy do klejenia powierzchniowego – ekologiczna alternatywa bez rozpuszczalników. Idealny do laminowania HPL, CPL i oklein.",
+        type: "Contact Adhesive",
+        image: "/placeholder.svg",
+      },
     ],
   },
   {

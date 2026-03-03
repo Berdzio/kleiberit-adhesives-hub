@@ -4,7 +4,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import { motion } from "framer-motion";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Leaf } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 const ProductCategoryPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -83,12 +84,18 @@ const ProductCategoryPage = () => {
                   </div>
                 )}
                 <div className="p-8">
-                  <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center justify-between mb-2">
                     <h3 className="font-heading text-xl font-bold text-foreground">{product.name}</h3>
                     <span className="text-xs font-heading font-semibold tracking-wider uppercase bg-secondary/10 text-secondary px-3 py-1 rounded-full">
                       {product.type}
                     </span>
                   </div>
+                  {product.badge && (
+                    <Badge className="mb-3 bg-green-600 hover:bg-green-700 text-white gap-1">
+                      <Leaf className="h-3 w-3" />
+                      {product.badge}
+                    </Badge>
+                  )}
                   <p className="text-muted-foreground leading-relaxed mb-4">{product.description}</p>
                   <Link
                     to={`/sector/${product.sectorSlug}`}

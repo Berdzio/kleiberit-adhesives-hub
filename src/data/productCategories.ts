@@ -16,7 +16,7 @@ export const productCategories: ProductCategory[] = [
     icon: Layers,
     description:
       "Reaktywne kleje poliuretanowe – idealne do okleinowania krawędzi i laminowania, gwarantujące odporność na temperaturę i wilgoć.",
-    matchTypes: ["PUR Hot Melt"],
+    matchTypes: ["PUR Hot Melt", "Termotopliwe PUR"],
   },
   {
     slug: "pvac",

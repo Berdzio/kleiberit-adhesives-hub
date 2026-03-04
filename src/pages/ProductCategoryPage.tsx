@@ -97,12 +97,14 @@ const ProductCategoryPage = () => {
                     </Badge>
                   )}
                   <p className="text-muted-foreground leading-relaxed mb-4">{product.description}</p>
-                  <Link
-                    to={`/sector/${product.sectorSlug}`}
-                    className="text-secondary text-sm font-heading font-semibold hover:underline"
-                  >
-                    Used in: {product.sectorName} →
-                  </Link>
+                  {product.sectorSlug && (
+                    <Link
+                      to={`/sector/${product.sectorSlug}`}
+                      className="text-secondary text-sm font-heading font-semibold hover:underline"
+                    >
+                      Used in: {product.sectorName} →
+                    </Link>
+                  )}
                 </div>
               </motion.div>
             ))}

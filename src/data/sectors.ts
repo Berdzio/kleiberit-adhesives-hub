@@ -21,7 +21,7 @@ export const sectors: Sector[] = [
     slug: "furnitures",
     name: "Meble",
     icon: "/icons/furnitures.png",
-    headline: "Adhesive Solutions for Furniture Manufacturing",
+    headline: "Kleje do produkcji mebli",
     description:
       "Kleje przemysłowe wspierające wszystkie etapy produkcji mebli — montaż paneli, okleinowanie krawędzi i laminowanie.",
     products: [
@@ -63,7 +63,7 @@ export const sectors: Sector[] = [
       {
         name: "KLEIBERIT 788",
         code: "788",
-        description: "EVA hot melt for edge banding of furniture panels. Excellent adhesion on melamine, PVC and ABS edges.",
+        description: "Termotopliwy klej EVA do okleinowania krawędzi płyt meblowych. Doskonała przyczepność do krawędzi z melaminy, PVC i ABS.",
         type: "Termotopliwe EVA",
         image: "/products/788.jpg",
       },
@@ -105,7 +105,7 @@ export const sectors: Sector[] = [
       {
         name: "KLEIBERIT 707.9",
         code: "707.9",
-        description: "PUR hot melt for high-quality edge banding with outstanding heat and moisture resistance.",
+        description: "Reaktywny klej PUR hot melt do okleinowania krawędzi mebli o najwyższej jakości. Wyjątkowa odporność na ciepło i wilgoć – idealna trwałość spoiny w meblach kuchennych i łazienkowych.",
         type: "PUR Hot Melt",
         image: "/products/707-9.jpg",
       },
@@ -155,7 +155,7 @@ export const sectors: Sector[] = [
       {
         name: "KLEIBERIT 435",
         code: "435",
-        description: "Contact adhesive for HPL lamination and furniture surface bonding applications.",
+        description: "Klej kontaktowy do laminowania powierzchni meblowych laminatami HPL. Wysoka odporność termiczna i natychmiastowe wiązanie po dociśnięciu.",
         type: "Contact Adhesive",
         image: "/products/501.jpg",
       },
@@ -186,9 +186,9 @@ export const sectors: Sector[] = [
     slug: "doors",
     name: "Drzwi",
     icon: "/icons/doors.png",
-    headline: "Precision Adhesives for Door Production",
+    headline: "Kleje do produkcji drzwi",
     description:
-      "Reliable bonding solutions for solid wood, engineered, and composite door manufacturing — including frame assembly, panel gluing, and surface finishing.",
+      "Niezawodne rozwiązania klejowe do produkcji drzwi z drewna litego, inżynieryjnego i kompozytowego — montaż ram, klejenie płycin i wykończenie powierzchni.",
     products: [
       {
         name: "KLEIBERIT 303",
@@ -224,9 +224,9 @@ export const sectors: Sector[] = [
     slug: "windows",
     name: "Okna",
     icon: "/icons/window.png",
-    headline: "High-Performance Adhesives for Window Manufacturing",
+    headline: "Kleje do produkcji okien",
     description:
-      "Weather-resistant adhesives engineered for wooden and composite window production, ensuring lasting bonds under extreme conditions.",
+      "Kleje odporne na warunki atmosferyczne, zaprojektowane do produkcji okien drewnianych i kompozytowych, zapewniające trwałe połączenia w ekstremalnych warunkach.",
     products: [
       {
         name: "KLEIBERIT 304",
@@ -297,9 +297,9 @@ export const sectors: Sector[] = [
     slug: "half-products",
     name: "Półfabrykaty",
     icon: "/icons/half-products.png",
-    headline: "Adhesives for Semi-Finished Furniture Components",
+    headline: "Kleje do produkcji półfabrykatów",
     description:
-      "Industrial-grade adhesives for manufacturing boards, panels, laminates, and other semi-finished products used in furniture production.",
+      "Kleje przemysłowe do produkcji płyt, paneli, laminatów i innych półfabrykatów stosowanych w branży meblarskiej i budowlanej.",
     products: [
       {
         name: "KLEIBERIT 303",
@@ -342,9 +342,9 @@ export const sectors: Sector[] = [
     slug: "montage",
     name: "Montaz",
     icon: "/icons/montage.png",
-    headline: "Montage & Assembly Adhesives",
+    headline: "Kleje montażowe",
     description:
-      "Strong, fast-curing montage adhesives for professional assembly, fixing, and installation work across multiple substrates.",
+      "Mocne, szybkowiążące kleje montażowe do profesjonalnego montażu, mocowania i instalacji na różnych podłożach.",
     products: [
       {
         name: "KLEIBERIT 566.0",
@@ -395,9 +395,9 @@ export const sectors: Sector[] = [
     slug: "floors",
     name: "Podłogi ",
     icon: "/icons/floors.png",
-    headline: "Adhesive Solutions for Flooring",
+    headline: "Kleje do podłóg",
     description:
-      "Professional-grade adhesives for parquet, laminate, vinyl, and engineered wood flooring installation and manufacturing.",
+      "Profesjonalne kleje do układania i produkcji parkietu, paneli laminowanych, podłóg winylowych i drewna inżynieryjnego.",
     products: [
       {
         name: "KLEIBERIT 583",

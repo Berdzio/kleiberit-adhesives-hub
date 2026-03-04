@@ -44,6 +44,28 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       image: "/placeholder.svg",
     },
   },
+  {
+    categorySlug: "primer",
+    product: {
+      name: "KLEIBERIT 831.0",
+      code: "831.0",
+      description:
+        "Primer do przygotowania powierzchni przed klejeniem reaktywnymi klejami PUR. Poprawia przyczepność na trudnych podłożach takich jak melamina i lakier.",
+      type: "Primer",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "primer",
+    product: {
+      name: "KLEIBERIT 842.0",
+      code: "842.0",
+      description:
+        "Primer na bazie wody do aktywacji powierzchni przed okleinowaniem krawędzi. Zwiększa siłę wiązania kleju PUR i EVA na materiałach o niskiej energii powierzchniowej.",
+      type: "Primer",
+      image: "/placeholder.svg",
+    },
+  },
 ];
 
 export const productCategories: ProductCategory[] = [
@@ -108,8 +130,8 @@ export const productCategories: ProductCategory[] = [
     title: "Primery",
     icon: Flame,
     description:
-      "Versatile ethylene vinyl acetate hot melt adhesives for edge banding, flat lamination, and profile wrapping.",
-    matchTypes: ["EVA Hot Melt"],
+      "Środki gruntujące do przygotowania powierzchni przed klejeniem – zwiększają przyczepność na trudnych podłożach.",
+    matchTypes: ["Primer"],
   },
 ];
 

@@ -9,6 +9,43 @@ export interface ProductCategory {
   matchTypes: string[]; // product.type values that belong to this category
 }
 
+// Standalone products not tied to any sector
+export const standaloneProducts: { categorySlug: string; product: Product }[] = [
+  {
+    categorySlug: "cleaners",
+    product: {
+      name: "KLEIBERIT 761.7",
+      code: "761.7",
+      description:
+        "Środek czyszczący do usuwania resztek klejów termotopliwych EVA i PUR z maszyn i narzędzi. Skuteczny w podwyższonej temperaturze.",
+      type: "Cleaner",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "cleaners",
+    product: {
+      name: "KLEIBERIT 761.6",
+      code: "761.6",
+      description:
+        "Czyściwo do konserwacji systemów klejowych – usuwa osady i zanieczyszczenia z dysz, walców i zbiorników klejowych.",
+      type: "Cleaner",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "cleaners",
+    product: {
+      name: "KLEIBERIT 760.3",
+      code: "760.3",
+      description:
+        "Granulat czyszczący do maszyn okleiniarskich i systemów hot melt. Usuwa zwęglone resztki kleju, przedłuża żywotność urządzeń.",
+      type: "Cleaner",
+      image: "/placeholder.svg",
+    },
+  },
+];
+
 export const productCategories: ProductCategory[] = [
   {
     slug: "pur-hot-melts",
@@ -63,8 +100,8 @@ export const productCategories: ProductCategory[] = [
     title: "Czyściwa",
     icon: Flame,
     description:
-      "Versatile ethylene vinyl acetate hot melt adhesives for edge banding, flat lamination, and profile wrapping.",
-    matchTypes: ["EVA Hot Melt"],
+      "Środki czyszczące i granulaty do konserwacji maszyn klejowych – usuwanie resztek klejów EVA i PUR z systemów hot melt.",
+    matchTypes: ["Cleaner"],
   },
   {
     slug: "primer",
@@ -91,6 +128,7 @@ export function getProductsByCategory(slug: string): {
   const products: ProductWithSector[] = [];
   const seen = new Set<string>();
 
+  // Products from sectors
   for (const sector of sectors) {
     for (const product of sector.products) {
       if (category.matchTypes.includes(product.type) && !seen.has(product.code)) {
@@ -101,6 +139,18 @@ export function getProductsByCategory(slug: string): {
           sectorSlug: sector.slug,
         });
       }
+    }
+  }
+
+  // Standalone products (not tied to any sector)
+  for (const entry of standaloneProducts) {
+    if (entry.categorySlug === slug && !seen.has(entry.product.code)) {
+      seen.add(entry.product.code);
+      products.push({
+        ...entry.product,
+        sectorName: "",
+        sectorSlug: "",
+      });
     }
   }
 

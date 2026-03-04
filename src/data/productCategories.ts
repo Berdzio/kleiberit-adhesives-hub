@@ -32,7 +32,7 @@ export const productCategories: ProductCategory[] = [
     icon: Flame,
     description:
       "Uniwersalne kleje EVA do okleinowania, laminowania i formowania profili.",
-    matchTypes: ["EVA Hot Melt"],
+    matchTypes: ["EVA Hot Melt", "Termotopliwe EVA"],
   },
   {
     slug: "montage",

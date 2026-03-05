@@ -64,7 +64,7 @@ const SectorPage = () => {
               Rekomendowane produktu
             </p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
-              Rozwiązania KLEIBERIT do {sector.name}
+              Rozwiązania KLEIBERIT® do {sector.name}
             </h2>
           </ScrollReveal>
 

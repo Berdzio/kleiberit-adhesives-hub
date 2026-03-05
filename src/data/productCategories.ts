@@ -14,7 +14,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
   {
     categorySlug: "cleaners",
     product: {
-      name: "KLEIBERIT 761.7",
+      name: "KLEIBERIT® 761.7",
       code: "761.7",
       description:
         "Środek czyszczący do usuwania resztek klejów termotopliwych EVA i PUR z maszyn i narzędzi. Skuteczny w podwyższonej temperaturze.",
@@ -25,7 +25,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
   {
     categorySlug: "cleaners",
     product: {
-      name: "KLEIBERIT 761.6",
+      name: "KLEIBERIT® 761.6",
       code: "761.6",
       description:
         "Czyściwo do konserwacji systemów klejowych – usuwa osady i zanieczyszczenia z dysz, walców i zbiorników klejowych.",
@@ -36,7 +36,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
   {
     categorySlug: "cleaners",
     product: {
-      name: "KLEIBERIT 760.3",
+      name: "KLEIBERIT® 760.3",
       code: "760.3",
       description:
         "Granulat czyszczący do maszyn okleiniarskich i systemów hot melt. Usuwa zwęglone resztki kleju, przedłuża żywotność urządzeń.",
@@ -47,7 +47,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
   {
     categorySlug: "primer",
     product: {
-      name: "KLEIBERIT 831.0",
+      name: "KLEIBERIT® 831.0",
       code: "831.0",
       description:
         "Primer do przygotowania powierzchni przed klejeniem reaktywnymi klejami PUR. Poprawia przyczepność na trudnych podłożach takich jak melamina i lakier.",
@@ -58,7 +58,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
   {
     categorySlug: "primer",
     product: {
-      name: "KLEIBERIT 842.0",
+      name: "KLEIBERIT® 842.0",
       code: "842.0",
       description:
         "Primer na bazie wody do aktywacji powierzchni przed okleinowaniem krawędzi. Zwiększa siłę wiązania kleju PUR i EVA na materiałach o niskiej energii powierzchniowej.",
@@ -91,7 +91,7 @@ export const productCategories: ProductCategory[] = [
     icon: Flame,
     description:
       "Uniwersalne kleje EVA do okleinowania, laminowania i formowania profili.",
-    matchTypes: ["EVA Hot Melt", "Termotopliwe EVA"],
+    matchTypes: ["Termotopliwe EVA"],
   },
   {
     slug: "montage",

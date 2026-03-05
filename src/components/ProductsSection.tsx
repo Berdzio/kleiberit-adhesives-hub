@@ -12,10 +12,10 @@ const ProductsSection = () => {
             Nasze produkty
           </p>
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Asortyment klejów KLEIBERIT
+            Asortyment klejów KLEIBERIT®
           </h2>
           <p className="text-muted-foreground text-lg">
-            Pełne portfolio produktów KLEIBERIT do profesjonalnych zastosowań przemysłowych
+            Pełne portfolio produktów KLEIBERIT® do profesjonalnych zastosowań przemysłowych
           </p>
         </ScrollReveal>
 

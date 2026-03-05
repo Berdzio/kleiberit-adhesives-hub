@@ -60,7 +60,7 @@ const ProductCategoryPage = () => {
               Products in this Category
             </p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
-              KLEIBERIT {category.title}
+              KLEIBERIT® {category.title}
             </h2>
           </ScrollReveal>
 

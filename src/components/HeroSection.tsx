@@ -18,7 +18,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-secondary font-heading font-semibold tracking-widest uppercase text-sm mb-4"
           >
-            Autoryzowany dystrybutor KLEIBERIT
+            Autoryzowany dystrybutor KLEIBERIT®
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -34,7 +34,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-primary-foreground/75 text-lg md:text-xl leading-relaxed mb-10"
           >
-            Sprawdzone kleje KLEIBERIT dla stolarki wewnętrznej i zewnętrzenej oraz branży budowlanej. Niezawodność potwierdzona doświadczeniem.
+            Sprawdzone kleje KLEIBERIT® dla stolarki wewnętrznej i zewnętrzenej oraz branży budowlanej. Niezawodność potwierdzona doświadczeniem.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}

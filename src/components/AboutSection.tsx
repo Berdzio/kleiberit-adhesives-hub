@@ -3,7 +3,7 @@ import ScrollReveal from "./ScrollReveal";
 import { motion } from "framer-motion";
 
 const features = [
-  { icon: Shield, title: "Autoryzowany Dystrybutor", desc: "Oficjalny autoryzowany partner KLEIBERIT z pełną gwarancją i gammą produktów." },
+  { icon: Shield, title: "Autoryzowany Dystrybutor", desc: "Oficjalny autoryzowany partner KLEIBERIT® z pełną gwarancją i gammą produktów." },
   { icon: Truck, title: "Szybkie doręczenia", desc: "Magazyn produktów umożliwia nam szybkie dostarczenie produktów." },
   { icon: Headphones, title: "Wsparcie techniczne", desc: "Profesjonalne doradztwo techniczne dopasowane do Państwa wymagań." },
   { icon: Award, title: "Wieloletnie doświadczenie", desc: "20+ lat obecności na Polskim rynku" },
@@ -22,7 +22,7 @@ const AboutSection = () => {
               Zaufany partner w rozwiązaniach klejowych
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              Jako autoryzowany dystrybutor KLEIBERIT łączymy światowej klasy technologię klejów ze znajomością lokalnych realiów i profesjonalnym wsparciem. Od doboru produktu po wsparcie integracji dbamy o to, aby procesy klejenia w Twojej firmie przebiegały z maksymalną wydajnością i niezawodnością
+              Jako autoryzowany dystrybutor KLEIBERIT® łączymy światowej klasy technologię klejów ze znajomością lokalnych realiów i profesjonalnym wsparciem. Od doboru produktu po wsparcie integracji dbamy o to, aby procesy klejenia w Twojej firmie przebiegały z maksymalną wydajnością i niezawodnością
             </p>
             <a
               href="#contact"

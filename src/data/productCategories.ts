@@ -18,7 +18,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       code: "761.7",
       description:
         "Środek czyszczący do usuwania resztek klejów termotopliwych EVA i PUR z maszyn i narzędzi. Skuteczny w podwyższonej temperaturze.",
-      type: "Cleaner",
+      type: "Czyściwo",
       image: "/placeholder.svg",
     },
   },
@@ -29,7 +29,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       code: "761.6",
       description:
         "Czyściwo do konserwacji systemów klejowych – usuwa osady i zanieczyszczenia z dysz, walców i zbiorników klejowych.",
-      type: "Cleaner",
+      type: "Czyściwo",
       image: "/placeholder.svg",
     },
   },
@@ -40,7 +40,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       code: "760.3",
       description:
         "Granulat czyszczący do maszyn okleiniarskich i systemów hot melt. Usuwa zwęglone resztki kleju, przedłuża żywotność urządzeń.",
-      type: "Cleaner",
+      type: "Czyściwo",
       image: "/placeholder.svg",
     },
   },
@@ -75,7 +75,7 @@ export const productCategories: ProductCategory[] = [
     icon: Layers,
     description:
       "Reaktywne kleje poliuretanowe – idealne do okleinowania krawędzi i laminowania, gwarantujące odporność na temperaturę i wilgoć.",
-    matchTypes: ["PUR Hot Melt", "Termotopliwe PUR"],
+    matchTypes: ["Termotopliwy PUR"],
   },
   {
     slug: "pvac",
@@ -115,7 +115,7 @@ export const productCategories: ProductCategory[] = [
     icon: Package,
     description:
       "Contact adhesives for HPL/CPL lamination and surface bonding in furniture and panel production.",
-    matchTypes: ["Contact Adhesive"],
+    matchTypes: ["Klej kontaktowy"],
   },
   {
     slug: "cleaners",
@@ -123,7 +123,7 @@ export const productCategories: ProductCategory[] = [
     icon: Flame,
     description:
       "Środki czyszczące i granulaty do konserwacji maszyn klejowych – usuwanie resztek klejów EVA i PUR z systemów hot melt.",
-    matchTypes: ["Cleaner"],
+    matchTypes: ["Czyściwo"],
   },
   {
     slug: "primer",

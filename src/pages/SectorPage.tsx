@@ -1,3 +1,4 @@
+import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { sectors } from "@/data/sectors";
 import Header from "@/components/Header";
@@ -8,6 +9,10 @@ import { ArrowLeft } from "lucide-react";
 
 const SectorPage = () => {
   const { slug } = useParams<{ slug: string }>();
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
   const sector = sectors.find((s) => s.slug === slug);
 
   if (!sector) {

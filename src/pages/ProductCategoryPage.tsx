@@ -91,7 +91,13 @@ const ProductCategoryPage = () => {
                     </span>
                   </div>
                   {product.badge && (
-                    <Badge className={`mb-3 gap-1 ${product.badge === "Do luster" ? "bg-sky-600 hover:bg-sky-700 text-white" : "bg-green-600 hover:bg-green-700 text-white"}`}>
+                    <Badge className={`mb-3 gap-1 ${
+                      product.badge === "Do luster"
+                        ? "bg-sky-600 hover:bg-sky-700 text-white"
+                        : product.badge === "EMICODE EC1"
+                        ? "bg-emerald-700 hover:bg-emerald-800 text-white"
+                        : "bg-green-600 hover:bg-green-700 text-white"
+                    }`}>
                       {product.badge === "Do luster" ? <RectangleVertical className="h-3 w-3" /> : <Leaf className="h-3 w-3" />}
                       {product.badge}
                     </Badge>

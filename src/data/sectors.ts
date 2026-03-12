@@ -139,6 +139,7 @@ export const sectors: Sector[] = [
         description: "Termotopliwy klej PUR o średniej lepkości do wszechstronnego okleinowania krawędzi. Bardzo dobra przyczepność do PVC, ABS i forniru.",
         type: "Termotopliwy PUR",
         image: "/placeholder.svg",
+        badge: "EMICODE EC1",
       },
       {
         name: "KLEIBERIT® 702.8.09",

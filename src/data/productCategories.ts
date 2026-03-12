@@ -14,23 +14,23 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
   {
     categorySlug: "cleaners",
     product: {
-      name: "KLEIBERIT® 761.7",
-      code: "761.7",
-      description:
-        "Środek czyszczący do usuwania resztek klejów termotopliwych EVA i PUR z maszyn i narzędzi. Skuteczny w podwyższonej temperaturze.",
-      type: "Czyściwo",
-      image: "/placeholder.svg",
-    },
-  },
-  {
-    categorySlug: "cleaners",
-    product: {
       name: "KLEIBERIT® 761.6",
       code: "761.6",
       description:
         "Czyściwo do konserwacji systemów klejowych – usuwa osady i zanieczyszczenia z dysz, walców i zbiorników klejowych.",
       type: "Czyściwo",
-      image: "/placeholder.svg",
+      image: "/products/7616.jpg",
+    },
+  },
+  {
+    categorySlug: "cleaners",
+    product: {
+      name: "KLEIBERIT® 761.7",
+      code: "761.7",
+      description:
+        "Środek czyszczący w granulacie do usuwania resztek klejów termotopliwych EVA i PUR z maszyn i narzędzi. Skuteczny w podwyższonej temperaturze.",
+      type: "Czyściwo",
+      image: "/products/7617.jpg",
     },
   },
   {

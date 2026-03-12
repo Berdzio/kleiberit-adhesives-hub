@@ -123,6 +123,7 @@ export const sectors: Sector[] = [
         description: "Termotopliwy klej PUR do szybkiego okleinowania krawędzi. Krótki czas otwarty, wysoka przyczepność do różnych materiałów krawędziowych.",
         type: "Termotopliwy PUR",
         image: "/placeholder.svg",
+        badge: "EMICODE EC1",
       },
       {
         name: "KLEIBERIT® 706.1.50",

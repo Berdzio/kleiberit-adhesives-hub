@@ -106,7 +106,7 @@ export const productCategories: ProductCategory[] = [
     title: "Kleje poliuretanowe",
     icon: Layers,
     description:
-      "One and two-component polyurethane adhesives for structural bonding, finger jointing, and lamination.",
+      "Jedno- i dwukomponentowe kleje poliuretanowe do klejenia konstrukcyjnego, łączenia na mikrowczepy i laminowania.",
     matchTypes: ["PUR"],
   },
   {
@@ -114,7 +114,7 @@ export const productCategories: ProductCategory[] = [
     title: "Kleje kontaktowe",
     icon: Package,
     description:
-      "Contact adhesives for HPL/CPL lamination and surface bonding in furniture and panel production.",
+      "Kleje kontaktowe do laminowania HPL/CPL oraz klejenia powierzchniowego w produkcji mebli i paneli.",
     matchTypes: ["Klej kontaktowy"],
   },
   {

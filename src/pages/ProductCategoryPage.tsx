@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import { motion } from "framer-motion";
-import { ArrowLeft, Leaf } from "lucide-react";
+import { ArrowLeft, Leaf, RectangleVertical } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const ProductCategoryPage = () => {
@@ -91,8 +91,8 @@ const ProductCategoryPage = () => {
                     </span>
                   </div>
                   {product.badge && (
-                    <Badge className="mb-3 bg-green-600 hover:bg-green-700 text-white gap-1">
-                      <Leaf className="h-3 w-3" />
+                    <Badge className={`mb-3 gap-1 ${product.badge === "Do luster" ? "bg-sky-600 hover:bg-sky-700 text-white" : "bg-green-600 hover:bg-green-700 text-white"}`}>
+                      {product.badge === "Do luster" ? <RectangleVertical className="h-3 w-3" /> : <Leaf className="h-3 w-3" />}
                       {product.badge}
                     </Badge>
                   )}

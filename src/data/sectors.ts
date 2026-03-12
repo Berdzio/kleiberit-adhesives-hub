@@ -115,7 +115,7 @@ export const sectors: Sector[] = [
         description: "Reaktywny klej PUR do okleinowania krawędzi o najwyższej jakości. Certyfikat mikroemisyjności – spełnia najwyższe normy emisji szkodliwych substancji. Doskonała odporność na temperaturę i wilgoć.",
         type: "Termotopliwy PUR",
         image: "/placeholder.svg",
-        badge: "Mikroemisyjny",
+        badge: "EMICODE EC1",
       },
       {
         name: "KLEIBERIT® 706.2.50",

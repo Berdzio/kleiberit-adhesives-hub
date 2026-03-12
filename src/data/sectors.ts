@@ -115,7 +115,7 @@ export const sectors: Sector[] = [
         description: "Reaktywny klej PUR do okleinowania krawędzi o najwyższej jakości. Certyfikat mikroemisyjności – spełnia najwyższe normy emisji szkodliwych substancji. Doskonała odporność na temperaturę i wilgoć.",
         type: "Termotopliwy PUR",
         image: "/placeholder.svg",
-        badge: "Mikroemisyjny",
+        badge: "EMICODE EC1",
       },
       {
         name: "KLEIBERIT® 706.2.50",
@@ -123,6 +123,7 @@ export const sectors: Sector[] = [
         description: "Termotopliwy klej PUR do szybkiego okleinowania krawędzi. Krótki czas otwarty, wysoka przyczepność do różnych materiałów krawędziowych.",
         type: "Termotopliwy PUR",
         image: "/placeholder.svg",
+        badge: "EMICODE EC1",
       },
       {
         name: "KLEIBERIT® 706.1.50",
@@ -130,6 +131,7 @@ export const sectors: Sector[] = [
         description: "Reaktywny klej PUR do okleinowania krawędzi z wydłużonym czasem otwartym. Idealny do profili i krawędzi o złożonych kształtach.",
         type: "Termotopliwy PUR",
         image: "/placeholder.svg",
+        badge: "EMICODE EC1",
       },
       {
         name: "KLEIBERIT® 706.4.50",
@@ -137,6 +139,7 @@ export const sectors: Sector[] = [
         description: "Termotopliwy klej PUR o średniej lepkości do wszechstronnego okleinowania krawędzi. Bardzo dobra przyczepność do PVC, ABS i forniru.",
         type: "Termotopliwy PUR",
         image: "/placeholder.svg",
+        badge: "EMICODE EC1",
       },
       {
         name: "KLEIBERIT® 702.8.09",

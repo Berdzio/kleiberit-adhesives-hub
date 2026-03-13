@@ -272,7 +272,7 @@ export const sectors: Sector[] = [
         name: "KLEIBERIT® 601.2",
         code: "601.2",
         description: "Klej montażowy szczególnie polecany do klejenia luster – neutralny chemicznie, nie uszkadza powłoki lustrzanej. Nadaje się również do montażu paneli dekoracyjnych i listew.",
-        type: "Montage",
+        type: "Montaż",
         image: "/products/6012.jpg",
         badge: "Do luster",
       },

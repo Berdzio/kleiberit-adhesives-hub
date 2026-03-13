@@ -258,7 +258,7 @@ export const sectors: Sector[] = [
         name: "KLEIBERIT® 566.0",
         code: "566.0",
         description: "Uniwersalny klej montażowy na bazie dyspersji do klejenia drewna, płyt wiórowych, MDF i innych materiałów budowlanych. Wysoka przyczepność początkowa.",
-        type: "Montage",
+        type: "Montaż",
         image: "/products/566.jpg",
       },
       {

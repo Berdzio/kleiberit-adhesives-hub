@@ -30,13 +30,13 @@ const ProductsSection = () => {
             >
               <Link
                 to={`/products/${cat.slug}`}
-                className="group block bg-card rounded-lg p-8 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-border"
+                className="group flex flex-col h-full bg-card rounded-lg p-8 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-border"
               >
                 <div className="w-14 h-14 rounded-lg gradient-accent flex items-center justify-center mb-6">
                   <cat.icon className="h-7 w-7 text-accent-foreground" />
                 </div>
                 <h3 className="font-heading text-xl font-bold text-foreground mb-3">{cat.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{cat.description}</p>
+                <p className="text-muted-foreground leading-relaxed mt-auto">{cat.description}</p>
               </Link>
             </motion.div>
           ))}

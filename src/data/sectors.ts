@@ -280,7 +280,7 @@ export const sectors: Sector[] = [
         name: "KLEIBERIT® 535.0",
         code: "535.0",
         description: "Jednokomponentowy klej poliuretanowy do montażu konstrukcyjnego. Wysoka wytrzymałość spoiny i odporność na wilgoć.",
-        type: "Montage",
+        type: "Montaż",
         image: "/products/535.jpg",
       },
       {

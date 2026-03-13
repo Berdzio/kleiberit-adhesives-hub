@@ -168,13 +168,6 @@ export const sectors: Sector[] = [
         image: "/products/707950.jpg",
         badge: "Mikroemisyjny",
       },
-      {
-        name: "KLEIBERIT® 540",
-        code: "540",
-        description: "Klej PUR do klejenia paneli sandwiczowych w konstrukcji drzwi. Wysoka wytrzymałość mechaniczna spoiny i doskonała przyczepność do różnych materiałów wypełnieniowych.",
-        type: "PUR",
-        image: "/products/501.jpg",
-      },
     ],
   },
   {

@@ -315,13 +315,6 @@ export const sectors: Sector[] = [
         image: "/products/501.jpg",
       },
       {
-        name: "KLEIBERIT® 540",
-        code: "540",
-        description: "Klej PUR do produkcji wielowarstwowych paneli podłogowych i klejenia podkładów z drewna inżynieryjnego. Wodoodporna spoina o wysokiej wytrzymałości.",
-        type: "PUR",
-        image: "/products/501.jpg",
-      },
-      {
         name: "KLEIBERIT® 303",
         code: "303",
         description: "Klej PVAc klasy D3 do klejenia połączeń pióro-wpust w podłogach laminowanych. Szybkie wiązanie i łatwa aplikacja na liniach produkcyjnych.",

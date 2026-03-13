@@ -328,13 +328,6 @@ export const sectors: Sector[] = [
         type: "PVAc",
         image: "/products/304.jpg",
       },
-      {
-        name: "KLEIBERIT® 600",
-        code: "600",
-        description: "Klej montażowy do szybkiego mocowania listew przypodłogowych, progów i wykończeń podłogowych. Wysoka przyczepność początkowa bez konieczności mocowania mechanicznego.",
-        type: "Montage",
-        image: "/products/600.jpg",
-      },
     ],
   },
 ];

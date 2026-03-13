@@ -82,13 +82,6 @@ export const sectors: Sector[] = [
         image: "/products/7883.jpg",
       },
       {
-        name: "KLEIBERIT® 782.0",
-        code: "782.0",
-        description: "Termotopliwy klej EVA do okleinowania profili i laminowania. Elastyczna spoina, odpowiedni do złożonych kształtów i profilowanych elementów.",
-        type: "Termotopliwe EVA",
-        image: "/placeholder.svg",
-      },
-      {
         name: "KLEIBERIT® 707.9.50 ME",
         code: "707.9.50",
         description: "Reaktywny klej PUR do okleinowania krawędzi o najwyższej jakości. Certyfikat mikroemisyjności – spełnia najwyższe normy emisji szkodliwych substancji. Doskonała odporność na temperaturę i wilgoć.",

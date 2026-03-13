@@ -220,20 +220,6 @@ export const sectors: Sector[] = [
         type: "PUR",
         image: "/placeholder.svg",
       },
-      {
-        name: "KLEIBERIT® 503.9",
-        code: "503.9",
-        description: "Jednokomponentowy klej poliuretanowy o średniej lepkości do klejenia drewna i tworzyw sztucznych. Elastyczna spoina odporna na obciążenia dynamiczne.",
-        type: "PUR",
-        image: "/placeholder.svg",
-      },
-      {
-        name: "KLEIBERIT® 540",
-        code: "540",
-        description: "Dwukomponentowy system PUR do laminowania profili okiennych o wysokiej wytrzymałości. Trwała spoina odporna na obciążenia mechaniczne i warunki zewnętrzne.",
-        type: "PUR",
-        image: "/products/501.jpg",
-      },
     ],
   },
   {

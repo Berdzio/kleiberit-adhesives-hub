@@ -245,7 +245,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       code: "585.5",
       description:
         "Pianka montażowa ognioodporna do wypełniania i uszczelniania przejść instalacyjnych. Spełnia wymagania klasyfikacji ogniowej.",
-      type: "Montage",
+      type: "Montaż",
       image: "/placeholder.svg",
       badge: "Ognioodporny",
     },
@@ -257,7 +257,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       code: "545.5",
       description:
         "Klej montażowy do trwałego łączenia elementów konstrukcyjnych. Wysoka przyczepność do drewna, betonu i metalu.",
-      type: "Montage",
+      type: "Montaż",
       image: "/placeholder.svg",
     },
   },
@@ -306,7 +306,7 @@ export const productCategories: ProductCategory[] = [
     icon: Package,
     description:
       "Kleje oraz pianki do montażu i łączenia elementów w budownictwie i aranżacji wnętrz – trwałość i niezawodność.",
-    matchTypes: ["Montage"],
+    matchTypes: ["Montaż"],
   },
   {
     slug: "pur",

@@ -11,6 +11,7 @@ export interface ProductCategory {
 
 // Standalone products not tied to any sector
 export const standaloneProducts: { categorySlug: string; product: Product }[] = [
+  // ── Czyściwa ──
   {
     categorySlug: "cleaners",
     product: {
@@ -45,6 +46,51 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
     },
   },
   {
+    categorySlug: "cleaners",
+    product: {
+      name: "KLEIBERIT® 820",
+      code: "820",
+      description:
+        "Środek czyszczący do usuwania utwardzonych resztek klejów PUR z maszyn i narzędzi. Skuteczne czyszczenie bez uszkadzania powierzchni.",
+      type: "Czyściwo",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "cleaners",
+    product: {
+      name: "KLEIBERIT® 826.0",
+      code: "826.0",
+      description:
+        "Środek czyszczący do systemów klejowych hot melt. Usuwa pozostałości klejów EVA i PUR, utrzymując maszyny w optymalnym stanie.",
+      type: "Czyściwo",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "cleaners",
+    product: {
+      name: "KLEIBERIT® 823.3",
+      code: "823.3",
+      description:
+        "Preparat czyszczący do maszyn okleiniarskich i aplikatorów klejowych. Rozpuszcza i usuwa utwardzone resztki kleju.",
+      type: "Czyściwo",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "cleaners",
+    product: {
+      name: "KLEIBERIT® 827",
+      code: "827",
+      description:
+        "Uniwersalny środek czyszczący do konserwacji urządzeń klejowych. Zapobiega zatykaniu dysz i zapewnia równomierną aplikację kleju.",
+      type: "Czyściwo",
+      image: "/placeholder.svg",
+    },
+  },
+  // ── Primery ──
+  {
     categorySlug: "primer",
     product: {
       name: "KLEIBERIT® 831.0",
@@ -63,6 +109,167 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       description:
         "Primer na bazie wody do aktywacji powierzchni przed okleinowaniem krawędzi. Zwiększa siłę wiązania kleju PUR i EVA na materiałach o niskiej energii powierzchniowej.",
       type: "Primer",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "primer",
+    product: {
+      name: "KLEIBERIT® 831.8",
+      code: "831.8",
+      description:
+        "Primer o podwyższonej reaktywności do przygotowania powierzchni przed klejeniem PUR. Szczególnie skuteczny na podłożach lakierowanych i foliowanych.",
+      type: "Primer",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "primer",
+    product: {
+      name: "KLEIBERIT® 821.0",
+      code: "821.0",
+      description:
+        "Środek gruntujący do zwiększenia przyczepności klejów na powierzchniach metalowych, szklanych i z tworzyw sztucznych. Szybkoschnący i łatwy w aplikacji.",
+      type: "Primer",
+      image: "/placeholder.svg",
+    },
+  },
+  // ── PUR termotopliwe (standalone) ──
+  {
+    categorySlug: "pur-hot-melts",
+    product: {
+      name: "KLEIBERIT® 702.5.49",
+      code: "702.5.49",
+      description:
+        "Reaktywny klej PUR hot melt do wrappingu profili okiennych. Doskonała przyczepność do folii PVC i forniru na profilach drewnianych i aluminiowych.",
+      type: "Termotopliwy PUR",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "pur-hot-melts",
+    product: {
+      name: "KLEIBERIT® 702.8.49",
+      code: "702.8.49",
+      description:
+        "Termotopliwy klej PUR do wrappingu profili okiennych o wydłużonym czasie otwartym. Elastyczna spoina odporna na warunki atmosferyczne.",
+      type: "Termotopliwy PUR",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "pur-hot-melts",
+    product: {
+      name: "KLEIBERIT® 709.3.50",
+      code: "709.3.50",
+      description:
+        "Reaktywny klej PUR do okleinowania krawędzi i laminowania płaskiego. Wysoka odporność termiczna i wyjątkowa jakość spoiny.",
+      type: "Termotopliwy PUR",
+      image: "/placeholder.svg",
+      badge: "EMICODE EC1",
+    },
+  },
+  // ── EVA termotopliwe (standalone) ──
+  {
+    categorySlug: "eva-hot-melts",
+    product: {
+      name: "KLEIBERIT® 788.7",
+      code: "788.7",
+      description:
+        "Termotopliwy klej EVA do okleinowania krawędzi na maszynach przemysłowych. Wysoka przyczepność i stabilność parametrów aplikacji.",
+      type: "Termotopliwe EVA",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "eva-hot-melts",
+    product: {
+      name: "KLEIBERIT® 779.6",
+      code: "779.6",
+      description:
+        "Klej EVA hot melt do okleinowania krawędzi – ekonomiczna opcja wypełniona. Dobra przyczepność przy niższym koszcie aplikacji.",
+      type: "Termotopliwe EVA",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "eva-hot-melts",
+    product: {
+      name: "KLEIBERIT® 774.4",
+      code: "774.4",
+      description:
+        "Ekonomiczny klej EVA wypełniony do okleinowania krawędzi. Stabilna aplikacja na maszynach średnio- i wysokowydajnych.",
+      type: "Termotopliwe EVA",
+      image: "/placeholder.svg",
+    },
+  },
+  // ── PUR (standalone) ──
+  {
+    categorySlug: "pur",
+    product: {
+      name: "KLEIBERIT® 501.4",
+      code: "501.4",
+      description:
+        "Jednokomponentowy klej poliuretanowy do klejenia drewna i materiałów drewnopochodnych. Wodoodporna spoina o wysokiej wytrzymałości mechanicznej.",
+      type: "PUR",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "pur",
+    product: {
+      name: "KLEIBERIT® 509.5",
+      code: "509.5",
+      description:
+        "Klej PUR do produkcji paneli sandwiczowych i klejenia warstwowego. Wysoka wytrzymałość spoiny i doskonała przyczepność do różnych materiałów rdzeniowych.",
+      type: "PUR",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "pur",
+    product: {
+      name: "KLEIBERIT® 541",
+      code: "541",
+      description:
+        "Dwukomponentowy klej poliuretanowy do klejenia konstrukcyjnego i laminowania. Wysoka wytrzymałość mechaniczna i odporność na warunki atmosferyczne.",
+      type: "PUR",
+      image: "/placeholder.svg",
+    },
+  },
+  // ── Montażowe (standalone) ──
+  {
+    categorySlug: "montage",
+    product: {
+      name: "KLEIBERIT® 585.5",
+      code: "585.5",
+      description:
+        "Pianka montażowa ognioodporna do wypełniania i uszczelniania przejść instalacyjnych. Spełnia wymagania klasyfikacji ogniowej.",
+      type: "Montage",
+      image: "/placeholder.svg",
+      badge: "Ognioodporny",
+    },
+  },
+  {
+    categorySlug: "montage",
+    product: {
+      name: "KLEIBERIT® 545.5",
+      code: "545.5",
+      description:
+        "Klej montażowy do trwałego łączenia elementów konstrukcyjnych. Wysoka przyczepność do drewna, betonu i metalu.",
+      type: "Montage",
+      image: "/placeholder.svg",
+    },
+  },
+  // ── Kontaktowe (standalone) ──
+  {
+    categorySlug: "contact",
+    product: {
+      name: "KLEIBERIT® 120",
+      code: "120",
+      description:
+        "Klej kontaktowy na bazie rozpuszczalnika do laminowania HPL i CPL. Natychmiastowe wiązanie po dociśnięciu i wysoka odporność termiczna.",
+      type: "Klej kontaktowy",
       image: "/placeholder.svg",
     },
   },

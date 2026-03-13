@@ -287,7 +287,7 @@ export const sectors: Sector[] = [
         name: "KLEIBERIT® 536.0",
         code: "536.0",
         description: "Klej montażowy PUR do trwałego łączenia elementów drewnianych i materiałów drewnopochodnych. Szybkie utwardzanie i wysoka odporność mechaniczna.",
-        type: "Montage",
+        type: "Montaż",
         image: "/products/536.jpg",
       },
       {

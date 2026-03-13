@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import { motion } from "framer-motion";
-import { ArrowLeft, Leaf, RectangleVertical } from "lucide-react";
+import { ArrowLeft, Leaf, RectangleVertical, ShieldCheck } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const ProductCategoryPage = () => {

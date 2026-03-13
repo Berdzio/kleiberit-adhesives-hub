@@ -257,7 +257,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       code: "545.5",
       description:
         "Klej montażowy do trwałego łączenia elementów konstrukcyjnych. Wysoka przyczepność do drewna, betonu i metalu.",
-      type: "Montage",
+      type: "Montaż",
       image: "/placeholder.svg",
     },
   },

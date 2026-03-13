@@ -265,7 +265,7 @@ export const sectors: Sector[] = [
         name: "KLEIBERIT® 568.0",
         code: "568.0",
         description: "Elastyczny klej montażowy do trwałego łączenia różnych materiałów budowlanych. Odporny na wilgoć i starzenie, odpowiedni do zastosowań wewnętrznych i zewnętrznych.",
-        type: "Montage",
+        type: "Montaż",
         image: "/products/568.jpg",
       },
       {

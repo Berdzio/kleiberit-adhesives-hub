@@ -306,7 +306,7 @@ export const productCategories: ProductCategory[] = [
     icon: Package,
     description:
       "Kleje oraz pianki do montażu i łączenia elementów w budownictwie i aranżacji wnętrz – trwałość i niezawodność.",
-    matchTypes: ["Montage"],
+    matchTypes: ["Montaż"],
   },
   {
     slug: "pur",

@@ -294,7 +294,7 @@ export const sectors: Sector[] = [
         name: "KLEIBERIT® 540.5",
         code: "540.5",
         description: "Reaktywny klej PUR do montażu i klejenia strukturalnego. Doskonała przyczepność do drewna, metalu, betonu i tworzyw sztucznych.",
-        type: "Montage",
+        type: "Montaż",
         image: "/placeholder.svg",
       },
     ],

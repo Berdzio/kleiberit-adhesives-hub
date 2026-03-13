@@ -245,7 +245,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       code: "585.5",
       description:
         "Pianka montażowa ognioodporna do wypełniania i uszczelniania przejść instalacyjnych. Spełnia wymagania klasyfikacji ogniowej.",
-      type: "Montage",
+      type: "Montaż",
       image: "/placeholder.svg",
       badge: "Ognioodporny",
     },

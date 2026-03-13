@@ -36,7 +36,7 @@ const ProductsSection = () => {
                   <cat.icon className="h-7 w-7 text-accent-foreground" />
                 </div>
                 <h3 className="font-heading text-xl font-bold text-foreground mb-3">{cat.title}</h3>
-                <p className="text-muted-foreground leading-relaxed mt-auto">{cat.description}</p>
+                <p className="text-muted-foreground leading-relaxed">{cat.description}</p>
               </Link>
             </motion.div>
           ))}

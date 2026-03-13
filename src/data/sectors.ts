@@ -248,7 +248,7 @@ export const sectors: Sector[] = [
   },
   {
     slug: "montage",
-    name: "Montaz",
+    name: "Montaż",
     icon: "/icons/montage.png",
     headline: "Kleje montażowe",
     description:

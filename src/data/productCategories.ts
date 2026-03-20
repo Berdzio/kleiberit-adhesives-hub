@@ -1,4 +1,4 @@
-import { Layers, Droplets, Flame, Package, LucideIcon } from "lucide-react";
+import { Layers, Droplets, Flame, Package, Pipette, SprayCan, Sparkles, HandMetal, LucideIcon } from "lucide-react";
 import { sectors, Product } from "./sectors";
 
 export interface ProductCategory {
@@ -279,7 +279,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "pur-hot-melts",
     title: "Termotopliwe kleje PUR",
-    icon: Layers,
+    icon: Flame,
     description:
       "Reaktywne kleje poliuretanowe – idealne do okleinowania krawędzi i laminowania, gwarantujące odporność na temperaturę i wilgoć.",
     matchTypes: ["Termotopliwy PUR"],
@@ -295,7 +295,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "eva-hot-melts",
     title: "Termotopliwe kleje EVA",
-    icon: Flame,
+    icon: Layers,
     description:
       "Uniwersalne kleje EVA do okleinowania, laminowania i formowania profili.",
     matchTypes: ["Termotopliwe EVA"],
@@ -303,7 +303,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "montage",
     title: "Kleje i pianki montażowe",
-    icon: Package,
+    icon: HandMetal,
     description:
       "Kleje oraz pianki do montażu i łączenia elementów w budownictwie i aranżacji wnętrz – trwałość i niezawodność.",
     matchTypes: ["Montaż"],
@@ -311,7 +311,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "pur",
     title: "Kleje poliuretanowe",
-    icon: Layers,
+    icon: Package,
     description:
       "Jedno- i dwukomponentowe kleje poliuretanowe do klejenia konstrukcyjnego, łączenia na mikrowczepy i laminowania.",
     matchTypes: ["PUR"],
@@ -319,7 +319,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "contact",
     title: "Kleje kontaktowe",
-    icon: Package,
+    icon: Pipette,
     description:
       "Kleje kontaktowe do laminowania HPL/CPL oraz klejenia powierzchniowego w produkcji mebli i paneli.",
     matchTypes: ["Klej kontaktowy"],
@@ -327,7 +327,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "cleaners",
     title: "Czyściwa",
-    icon: Flame,
+    icon: SprayCan,
     description:
       "Środki czyszczące i granulaty do konserwacji maszyn klejowych – usuwanie resztek klejów EVA i PUR z systemów hot melt.",
     matchTypes: ["Czyściwo"],
@@ -335,7 +335,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "primer",
     title: "Primery",
-    icon: Flame,
+    icon: Sparkles,
     description:
       "Środki gruntujące do przygotowania powierzchni przed klejeniem – zwiększają przyczepność na trudnych podłożach.",
     matchTypes: ["Primer"],

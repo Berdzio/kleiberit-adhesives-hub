@@ -327,7 +327,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "cleaners",
     title: "Czyściwa",
-    icon: Flame,
+    icon: SprayCan,
     description:
       "Środki czyszczące i granulaty do konserwacji maszyn klejowych – usuwanie resztek klejów EVA i PUR z systemów hot melt.",
     matchTypes: ["Czyściwo"],

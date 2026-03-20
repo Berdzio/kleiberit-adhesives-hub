@@ -1,5 +1,7 @@
+import { useMemo } from "react";
 import { useParams, Link } from "react-router-dom";
 import { getProductsByCategory } from "@/data/productCategories";
+import { useSeo } from "@/hooks/useSeo";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -11,13 +13,56 @@ const ProductCategoryPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const { category, products } = getProductsByCategory(slug || "");
 
+  const jsonLd = useMemo(() => {
+    if (!category) return undefined;
+    return {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: `${category.title} KLEIBERIT® — Klejber`,
+      description: category.description,
+      url: `https://klejeme.pl/products/${slug}`,
+      breadcrumb: {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Strona główna", item: "https://klejeme.pl/" },
+          { "@type": "ListItem", position: 2, name: "Produkty", item: "https://klejeme.pl/#products" },
+          { "@type": "ListItem", position: 3, name: category.title, item: `https://klejeme.pl/products/${slug}` },
+        ],
+      },
+      mainEntity: {
+        "@type": "ItemList",
+        itemListElement: products.map((p, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          item: {
+            "@type": "Product",
+            name: p.name,
+            description: p.description,
+            brand: { "@type": "Brand", name: "KLEIBERIT" },
+          },
+        })),
+      },
+    };
+  }, [category, products, slug]);
+
+  useSeo({
+    title: category
+      ? `${category.title} KLEIBERIT® — kleje przemysłowe | Klejber`
+      : "Nie znaleziono kategorii | Klejber",
+    description: category
+      ? `${category.description} Autoryzowany dystrybutor KLEIBERIT® w Polsce.`
+      : "Kategoria produktów nie została znaleziona.",
+    canonical: category ? `https://klejeme.pl/products/${slug}` : undefined,
+    jsonLd,
+  });
+
   if (!category) {
     return (
       <div className="min-h-screen bg-background">
         <Header />
         <div className="container mx-auto px-4 py-32 text-center">
-          <h1 className="font-heading text-4xl font-bold text-foreground mb-4">Category not found</h1>
-          <Link to="/" className="text-secondary hover:underline">← Back to home</Link>
+          <h1 className="font-heading text-4xl font-bold text-foreground mb-4">Nie znaleziono kategorii</h1>
+          <Link to="/" className="text-secondary hover:underline">← Strona główna</Link>
         </div>
         <Footer />
       </div>
@@ -37,7 +82,7 @@ const ProductCategoryPage = () => {
             className="inline-flex items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors mb-8 font-heading text-sm tracking-wide"
           >
             <ArrowLeft className="h-4 w-4" />
-            Back to Home
+            Strona główna
           </Link>
           <ScrollReveal>
             <div className="w-16 h-16 rounded-lg gradient-accent flex items-center justify-center mb-4">
@@ -57,7 +102,7 @@ const ProductCategoryPage = () => {
         <div className="container mx-auto px-4">
           <ScrollReveal className="mb-12">
             <p className="text-secondary font-heading font-semibold tracking-widest uppercase text-sm mb-3">
-              Products in this Category
+              Produkty w tej kategorii
             </p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
               KLEIBERIT® {category.title}
@@ -78,8 +123,9 @@ const ProductCategoryPage = () => {
                   <div className="aspect-[4/3] bg-muted overflow-hidden">
                     <img
                       src={product.image}
-                      alt={product.name}
+                      alt={`${product.name} — ${product.type}`}
                       className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
                     />
                   </div>
                 )}
@@ -116,10 +162,10 @@ const ProductCategoryPage = () => {
         <div className="container mx-auto px-4 text-center">
           <ScrollReveal>
             <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Potrzebujesz pomocy w dobobrze odpowiedniego produktu?
+              Potrzebujesz pomocy w doborze odpowiedniego produktu?
             </h3>
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-              Dopasujemy odpowiednie produkty KLEIBERIT do twoich potrzeb.
+              Dopasujemy odpowiednie produkty KLEIBERIT® do Twoich potrzeb.
             </p>
             <Link
               to="/#contact"

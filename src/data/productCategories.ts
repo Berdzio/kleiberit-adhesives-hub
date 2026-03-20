@@ -335,7 +335,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "primer",
     title: "Primery",
-    icon: Flame,
+    icon: Sparkles,
     description:
       "Środki gruntujące do przygotowania powierzchni przed klejeniem – zwiększają przyczepność na trudnych podłożach.",
     matchTypes: ["Primer"],

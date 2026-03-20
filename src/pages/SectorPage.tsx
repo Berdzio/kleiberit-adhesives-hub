@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { useParams, Link } from "react-router-dom";
 import { sectors } from "@/data/sectors";
+import { useSeo } from "@/hooks/useSeo";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -13,7 +14,51 @@ const SectorPage = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, [slug]);
+
   const sector = sectors.find((s) => s.slug === slug);
+
+  const jsonLd = useMemo(() => {
+    if (!sector) return undefined;
+    return {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: `Kleje przemysłowe do branży: ${sector.name} — Klejber`,
+      description: sector.description,
+      url: `https://klejeme.pl/sector/${slug}`,
+      breadcrumb: {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Strona główna", item: "https://klejeme.pl/" },
+          { "@type": "ListItem", position: 2, name: "Branże", item: "https://klejeme.pl/#industries" },
+          { "@type": "ListItem", position: 3, name: sector.name, item: `https://klejeme.pl/sector/${slug}` },
+        ],
+      },
+      mainEntity: {
+        "@type": "ItemList",
+        itemListElement: sector.products.map((p, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          item: {
+            "@type": "Product",
+            name: p.name,
+            description: p.description,
+            brand: { "@type": "Brand", name: "KLEIBERIT" },
+          },
+        })),
+      },
+    };
+  }, [sector, slug]);
+
+  useSeo({
+    title: sector
+      ? `Kleje do ${sector.name.toLowerCase()} KLEIBERIT® — kleje przemysłowe | Klejber`
+      : "Nie znaleziono branży | Klejber",
+    description: sector
+      ? `${sector.description} Autoryzowany dystrybutor klejów przemysłowych KLEIBERIT® w Polsce.`
+      : "Branża nie została znaleziona.",
+    canonical: sector ? `https://klejeme.pl/sector/${slug}` : undefined,
+    jsonLd,
+  });
 
   if (!sector) {
     return (
@@ -34,7 +79,6 @@ const SectorPage = () => {
     <div className="min-h-screen bg-background">
       <Header />
 
-      {/* Hero */}
       <section className="pt-32 pb-16 bg-primary">
         <div className="container mx-auto px-4">
           <Link
@@ -56,12 +100,11 @@ const SectorPage = () => {
         </div>
       </section>
 
-      {/* Products */}
       <section className="py-24">
         <div className="container mx-auto px-4">
           <ScrollReveal className="mb-12">
             <p className="text-secondary font-heading font-semibold tracking-widest uppercase text-sm mb-3">
-              Rekomendowane produktu
+              Rekomendowane produkty
             </p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
               Rozwiązania KLEIBERIT® do {sector.name}
@@ -95,7 +138,6 @@ const SectorPage = () => {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="py-16 bg-accent/10">
         <div className="container mx-auto px-4 text-center">
           <ScrollReveal>
@@ -103,7 +145,7 @@ const SectorPage = () => {
               Potrzebujesz pomocy w wyborze?
             </h3>
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-              Dopasujemy odpowiedni produkt do twoich wymagań.
+              Dopasujemy odpowiedni produkt do Twoich wymagań.
             </p>
             <Link
               to="/#contact"

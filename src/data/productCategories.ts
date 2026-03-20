@@ -303,7 +303,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "montage",
     title: "Kleje i pianki montażowe",
-    icon: Package,
+    icon: HandMetal,
     description:
       "Kleje oraz pianki do montażu i łączenia elementów w budownictwie i aranżacji wnętrz – trwałość i niezawodność.",
     matchTypes: ["Montaż"],

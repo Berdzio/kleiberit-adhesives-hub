@@ -1,4 +1,4 @@
-import { Layers, Droplets, Flame, Package, LucideIcon } from "lucide-react";
+import { Layers, Droplets, Flame, Package, Pipette, SprayCan, Sparkles, HandMetal, LucideIcon } from "lucide-react";
 import { sectors, Product } from "./sectors";
 
 export interface ProductCategory {

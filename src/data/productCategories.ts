@@ -311,7 +311,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "pur",
     title: "Kleje poliuretanowe",
-    icon: Layers,
+    icon: Package,
     description:
       "Jedno- i dwukomponentowe kleje poliuretanowe do klejenia konstrukcyjnego, łączenia na mikrowczepy i laminowania.",
     matchTypes: ["PUR"],

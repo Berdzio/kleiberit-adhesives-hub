@@ -319,7 +319,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "contact",
     title: "Kleje kontaktowe",
-    icon: Package,
+    icon: Pipette,
     description:
       "Kleje kontaktowe do laminowania HPL/CPL oraz klejenia powierzchniowego w produkcji mebli i paneli.",
     matchTypes: ["Klej kontaktowy"],

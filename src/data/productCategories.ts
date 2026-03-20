@@ -279,7 +279,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "pur-hot-melts",
     title: "Termotopliwe kleje PUR",
-    icon: Layers,
+    icon: Flame,
     description:
       "Reaktywne kleje poliuretanowe – idealne do okleinowania krawędzi i laminowania, gwarantujące odporność na temperaturę i wilgoć.",
     matchTypes: ["Termotopliwy PUR"],

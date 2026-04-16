@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import { useParams, Link } from "react-router-dom";
-import { sectors } from "@/data/sectors";
+import { sectors, Product, ProductSubcategory } from "@/data/sectors";
 import { useSeo } from "@/hooks/useSeo";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";

@@ -8,6 +8,24 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 
+const ProductCard = ({ product, index }: { product: Product; index: number }) => (
+  <motion.div
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, margin: "-60px" }}
+    transition={{ duration: 0.5, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
+    className="group bg-card rounded-lg p-8 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-border"
+  >
+    <div className="flex items-center justify-between mb-4">
+      <h3 className="font-heading text-xl font-bold text-foreground">{product.name}</h3>
+      <span className="text-xs font-heading font-semibold tracking-wider uppercase bg-secondary/10 text-secondary px-3 py-1 rounded-full">
+        {product.type}
+      </span>
+    </div>
+    <p className="text-muted-foreground leading-relaxed">{product.description}</p>
+  </motion.div>
+);
+
 const SectorPage = () => {
   const { slug } = useParams<{ slug: string }>();
 

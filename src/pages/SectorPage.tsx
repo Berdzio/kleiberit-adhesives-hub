@@ -111,30 +111,35 @@ const SectorPage = () => {
             </h2>
           </ScrollReveal>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {sector.products.map((product, i) => (
-              <motion.div
-                key={product.code + i}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.5, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
-                className="group bg-card rounded-lg p-8 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-border"
-              >
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="font-heading text-xl font-bold text-foreground">
-                    {product.name}
-                  </h3>
-                  <span className="text-xs font-heading font-semibold tracking-wider uppercase bg-secondary/10 text-secondary px-3 py-1 rounded-full">
-                    {product.type}
-                  </span>
+          {sector.subcategories && sector.subcategories.length > 0 ? (
+            sector.subcategories.map((sub, si) => {
+              const subProducts = sector.products.filter((p) =>
+                sub.matchTypes.includes(p.type)
+              );
+              if (subProducts.length === 0) return null;
+              return (
+                <div key={si} className="mb-16 last:mb-0">
+                  <ScrollReveal className="mb-8">
+                    <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-2">
+                      {sub.title}
+                    </h3>
+                    <p className="text-muted-foreground">{sub.description}</p>
+                  </ScrollReveal>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {subProducts.map((product, i) => (
+                      <ProductCard key={product.code + i} product={product} index={i} />
+                    ))}
+                  </div>
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
-                  {product.description}
-                </p>
-              </motion.div>
-            ))}
-          </div>
+              );
+            })
+          ) : (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {sector.products.map((product, i) => (
+                <ProductCard key={product.code + i} product={product} index={i} />
+              ))}
+            </div>
+          )}
         </div>
       </section>
 

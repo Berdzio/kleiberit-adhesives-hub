@@ -7,6 +7,12 @@ export interface Product {
   badge?: string;
 }
 
+export interface ProductSubcategory {
+  title: string;
+  description: string;
+  matchTypes: string[];
+}
+
 export interface Sector {
   slug: string;
   name: string;
@@ -14,6 +20,7 @@ export interface Sector {
   headline: string;
   description: string;
   products: Product[];
+  subcategories?: ProductSubcategory[];
 }
 
 export const sectors: Sector[] = [

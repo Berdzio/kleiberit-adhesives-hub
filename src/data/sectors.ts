@@ -31,6 +31,23 @@ export const sectors: Sector[] = [
     headline: "Kleje do produkcji mebli",
     description:
       "Kleje przemysłowe wspierające wszystkie etapy produkcji mebli — montaż paneli, okleinowanie krawędzi i laminowanie.",
+    subcategories: [
+      {
+        title: "Kleje białe",
+        description: "Kleje PVAc do montażu mebli i łączenia elementów drewnianych.",
+        matchTypes: ["PVAc"],
+      },
+      {
+        title: "Oklejanie obrzeży",
+        description: "Termotopliwe kleje EVA i PUR do okleinowania krawędzi płyt meblowych.",
+        matchTypes: ["Termotopliwe EVA", "Termotopliwy PUR"],
+      },
+      {
+        title: "Kleje kontaktowe",
+        description: "Kleje kontaktowe do laminowania HPL/CPL i klejenia powierzchniowego.",
+        matchTypes: ["Klej kontaktowy"],
+      },
+    ],
     products: [
       {
         name: "KLEIBERIT® 303",

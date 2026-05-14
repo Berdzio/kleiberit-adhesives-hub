@@ -85,20 +85,6 @@ export const sectors: Sector[] = [
         image: "/products/7733.jpg",
       },
       {
-        name: "KLEIBERIT® 773.1",
-        code: "773.1",
-        description: "Transprarentny klej EVA hot melt do okleinowania krawędzi o niskiej temperaturze aplikacji. Uniwersalne zastosowanie na maszynach jedno- i dwustronnych.",
-        type: "Termotopliwe EVA",
-        image: "/products/7731.jpg",
-      },
-      {
-        name: "KLEIBERIT® 773.8",
-        code: "773.8",
-        description: "Termotopliwy klej EVA o zwiększonej odporności termicznej do okleinowania krawędzi. Doskonała jakość spoiny i stabilność koloru.",
-        type: "Termotopliwe EVA",
-        image: "/placeholder.svg",
-      },
-      {
         name: "KLEIBERIT® 788.3",
         code: "788.3",
         description: "Klej termotopliwy EVA do ręcznego okleinowania obrzeży. Niska temperatura pracy od 130 °C, bardzo długi czas otwarty, odporność od –30 °C do +90 °C. Granulat 25 kg: biały, kość słoniowa, czarny.",

@@ -94,7 +94,7 @@ export const sectors: Sector[] = [
       {
         name: "KLEIBERIT® 707.9.50 ME",
         code: "707.9.50",
-        description: "Reaktywny klej PUR do okleinowania krawędzi o najwyższej jakości. Certyfikat mikroemisyjności – spełnia najwyższe normy emisji szkodliwych substancji. Doskonała odporność na temperaturę i wilgoć.",
+        description: "Reaktywny klej PUR ME do okleinowania obrzeży ABS, PVC, HPL, CPL i forniru – wariant kość słoniowa. Odporność do +150 °C i –30 °C, stabilność w stapialniku min. 24 h. Op. 6×2 kg / 20 kg.",
         type: "Termotopliwy PUR",
         image: "/products/707950.jpg",
         badge: "Mikroemisyjny",
@@ -102,33 +102,10 @@ export const sectors: Sector[] = [
       {
         name: "KLEIBERIT® 706.2.50 ME",
         code: "706.2.50",
-        description: "Termotopliwy klej PUR do szybkiego okleinowania krawędzi. Krótki czas otwarty, wysoka przyczepność do różnych materiałów krawędziowych.",
+        description: "Mikroemisyjny klej PUR do kaszerowania płyt MDF i wiórowych foliami PVC, ABS, PET i PMMA. Średni czas otwarty poniżej 4 min, lepkość 12 000 mPa·s (120 °C), temp. pracy 120–140 °C. Kość słoniowa.",
         type: "Termotopliwy PUR",
         image: "/placeholder.svg",
         badge: "Mikroemisyjny",
-      },
-      {
-        name: "KLEIBERIT® 706.1.50 ME",
-        code: "706.1.50",
-        description: "Reaktywny klej PUR do okleinowania krawędzi z wydłużonym czasem otwartym. Idealny do profili i krawędzi o złożonych kształtach.",
-        type: "Termotopliwy PUR",
-        image: "/placeholder.svg",
-        badge: "Mikroemisyjny",
-      },
-      {
-        name: "KLEIBERIT® 706.4.50 ME",
-        code: "706.4.50",
-        description: "Termotopliwy klej PUR o średniej lepkości do wszechstronnego okleinowania krawędzi. Bardzo dobra przyczepność do PVC, ABS i forniru.",
-        type: "Termotopliwy PUR",
-        image: "/placeholder.svg",
-        badge: "Mikroemisyjny",
-      },
-      {
-        name: "KLEIBERIT® 705.7.00",
-        code: "705.7.00",
-        description: "Reaktywny klej PUR do okleinowania krawędzi i laminowania płaskiego. Uniwersalne zastosowanie, dobra przyczepność do melaminy i lakieru.",
-        type: "Termotopliwy PUR",
-        image: "/placeholder.svg",
       },
       {
         name: "KLEIBERIT® 435",
@@ -173,7 +150,7 @@ export const sectors: Sector[] = [
       {
         name: "KLEIBERIT® 707.9.50 ME",
         code: "707.9.50",
-        description: "Reaktywny klej PUR hot melt do okleinowania krawędzi skrzydeł drzwiowych. Wyjątkowa odporność termiczna i trwałość spoiny – idealny do drzwi wewnętrznych i zewnętrznych.",
+        description: "Reaktywny klej PUR ME do okleinowania obrzeży skrzydeł drzwiowych – ABS, PVC, HPL, CPL, fornir. Odporność do +150 °C i –30 °C, stabilność w stapialniku min. 24 h, MDI <0,1%.",
         type: "Termotopliwy PUR",
         image: "/products/707950.jpg",
         badge: "Mikroemisyjny",

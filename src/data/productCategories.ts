@@ -11,6 +11,52 @@ export interface ProductCategory {
 
 // Standalone products not tied to any sector
 export const standaloneProducts: { categorySlug: string; product: Product }[] = [
+  // ── PVAc (standalone) ──
+  {
+    categorySlug: "pvac",
+    product: {
+      name: "KLEIBERIT® 304.4 EPI",
+      code: "304.4",
+      description:
+        "Specjalistyczny klej EPI D4 do drewna egzotycznego (teak, merbau, bangkirai). Z utwardzaczem 808.0 (15%), D4, WATT 91, BRL 2339, JAIA F****. Do schodów zewnętrznych i tarasów.",
+      type: "PVAc",
+      image: "/placeholder.svg",
+      badge: "EPI · D4",
+    },
+  },
+  {
+    categorySlug: "pvac",
+    product: {
+      name: "KLEIBERIT® 316.0",
+      code: "316.0",
+      description:
+        "Wyspecjalizowany klej PVAc do kołków i miniwczepów. Ultra-niska lepkość 470 mPa·s – dysze nie zatykają się, doskonałe właściwości natryskowe. Do automatów kołkowych, łatarek sęków. Op. 4,5–26 kg.",
+      type: "PVAc",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "pvac",
+    product: {
+      name: "KLEIBERIT® 322.1",
+      code: "322.1",
+      description:
+        "Specjalna dyspersja PVAc do fornirowania płyt wiórowych i stolarskich oraz klejenia HPL, folii papierowych i laminatów. Czas otwarty do 6 min, bez EU oznakowania. Op. 34 / 130 kg.",
+      type: "PVAc",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "pvac",
+    product: {
+      name: "KLEIBERIT® 323.0",
+      code: "323.0",
+      description:
+        "Wielozadaniowy klej PVAc D2 do fug, kołków, obrzeży ręcznych, HPL, korpusów mebli i postformingu. Wysoka wytrzymałość początkowa, fuga bezbarwna. Mrozoodporny do –25°C. Op. 10–130 kg.",
+      type: "PVAc",
+      image: "/placeholder.svg",
+    },
+  },
   // ── Czyściwa ──
   {
     categorySlug: "cleaners",

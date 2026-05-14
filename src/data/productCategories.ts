@@ -138,12 +138,13 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
   {
     categorySlug: "pur-hot-melts",
     product: {
-      name: "KLEIBERIT® 702.5.49",
-      code: "702.5.49",
+      name: "KLEIBERIT® 702.5.50 ME",
+      code: "702.5.50",
       description:
-        "Reaktywny klej PUR hot melt do wrappingu profili okiennych. Doskonała przyczepność do folii PVC i forniru na profilach drewnianych i aluminiowych.",
+        "Mikroemisyjny klej PUR do okleinowania profili wewnętrznych foliami PVC i papierami dekoracyjnymi. MDI <0,1%, bez obowiązkowego oznakowania UE. Odporność do +140 °C i –40 °C. Posuw 20–50 m/min.",
       type: "Termotopliwy PUR",
       image: "/placeholder.svg",
+      badge: "Mikroemisyjny",
     },
   },
   {
@@ -152,7 +153,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 702.8.49",
       code: "702.8.49",
       description:
-        "Termotopliwy klej PUR do wrappingu profili okiennych o wydłużonym czasie otwartym. Elastyczna spoina odporna na warunki atmosferyczne.",
+        "Reaktywny klej PUR do okleinowania profili z MDF i PVC foliami PVC i papierami dekoracyjnymi, w zastosowaniach wewnętrznych. Odporność do +150 °C i –30 °C, posuw 20–50 m/min, op. 20–190 kg.",
       type: "Termotopliwy PUR",
       image: "/placeholder.svg",
     },
@@ -160,13 +161,84 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
   {
     categorySlug: "pur-hot-melts",
     product: {
-      name: "KLEIBERIT® 709.3.50",
-      code: "709.3.50",
+      name: "KLEIBERIT® 704.0 Supramelt PUR",
+      code: "704.0",
       description:
-        "Reaktywny klej PUR do okleinowania krawędzi i laminowania płaskiego. Wysoka odporność termiczna i wyjątkowa jakość spoiny.",
+        "Reaktywny klej PUR do opłaszczowywania profili PVC i aluminium foliami PVC, akrylanowymi i fornirem. Odporność od –40 °C do +150 °C, atest RAL GZ 716/1. Temp. pracy 120–140 °C. Do zastosowań zewnętrznych.",
       type: "Termotopliwy PUR",
       image: "/placeholder.svg",
-      badge: "EMICODE EC1",
+      badge: "RAL GZ 716/1",
+    },
+  },
+  {
+    categorySlug: "pur-hot-melts",
+    product: {
+      name: "KLEIBERIT® 704.5",
+      code: "704.5",
+      description:
+        "Reaktywny PUR do opłaszczowywania profili PVC i aluminium foliami PVC, akrylowymi i fornirami. Atest RAL GZ 716, odporność –40 °C do +150 °C, temp. pracy 120–140 °C, posuw 5–40 m/min. Op. 0,3–200 kg.",
+      type: "Termotopliwy PUR",
+      image: "/placeholder.svg",
+      badge: "RAL GZ 716",
+    },
+  },
+  {
+    categorySlug: "pur-hot-melts",
+    product: {
+      name: "KLEIBERIT® 707.9.51 ME",
+      code: "707.9.51",
+      description:
+        "Reaktywny klej PUR ME do okleinowania obrzeży ABS, PVC, HPL, CPL i forniru – wariant biały. Odporność do +150 °C i –30 °C, stabilność w stapialniku min. 24 h. Idealny do białych i jasnych obrzeży.",
+      type: "Termotopliwy PUR",
+      image: "/placeholder.svg",
+      badge: "Mikroemisyjny",
+    },
+  },
+  {
+    categorySlug: "pur-hot-melts",
+    product: {
+      name: "KLEIBERIT® 707.9.58 ME",
+      code: "707.9.58",
+      description:
+        "Reaktywny klej PUR ME do okleinowania obrzeży ABS, PVC, HPL, CPL i forniru – wariant transparentny. Odporność do +150 °C i –30 °C. Uniwersalny – niewidoczna spoina pasuje do każdego koloru obrzeża.",
+      type: "Termotopliwy PUR",
+      image: "/placeholder.svg",
+      badge: "Mikroemisyjny",
+    },
+  },
+  {
+    categorySlug: "pur-hot-melts",
+    product: {
+      name: "KLEIBERIT® 709.3.50 ME",
+      code: "709.3.50",
+      description:
+        "Mikroemisyjny klej PUR do kaszerowania frontów foliami wysokopołyskowymi. Wyjątkowo niska lepkość (8 000 mPa·s), ultra-gładka spoina, czas otwarty <3 min, MDI <0,1%. Do frontów i płyt meblowych.",
+      type: "Termotopliwy PUR",
+      image: "/placeholder.svg",
+      badge: "Mikroemisyjny",
+    },
+  },
+  {
+    categorySlug: "pur-hot-melts",
+    product: {
+      name: "KLEIBERIT® 711.0",
+      code: "711.0",
+      description:
+        "Reaktywny klej PUR do kaszerowania płyt meblowych foliami z tworzyw sztucznych ABS, PET i innymi materiałami trudnymi do zwilżenia. Wysoka wytrzymałość, odporność na wilgoć i ciepło. Do maszyn flat lamination.",
+      type: "Termotopliwy PUR",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "pur-hot-melts",
+    product: {
+      name: "KLEIBERIT® 711.0.02 ME",
+      code: "711.0.02",
+      description:
+        "Reaktywny klej PUR do kaszerowania powierzchni transparentnymi foliami z tworzyw sztucznych. Temp. pracy 110–130 °C (maks.!), stabilność UV, MDI <0,1%. Lepkość 8 000 mPa·s. Op. 20–50 kg.",
+      type: "Termotopliwy PUR",
+      image: "/placeholder.svg",
+      badge: "Mikroemisyjny",
     },
   },
   // ── EVA termotopliwe (standalone) ──

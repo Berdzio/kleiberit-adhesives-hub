@@ -70,7 +70,7 @@ const SectorPage = () => {
   useSeo({
     title: sector
       ? `Kleje do ${sector.name.toLowerCase()} KLEIBERIT® — kleje przemysłowe | Klejber`
-      : "Nie znaleziono branży | Klejber",
+      : "Nie znaleziono branży | Klejber kleje przemysłowe",
     description: sector
       ? `${sector.description} Autoryzowany dystrybutor klejów przemysłowych KLEIBERIT® w Polsce.`
       : "Branża nie została znaleziona.",

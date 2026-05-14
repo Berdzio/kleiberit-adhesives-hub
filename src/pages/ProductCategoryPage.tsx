@@ -48,7 +48,7 @@ const ProductCategoryPage = () => {
   useSeo({
     title: category
       ? `${category.title} KLEIBERIT® — kleje przemysłowe | Klejber`
-      : "Nie znaleziono kategorii | Klejber",
+      : "Nie znaleziono kategorii | Klejber kleje przemysłowe",
     description: category
       ? `${category.description} Autoryzowany dystrybutor KLEIBERIT® w Polsce.`
       : "Kategoria produktów nie została znaleziona.",

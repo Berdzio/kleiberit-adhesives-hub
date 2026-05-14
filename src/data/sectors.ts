@@ -80,7 +80,7 @@ export const sectors: Sector[] = [
       {
         name: "KLEIBERIT® 773.3",
         code: "773.3",
-        description: "Termotopliwy klej EVA do okleinowania krawędzi na maszynach średnio- i wysokowydajnych. Jasny kolor spoiny, dobra przyczepność do PVC, ABS i melaminy.",
+        description: "Klej termotopliwy EVA do automatycznego oklejania obrzeży CPL, PVC, ABS, poliestru i forniru. Temp. pracy 170–200 °C, posuw 10–30 m/min. Granulat naturalny lub biały. Op. 3–20 kg.",
         type: "Termotopliwe EVA",
         image: "/products/7733.jpg",
       },
@@ -101,7 +101,7 @@ export const sectors: Sector[] = [
       {
         name: "KLEIBERIT® 788.3",
         code: "788.3",
-        description: "Klej EVA hot melt do szybkiego okleinowania krawędzi na maszynach przemysłowych. Wysoka przyczepność do różnych materiałów krawędziowych.",
+        description: "Klej termotopliwy EVA do ręcznego okleinowania obrzeży. Niska temperatura pracy od 130 °C, bardzo długi czas otwarty, odporność od –30 °C do +90 °C. Granulat 25 kg: biały, kość słoniowa, czarny.",
         type: "Termotopliwe EVA",
         image: "/products/7883.jpg",
       },

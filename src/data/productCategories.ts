@@ -11,6 +11,52 @@ export interface ProductCategory {
 
 // Standalone products not tied to any sector
 export const standaloneProducts: { categorySlug: string; product: Product }[] = [
+  // ── PVAc (standalone) ──
+  {
+    categorySlug: "pvac",
+    product: {
+      name: "KLEIBERIT® 304.4 EPI",
+      code: "304.4",
+      description:
+        "Specjalistyczny klej EPI D4 do drewna egzotycznego (teak, merbau, bangkirai). Z utwardzaczem 808.0 (15%), D4, WATT 91, BRL 2339, JAIA F****. Do schodów zewnętrznych i tarasów.",
+      type: "PVAc",
+      image: "/placeholder.svg",
+      badge: "EPI · D4",
+    },
+  },
+  {
+    categorySlug: "pvac",
+    product: {
+      name: "KLEIBERIT® 316.0",
+      code: "316.0",
+      description:
+        "Wyspecjalizowany klej PVAc do kołków i miniwczepów. Ultra-niska lepkość 470 mPa·s – dysze nie zatykają się, doskonałe właściwości natryskowe. Do automatów kołkowych, łatarek sęków. Op. 4,5–26 kg.",
+      type: "PVAc",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "pvac",
+    product: {
+      name: "KLEIBERIT® 322.1",
+      code: "322.1",
+      description:
+        "Specjalna dyspersja PVAc do fornirowania płyt wiórowych i stolarskich oraz klejenia HPL, folii papierowych i laminatów. Czas otwarty do 6 min, bez EU oznakowania. Op. 34 / 130 kg.",
+      type: "PVAc",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "pvac",
+    product: {
+      name: "KLEIBERIT® 323.0",
+      code: "323.0",
+      description:
+        "Wielozadaniowy klej PVAc D2 do fug, kołków, obrzeży ręcznych, HPL, korpusów mebli i postformingu. Wysoka wytrzymałość początkowa, fuga bezbarwna. Mrozoodporny do –25°C. Op. 10–130 kg.",
+      type: "PVAc",
+      image: "/placeholder.svg",
+    },
+  },
   // ── Czyściwa ──
   {
     categorySlug: "cleaners",
@@ -324,22 +370,55 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
   {
     categorySlug: "montage",
     product: {
-      name: "KLEIBERIT® 585.5",
-      code: "585.5",
+      name: "KLEIBERIT® 566.4",
+      code: "566.4",
       description:
-        "Pianka montażowa ognioodporna do wypełniania i uszczelniania przejść instalacyjnych. Spełnia wymagania klasyfikacji ogniowej.",
+        "Kleiberit 566 Supracraft – trwale elastyczny 1K PUR klej i uszczelniacz do metali, drewna, betonu, ceramiki i tworzyw. Shore A 45, rozciąganie >600%, odporność –40 do +90°C, IMO FTP, klasa E. Szary/czarny/biały. Op. 300 ml / 600 ml.",
       type: "Montaż",
       image: "/placeholder.svg",
-      badge: "Ognioodporny",
     },
   },
   {
     categorySlug: "montage",
     product: {
-      name: "KLEIBERIT® 545.5",
-      code: "545.5",
+      name: "KLEIBERIT® 566.5",
+      code: "566.5",
       description:
-        "Klej montażowy do trwałego łączenia elementów konstrukcyjnych. Wysoka przyczepność do drewna, betonu i metalu.",
+        "Kleiberit 566 Supracraft – trwale elastyczny 1K PUR klej i uszczelniacz do metali, drewna, betonu, ceramiki i tworzyw. Shore A 45, rozciąganie >600%, odporność –40 do +90°C, IMO FTP, klasa E. Szary/czarny/biały. Op. 300 ml / 600 ml.",
+      type: "Montaż",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "montage",
+    product: {
+      name: "KLEIBERIT® 568.1",
+      code: "568.1",
+      description:
+        "Kleiberit 568 Supracon – ekstremalnie szybki 1K PUR klej montażowy D4 i WATT 91. Drewno, metal, beton, ceramika, PVC, GRP, styropian. Czas otwarty ok. 5 min, czas docisku 15–30 min, od +7°C. Bez rozpuszczalników. Kartusz 310/400 ml.",
+      type: "Montaż",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "montage",
+    product: {
+      name: "KLEIBERIT® 601.1",
+      code: "601.1",
+      description:
+        "Kleiberit 601.1 – elastyczny klej STP 1K do montażu luster (DIN EN 1036), szkła, drewna i metali wewnątrz i na zewnątrz. Shore A 73, czas kożuszenia ok. 8 min, VOC A+, EC1 plus R. 4 kolory. Op. 12×280 ml.",
+      type: "Montaż",
+      image: "/placeholder.svg",
+      badge: "EC1 plus R",
+    },
+  },
+  {
+    categorySlug: "montage",
+    product: {
+      name: "KLEIBERIT® 584.0",
+      code: "584.0",
+      description:
+        "Kleiberit 584.0 – elastyczny klej montażowy STP 1K bez izocyjanianów, ftalanów, silikonu i rozpuszczalników. Shore A 50, czas kożuszenia 25 min, bez obowiązkowego oznakowania EU. Listwy, panele, ceramika, drewno. Biały/czarny. Op. 300/600 ml.",
       type: "Montaż",
       image: "/placeholder.svg",
     },

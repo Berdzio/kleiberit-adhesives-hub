@@ -176,18 +176,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 788.7",
       code: "788.7",
       description:
-        "Termotopliwy klej EVA do okleinowania krawędzi na maszynach przemysłowych. Wysoka przyczepność i stabilność parametrów aplikacji.",
-      type: "Termotopliwe EVA",
-      image: "/placeholder.svg",
-    },
-  },
-  {
-    categorySlug: "eva-hot-melts",
-    product: {
-      name: "KLEIBERIT® 779.6",
-      code: "779.6",
-      description:
-        "Klej EVA hot melt do okleinowania krawędzi – ekonomiczna opcja wypełniona. Dobra przyczepność przy niższym koszcie aplikacji.",
+        "Klej termotopliwy EVA do obrzeży ABS, PVC, poliestru, forniru i papieru. Odporność do +100 °C i –30 °C, długi czas otwarty, prędkość posuwu 5–20 m/min. Granulat 5–25 kg.",
       type: "Termotopliwe EVA",
       image: "/placeholder.svg",
     },
@@ -198,7 +187,29 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 774.4",
       code: "774.4",
       description:
-        "Ekonomiczny klej EVA wypełniony do okleinowania krawędzi. Stabilna aplikacja na maszynach średnio- i wysokowydajnych.",
+        "Termotopliwy klej EVA do okleinowania obrzeży. Średnia lepkość, wysoka siła wiązania, granulat kości słoniowej lub biały. Idealny do ręcznych i wolnobieżnych okleiniarek. Opakowanie 25 kg.",
+      type: "Termotopliwe EVA",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "eva-hot-melts",
+    product: {
+      name: "KLEIBERIT® 743.6",
+      code: "743.6",
+      description:
+        "Termotopliwy klej EVA do okleinowania listw, profili i płyt MDF/wiórowych żywicznymi foliami dekoracyjnymi. Do maszyn profile wrapping. Wysoka wytrzymałość początkowa, czysta obróbka.",
+      type: "Termotopliwe EVA",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "eva-hot-melts",
+    product: {
+      name: "KLEIBERIT® 743.7",
+      code: "743.7",
+      description:
+        "Wysoce płynny klej EVA do okleinowania profili cienkimi foliami papierowymi i kaszerowania pianek tekstyliami. Posuw do 50 m/min, lepkość 3500 mPa·s (180 °C). Op. 20 kg / 750 kg.",
       type: "Termotopliwe EVA",
       image: "/placeholder.svg",
     },

@@ -1,4 +1,4 @@
-import { Layers, Droplets, Flame, Package, Pipette, SprayCan, Sparkles, HandMetal, LucideIcon } from "lucide-react";
+import { Layers, Zap, TreePine, Hammer, FlaskConical, Paintbrush, SprayCan, Shield, LucideIcon } from "lucide-react";
 import { sectors, Product } from "./sectors";
 
 export interface ProductCategorySubcategory {
@@ -171,18 +171,19 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 831.0",
       code: "831.0",
       description:
-        "Primer do przygotowania powierzchni przed klejeniem reaktywnymi klejami PUR. Poprawia przyczepność na trudnych podłożach takich jak melamina i lakier.",
+        "Kleiberit 831.0 – solwentowy primer fluorescencyjny (UV) do opłaszczowywania profili PVC i aluminium klejami PUR HM. Zużycie 20–60 g/m², niepalny, mrozoodporny, trwałość 2 lata. Certyfikat RAL GZ 716. Op. 1 / 4,5 / 35 / 250 kg.",
       type: "Primer",
+      badge: "RAL GZ 716",
       image: "/placeholder.svg",
     },
   },
   {
     categorySlug: "primer",
     product: {
-      name: "KLEIBERIT® 842.0",
-      code: "842.0",
+      name: "KLEIBERIT® 831.4",
+      code: "831.4",
       description:
-        "Primer na bazie wody do aktywacji powierzchni przed okleinowaniem krawędzi. Zwiększa siłę wiązania kleju PUR i EVA na materiałach o niskiej energii powierzchniowej.",
+        "Kleiberit 831.4 – specjalistyczny primer solwentowy wyłącznie do opłaszczowywania profili foliami akrylowymi (PMMA). Nanosić w cienkiej warstwie, całkowicie wysuszyć przed strefą klejenia. Kompatybilny z klejami 704.0, 704.3, 704.5.",
       type: "Primer",
       image: "/placeholder.svg",
     },
@@ -193,8 +194,20 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 831.8",
       code: "831.8",
       description:
-        "Primer o podwyższonej reaktywności do przygotowania powierzchni przed klejeniem PUR. Szczególnie skuteczny na podłożach lakierowanych i foliowanych.",
+        "Kleiberit 831.8 – fluorescencyjny primer solwentowy do opłaszczowywania profili PVC okiennych i metalowych klejami PUR HM. Niższe zużycie niż 831.0 (10–15 g/m²), trwałość 6 miesięcy, czyściwo 821.0. Wrażliwy na mróz (min. +5°C). Op. 4,5 / 35 / 250 kg.",
       type: "Primer",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "primer",
+    product: {
+      name: "KLEIBERIT® 842.0",
+      code: "842.0",
+      description:
+        "Kleiberit 842.0 – primer Low VOC na bazie polimeru do opłaszczowywania profili PVC klejami PUR HM. Bez chlorowanych węglowodorów, fluorescencyjny (UV), zużycie 5–10 g/m², profil podgrzać do 35–40°C. Certyfikat RAL GZ 716, trwałość 12 mies. Op. 4,5 / 25 kg.",
+      type: "Primer",
+      badge: "RAL GZ 716",
       image: "/placeholder.svg",
     },
   },
@@ -509,7 +522,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "pur-hot-melts",
     title: "Termotopliwe kleje PUR",
-    icon: Flame,
+    icon: Zap,
     description:
       "Reaktywne kleje poliuretanowe – idealne do okleinowania krawędzi i laminowania, gwarantujące odporność na temperaturę i wilgoć.",
     matchTypes: ["Termotopliwy PUR"],
@@ -517,7 +530,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "pvac",
     title: "Kleje PVAc",
-    icon: Droplets,
+    icon: TreePine,
     description:
       "Białe kleje równiez z normą D3/D4 – idealne rozwiązania do montażu mebli i łączenia elementów drewnianych.",
     matchTypes: ["PVAc"],
@@ -533,7 +546,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "montage",
     title: "Kleje i pianki montażowe",
-    icon: HandMetal,
+    icon: Hammer,
     description:
       "Kleje oraz pianki do montażu i łączenia elementów w budownictwie i aranżacji wnętrz – trwałość i niezawodność.",
     matchTypes: ["Montaż", "Pianka montażowa"],
@@ -553,7 +566,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "pur",
     title: "Kleje poliuretanowe",
-    icon: Package,
+    icon: FlaskConical,
     description:
       "Jedno- i dwukomponentowe kleje poliuretanowe do klejenia konstrukcyjnego, łączenia na mikrowczepy i laminowania.",
     matchTypes: ["PUR"],
@@ -561,7 +574,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "contact",
     title: "Kleje kontaktowe",
-    icon: Pipette,
+    icon: Paintbrush,
     description:
       "Kleje kontaktowe do laminowania HPL/CPL oraz klejenia powierzchniowego w produkcji mebli i paneli.",
     matchTypes: ["Klej kontaktowy"],
@@ -577,7 +590,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "primer",
     title: "Primery",
-    icon: Sparkles,
+    icon: Shield,
     description:
       "Środki gruntujące do przygotowania powierzchni przed klejeniem – zwiększają przyczepność na trudnych podłożach.",
     matchTypes: ["Primer"],

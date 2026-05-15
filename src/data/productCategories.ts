@@ -463,10 +463,21 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
   {
     categorySlug: "contact",
     product: {
-      name: "KLEIBERIT® 120",
-      code: "120",
+      name: "KLEIBERIT® 120.0 Supra-Gel",
+      code: "120.0",
       description:
-        "Klej kontaktowy na bazie rozpuszczalnika do laminowania HPL i CPL. Natychmiastowe wiązanie po dociśnięciu i wysoka odporność termiczna.",
+        "Kleiberit 120.0 Supra-Gel – żelowy klej kontaktowy polychloroprenowy do szpachli. Do klejenia fornirów, dekoracyjnych laminatów warstwowych, folii metalowych i korka z płytami drewnopochodnymi. Min. temp. pracy +15 °C. Op. 0,7–25 kg.",
+      type: "Klej kontaktowy",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "contact",
+    product: {
+      name: "KLEIBERIT® 152.5",
+      code: "152.5",
+      description:
+        "Kleiberit 152.5 – niskowiskozowy klej kontaktowy CR do natrysku (dysza 1,3–1,7 mm, 3–4 bar). Pianki, tkaniny, wykładziny PVC i linoleum, papier, postforming. Lepkość 600 mPa·s, –30 do +80°C. Z utwardzaczem 801.0: wytrzymałość po 3 dniach. Op. 4,5–170 kg.",
       type: "Klej kontaktowy",
       image: "/placeholder.svg",
     },

@@ -1,3 +1,17 @@
+export interface ProductSpec {
+  label: string;
+  value: string;
+}
+
+export interface ProductDetails {
+  body: string;
+  specs?: ProductSpec[];
+  applications?: string;
+  note?: string;
+  warning?: string;
+  keyFeature?: string;
+}
+
 export interface Product {
   name: string;
   code: string;
@@ -5,6 +19,7 @@ export interface Product {
   type: string;
   image?: string;
   badge?: string;
+  details?: ProductDetails;
 }
 
 export interface ProductSubcategory {

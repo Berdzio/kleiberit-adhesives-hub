@@ -7,7 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import { motion } from "framer-motion";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, Zap, TriangleAlert } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { getBadgeClass, getBadgeIcon } from "@/lib/badges";
 
@@ -26,6 +26,8 @@ const ProductDetailPage = () => {
   // Canonical description: prefer standalone (SEO meta), fall back to first sector
   const mainDescription =
     standaloneEntry?.product.description ?? sectorOccurrences[0]?.product.description ?? "";
+  const mainDetails =
+    standaloneEntry?.product.details ?? sectorOccurrences[0]?.product.details;
 
   const jsonLd = useMemo(() => {
     if (!product) return undefined;
@@ -124,9 +126,46 @@ const ProductDetailPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                className="bg-card rounded-lg p-8 shadow-card border border-border"
+                className="bg-card rounded-lg p-8 shadow-card border border-border space-y-6"
               >
-                <p className="text-foreground text-lg leading-relaxed">{mainDescription}</p>
+                {mainDetails ? (
+                  <>
+                    <p className="text-foreground text-base leading-relaxed">{mainDetails.body}</p>
+                    {mainDetails.keyFeature && (
+                      <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-4 text-sm text-foreground flex gap-3">
+                        <Zap className="h-4 w-4 text-secondary mt-0.5 shrink-0" />
+                        <span>{mainDetails.keyFeature}</span>
+                      </div>
+                    )}
+                    {mainDetails.warning && (
+                      <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-sm text-red-800 flex gap-3">
+                        <TriangleAlert className="h-4 w-4 mt-0.5 shrink-0" />
+                        <span>{mainDetails.warning}</span>
+                      </div>
+                    )}
+                    {mainDetails.specs && mainDetails.specs.length > 0 && (
+                      <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                        {mainDetails.specs.map((spec) => (
+                          <div key={spec.label} className="bg-muted/40 rounded-lg p-3">
+                            <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">{spec.label}</p>
+                            <p className="text-sm font-semibold text-foreground">{spec.value}</p>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                    {mainDetails.applications && (
+                      <div>
+                        <p className="text-sm font-semibold text-secondary uppercase tracking-wide mb-1">Zastosowanie</p>
+                        <p className="text-sm text-foreground leading-relaxed">{mainDetails.applications}</p>
+                      </div>
+                    )}
+                    {mainDetails.note && (
+                      <p className="text-sm text-muted-foreground">{mainDetails.note}</p>
+                    )}
+                  </>
+                ) : (
+                  <p className="text-foreground text-lg leading-relaxed">{mainDescription}</p>
+                )}
               </motion.div>
             </div>
 

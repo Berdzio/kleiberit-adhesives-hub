@@ -1,4 +1,4 @@
-import { Layers, Droplets, Flame, Package, Pipette, SprayCan, Sparkles, HandMetal, LucideIcon } from "lucide-react";
+import { Layers, Zap, TreePine, Hammer, FlaskConical, Paintbrush, SprayCan, Shield, LucideIcon } from "lucide-react";
 import { sectors, Product } from "./sectors";
 
 export interface ProductCategorySubcategory {
@@ -522,7 +522,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "pur-hot-melts",
     title: "Termotopliwe kleje PUR",
-    icon: Flame,
+    icon: Zap,
     description:
       "Reaktywne kleje poliuretanowe – idealne do okleinowania krawędzi i laminowania, gwarantujące odporność na temperaturę i wilgoć.",
     matchTypes: ["Termotopliwy PUR"],
@@ -530,7 +530,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "pvac",
     title: "Kleje PVAc",
-    icon: Droplets,
+    icon: TreePine,
     description:
       "Białe kleje równiez z normą D3/D4 – idealne rozwiązania do montażu mebli i łączenia elementów drewnianych.",
     matchTypes: ["PVAc"],
@@ -546,7 +546,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "montage",
     title: "Kleje i pianki montażowe",
-    icon: HandMetal,
+    icon: Hammer,
     description:
       "Kleje oraz pianki do montażu i łączenia elementów w budownictwie i aranżacji wnętrz – trwałość i niezawodność.",
     matchTypes: ["Montaż", "Pianka montażowa"],
@@ -566,7 +566,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "pur",
     title: "Kleje poliuretanowe",
-    icon: Package,
+    icon: FlaskConical,
     description:
       "Jedno- i dwukomponentowe kleje poliuretanowe do klejenia konstrukcyjnego, łączenia na mikrowczepy i laminowania.",
     matchTypes: ["PUR"],
@@ -574,7 +574,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "contact",
     title: "Kleje kontaktowe",
-    icon: Pipette,
+    icon: Paintbrush,
     description:
       "Kleje kontaktowe do laminowania HPL/CPL oraz klejenia powierzchniowego w produkcji mebli i paneli.",
     matchTypes: ["Klej kontaktowy"],
@@ -590,7 +590,7 @@ export const productCategories: ProductCategory[] = [
   {
     slug: "primer",
     title: "Primery",
-    icon: Sparkles,
+    icon: Shield,
     description:
       "Środki gruntujące do przygotowania powierzchni przed klejeniem – zwiększają przyczepność na trudnych podłożach.",
     matchTypes: ["Primer"],

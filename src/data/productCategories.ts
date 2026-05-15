@@ -74,6 +74,10 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
         "Kleiberit 760.3 – specjalistyczny płynny środek czyszczący do wałków i urządzeń nanoszących dyspersyjne kleje PVAc (303.0, 304.1, 322.1, 332.0 i inne). Czyszczenie po zakończeniu pracy lub przerwie produkcyjnej.",
       type: "Czyściwo",
       image: "/placeholder.svg",
+      details: {
+        body: "Kleiberit 760.3 to płynne czyściwo do wałków i urządzeń nanoszących dyspersje PVAc – klejów takich jak 303.0, 304.1, 322.1, 323.0, 332.0. Umożliwia efektywne usunięcie pozostałości kleju dyspersyjnego z wałków nanoszących, łopat i zbiorników maszyn klejących przed wyschnięciem dyspersji.",
+        applications: "Czyszczenie wałków i urządzeń nanoszących kleje PVAc (303.0, 304.1, 322.1, 323.0, 332.0) po zakończeniu pracy lub przerwie produkcyjnej.",
+      },
     },
   },
   {
@@ -85,6 +89,19 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
         "Kleiberit 761.6 – czyściwo 2w1 do maszyn z termotopliwym PUR: łączy funkcję czyściwa płuczącego (761.7) i intensywnego (826.0). Niebieski granulat, 150–160°C, do zbiorników, pomp, węży i dysz szczelinowych. Op. 6×1,8 kg / 50 kg.",
       type: "Czyściwo",
       image: "/products/7616.jpg",
+      details: {
+        body: "Kleiberit 761.6 to dwufunkcyjne czyściwo do maszyn przetwarzających termotopliwy klej PUR – łączy w jednym produkcie funkcję czyściwa płuczącego (jak 761.7) i intensywnego (jak 826.0). Usuwa zarówno nieutwardzony, jak i utwardzony oraz zeszklały PUR ze zbiorników, pomp, węży transportowych i metalowych głowic nanoszących. Niebieski kolor ułatwia kontrolę przepłukiwania.",
+        specs: [
+          { label: "Forma / kolor", value: "Bryłki / NIEBIESKI" },
+          { label: "Temp. pracy", value: "150–160 °C" },
+          { label: "Gęstość", value: "ok. 0,98 g/cm³" },
+          { label: "Opakowania", value: "6×1,8 kg · 18 kg · 50 kg" },
+          { label: "Trwałość", value: "ok. 2 lata" },
+          { label: "Konserwacja prewent.", value: "Zalecana kwartalnie" },
+        ],
+        applications: "Czyszczenie zbiorników, pomp, węży i dysz szczelinowych maszyn z klejami PUR HM.",
+        note: "Gdy maszyna zawiera zeszklały/utwardzony PUR – 761.6 usuwa zanieczyszczenia, których samo przepłukiwanie (761.7) nie poradzi. Do regularnej konserwacji wystarczy 761.7.",
+      },
     },
   },
   {
@@ -96,6 +113,16 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
         "Kleiberit 761.7 – czyściwo do przepłukiwania systemów z klejami PUR i EVA HM. Neutralizuje reakcję izocyjanianu, zapobiega zatykaniu dysz. Ta sama temperatura pracy co klej PUR. Op. 12×0,25 kg / 1,5 kg / 15 kg / 20 kg.",
       type: "Czyściwo",
       image: "/products/7617.jpg",
+      details: {
+        body: "Kleiberit 761.7 to czyściwo do regularnego płukania maszyn przetwarzających termotopliwe kleje PUR i EVA. Stosowane szczególnie podczas przerw w produkcji – neutralizuje reakcję izocyjanianu w pozostałościach PUR, zapobiegając utwardzaniu się kleju w dyszach, wężach i pompach. Temperatura pracy identyczna jak przetwarzanego kleju PUR.",
+        specs: [
+          { label: "Forma", value: "Bryłki" },
+          { label: "Temp. pracy", value: "Jak przetwarzany PUR HM" },
+          { label: "Opakowania", value: "12×0,25 kg · 4×1,5 kg · 15 kg · 20 kg" },
+          { label: "Trwałość", value: "ok. 2 lata" },
+        ],
+        applications: "Regularne przepłukiwanie systemów z klejami PUR i EVA HM. Stosować przed planowaną przerwą produkcyjną.",
+      },
     },
   },
   {
@@ -107,6 +134,15 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
         "Kleiberit 761.8 – specjalistyczny proszek do czyszczenia walców w maszynach flat lamination przetwarzających PUR HM. Proszek roztopić w zbiorniku, uruchomić bieg wsteczny walca – resztki kleju usuwane efektywnie. Op. wiadro 20 kg.",
       type: "Czyściwo",
       image: "/placeholder.svg",
+      details: {
+        body: "Kleiberit 761.8 to proszek w formie sypkiej, przeznaczony wyłącznie do czyszczenia walców nanoszących w maszynach flat lamination przetwarzających PUR HM. Technika: proszek stopić w urządzeniu, a następnie uruchamiając bieg wsteczny walca usunąć resztki kleju.",
+        specs: [
+          { label: "Forma", value: "Proszek (unikalna!)" },
+          { label: "Technika", value: "Roztopić → bieg wsteczny walca" },
+          { label: "Opakowanie", value: "Wiadro 20 kg" },
+        ],
+        applications: "Czyszczenie walców nanoszących w maszynach flat lamination z klejami PUR HM (706.x, 709.x, 711.x).",
+      },
     },
   },
   {
@@ -118,6 +154,16 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
         "Kleiberit 820.0 – płynny rozcieńczalnik i czyściwo PUR bez toluenu. Usuwa nieutwardzone ciekłe kleje PUR, CR i STP z narzędzi i urządzeń. Do wszystkich klejów PUR 1K i 2K. Op. 4,5 / 22 kg.",
       type: "Czyściwo",
       image: "/placeholder.svg",
+      details: {
+        body: "Kleiberit 820.0 to standardowe czyściwo i rozcieńczalnik do wszystkich ciekłych klejów PUR (1K i 2K) produkowanych przez Kleiberit. Stosowany do narzędzi, urządzeń i skóry przed całkowitym utwardzeniem kleju. Nie zawiera toluenu. Utwardzony klej PUR można usunąć wyłącznie mechanicznie – dlatego kluczowe jest zastosowanie 820.0 natychmiast po zakończeniu pracy.",
+        specs: [
+          { label: "Forma", value: "Płynny" },
+          { label: "Toluen", value: "Nie zawiera" },
+          { label: "Opakowania", value: "4,5 kg / 22 kg" },
+          { label: "Temp. pracy", value: "Pokojowa" },
+        ],
+        applications: "Czyszczenie narzędzi i urządzeń po klejach 501.x, 508.5, 510.3.x, 541.6, 566, 568, 584, 601.1 i klejach kontaktowych CR (114.5, 152.x). Stosować przed utwardzeniem kleju.",
+      },
     },
   },
   {
@@ -129,6 +175,10 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
         "Kleiberit 821.0 – płynny środek czyszczący do urządzeń nanoszących dyspersje PVAc i kleje PUR. Do wałków, dysz i zbiorników nanoszących – alternatywa lub uzupełnienie 820.0.",
       type: "Czyściwo",
       image: "/placeholder.svg",
+      details: {
+        body: "Kleiberit 821.0 to płynny środek czyszczący do urządzeń nanoszących kleje dyspersyjne PVAc oraz ciekłe kleje PUR. Stosowany do czyszczenia wałków, dysz i zbiorników nanoszących. Uzupełnia 820.0 w zakresie dyspersji wodnych – do czyszczenia urządzeń po klejach PVAc.",
+        applications: "Czyszczenie urządzeń nanoszących po klejach PVAc (303.0, 304.1, 322.1, 332.0) i ciekłych klejach PUR.",
+      },
     },
   },
   {
@@ -140,6 +190,14 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
         "Kleiberit 823.3 – czyściwo PUR w aerozolu do pistoletów montażowych (pianki 535.0, 536.0, 585.5) i aplikatorów ciekłego PUR. Błyskawiczne czyszczenie zaciśniętych zaworów i dysz. Op. 12×500 ml.",
       type: "Czyściwo",
       image: "/placeholder.svg",
+      details: {
+        body: "Kleiberit 823.3 to czyściwo PUR w aerozolu, dedykowane do pistoletów montażowych do pianek PUR (535.0, 536.0, 585.5) i aplikatorów ciekłego PUR. Aerozol umożliwia precyzyjne przepłukanie zaworów i dysz bez demontażu pistoletu. Stosować natychmiast po zakończeniu pracy – utwardzonej pianki nie można usunąć aerozolem.",
+        specs: [
+          { label: "Forma", value: "Aerozol w puszce" },
+          { label: "Opakowanie", value: "12 × 500 ml" },
+        ],
+        applications: "Czyszczenie pistoletów do pianek PUR 535.0, 536.0, 585.5 i aplikatorów ciekłego PUR. Stosować natychmiast po zakończeniu pracy.",
+      },
     },
   },
   {
@@ -151,6 +209,15 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
         "Kleiberit 826.0 – intensywny środek czyszczący (niebieski) do usuwania nawet utwardzonych i zeszklałych pozostałości PUR HM ze zbiorników, dysz i pomp. Temp. 150–160°C. Działa tam, gdzie 761.7 nie wystarcza.",
       type: "Czyściwo",
       image: "/placeholder.svg",
+      details: {
+        body: "Kleiberit 826.0 to intensywny środek czyszczący (niebieski granulat) do usuwania nawet utwardzonych i zeszklałych pozostałości termotopliwego PUR ze zbiorników, pomp, węży i głowic nanoszących. Skuteczny tam, gdzie zwykłe przepłukiwanie (761.7) nie jest wystarczające. Jego funkcjonalność jest zintegrowana w produkcie 761.6 – jeśli masz 761.6, nie potrzebujesz kupować 826.0 osobno.",
+        specs: [
+          { label: "Forma / kolor", value: "Bryłki / NIEBIESKI" },
+          { label: "Temp. pracy", value: "150–160 °C" },
+          { label: "Relacja do 761.6", value: "826.0 jest składnikiem 761.6" },
+        ],
+        applications: "Intensywne czyszczenie zbiorników, pomp, węży i głowic nanoszących z utwardzonym lub zeszklałym PUR HM.",
+      },
     },
   },
   {
@@ -162,6 +229,15 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
         "Kleiberit 827.0 – specjalistyczny środek czyszczący do zbiorników okleiniarek i maszyn przetwarzających termotopliwe kleje EVA (773.3, 788.x, 743.x). Granulki do stopienia i przepłukania zbiornika. Op. 4,5 kg.",
       type: "Czyściwo",
       image: "/placeholder.svg",
+      details: {
+        body: "Kleiberit 827.0 to czyściwo w formie granulek, przeznaczone do czyszczenia zbiorników okleiniarek i maszyn przetwarzających termotopliwe kleje EVA. Granulki stopić w zbiorniku maszyny i przepłukać system przed planowaną przerwą produkcyjną lub wymianą kleju.",
+        specs: [
+          { label: "Forma", value: "Granulki (EVA)" },
+          { label: "Temp. pracy", value: "Temp. pracy kleju EVA" },
+          { label: "Opakowanie", value: "4,5 kg (kanister met.)" },
+        ],
+        applications: "Czyszczenie zbiorników okleiniarek i maszyn z klejami EVA (773.3, 788.3, 788.7, 743.6, 743.7). Stosować przed przerwą produkcyjną lub wymianą kleju.",
+      },
     },
   },
   // ── Primery ──

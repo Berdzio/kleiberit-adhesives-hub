@@ -642,23 +642,102 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
   {
     categorySlug: "eva-hot-melts",
     product: {
-      name: "KLEIBERIT® 788.7",
-      code: "788.7",
+      name: "KLEIBERIT® 774.4",
+      code: "774.4",
       description:
-        "Klej termotopliwy EVA do obrzeży ABS, PVC, poliestru, forniru i papieru. Odporność do +100 °C i –30 °C, długi czas otwarty, prędkość posuwu 5–20 m/min. Granulat 5–25 kg.",
+        "Kleiberit 774.4 – klej termotopliwy EVA do ręcznych i półautomatycznych okleiniarek obrzeży. Dobra przyczepność do obrzeży PVC, ABS i melaninowych. Temperatura pracy 150–180°C. Gotowy do użycia.",
       type: "Termotopliwe EVA",
       image: "/placeholder.svg",
+      details: {
+        body: "Kleiberit 774.4 to klej termotopliwy na bazie kopolimerów EVA, przeznaczony do ręcznego okleinowania obrzeży na okleinarkach ręcznych i półautomatycznych. Zapewnia dobrą przyczepność do standardowych obrzeży PVC, ABS i melaninowych przy niższej temperaturze roboczej, co sprawia że nadaje się do maszyn bez zaawansowanego systemu kontroli temperatury. Gotowy do użycia – wsypać do zasobnika i topić. Bez obowiązkowego oznakowania EU.",
+        specs: [
+          { label: "Baza", value: "Kopolimery EVA" },
+          { label: "Temperatura pracy", value: "150–180°C" },
+          { label: "Metoda nanoszenia", value: "Wałek" },
+          { label: "Wilgotność drewna", value: "8–10%" },
+          { label: "Oznakowanie EU", value: "Niewymagane" },
+        ],
+        applications: "Okleinowanie obrzeży PVC, ABS i melaninowych na ręcznych i półautomatycznych okleinarkach · materiały drewnopochodne (MDF, płyta wiórowa) · produkcja małoseryjna i rzemieślnicza.",
+      },
     },
   },
   {
     categorySlug: "eva-hot-melts",
     product: {
-      name: "KLEIBERIT® 774.4",
-      code: "774.4",
+      name: "KLEIBERIT® 788.3 ME",
+      code: "788.3",
       description:
-        "Termotopliwy klej EVA do okleinowania obrzeży. Średnia lepkość, wysoka siła wiązania, granulat kości słoniowej lub biały. Idealny do ręcznych i wolnobieżnych okleiniarek. Opakowanie 25 kg.",
+        "Kleiberit 788.3 ME – niskotopliwy klej EVA z technologią Micro-Emission do ręcznych okleiniarek. Temperatura pracy od 130°C, 3 kolory: biały, kość słoniowa, transparentny. Op. 1 / 3 / 15 kg.",
       type: "Termotopliwe EVA",
       image: "/placeholder.svg",
+      details: {
+        body: "Kleiberit 788.3 ME to niskotopliwy klej termotopliwy EVA z technologią Micro-Emission, przeznaczony do ręcznych okleiniarek pracujących w niższych temperaturach. Temperatura pracy od 130°C oznacza szybsze osiągnięcie gotowości roboczej i niższe zużycie energii w porównaniu do standardowych klejów EVA. Dostępny w 3 kolorach pozwala dopasować barwę spoiny do okleinowanego materiału.",
+        keyFeature: "Temperatura pracy od 130°C — szybsze nagrzewanie i niższe zużycie energii niż standardowe kleje EVA. Dostępny w 3 kolorach.",
+        specs: [
+          { label: "Baza", value: "Kopolimery EVA" },
+          { label: "Technologia", value: "ME (Micro-Emission)" },
+          { label: "Temperatura pracy", value: "130–160°C" },
+          { label: "Kolory", value: "Biały / kość słoniowa / transparentny" },
+          { label: "Metoda nanoszenia", value: "Wałek (okleiniarki ręczne)" },
+          { label: "Opakowania", value: "1 kg · 3 kg · 15 kg" },
+        ],
+        applications: "Ręczne okleiniarki pracujące w niższych temperaturach · obrzeża PVC, ABS i melaninowe · zastosowania wymagające niewidocznej fugi (kolor transparentny).",
+        note: "Biały – do białych i jasnych obrzeży · Kość słoniowa – do naturalnych i ciepłych dekorów · Transparentny – do wszystkich kolorów gdy fuga ma być niewidoczna.",
+      },
+    },
+  },
+  {
+    categorySlug: "eva-hot-melts",
+    product: {
+      name: "KLEIBERIT® 788.7",
+      code: "788.7",
+      description:
+        "Kleiberit 788.7 – klej termotopliwy EVA do ręcznych i wolnobieżnych okleiniarek. Dobra przyczepność do szerokiego zakresu obrzeży: PVC, ABS, CPL, fornir, melamin. Temperatura pracy 150–185°C.",
+      type: "Termotopliwe EVA",
+      image: "/placeholder.svg",
+      details: {
+        body: "Kleiberit 788.7 to klej termotopliwy EVA do ręcznych i wolnobieżnych okleiniarek obrzeży, wyróżniający się dobrą przyczepnością do szerokiego zakresu materiałów obrzeżowych. Dedykowany dla zakładów stosujących różne typy obrzeży (PVC, ABS, CPL, fornir) na jednej maszynie, gdzie liczy się elastyczność zastosowania bez konieczności wymiany kleju.",
+        keyFeature: "Kompatybilność z szerokim zakresem obrzeży: PVC, ABS, CPL, fornir, melamin — jeden klej do wszystkich typów obrzeży na maszynie.",
+        specs: [
+          { label: "Baza", value: "Kopolimery EVA" },
+          { label: "Temperatura pracy", value: "150–185°C" },
+          { label: "Przyczepność do", value: "PVC, ABS, CPL, fornir, melamin" },
+          { label: "Metoda nanoszenia", value: "Wałek" },
+          { label: "Wilgotność drewna", value: "8–10%" },
+        ],
+        applications: "Ręczne i wolnobieżne okleiniarki obrzeży · obrzeża PVC, ABS, CPL, fornirowe i melaninowe · zakłady stosujące wiele typów obrzeży na jednej maszynie.",
+      },
+    },
+  },
+  {
+    categorySlug: "eva-hot-melts",
+    product: {
+      name: "KLEIBERIT® 773.3",
+      code: "773.3",
+      description:
+        "Kleiberit 773.3 – klej termotopliwy EVA do automatycznych okleiniarek CNC i BAZ. Prędkość posuwu 10–30 m/min, temperatura pracy 170–200°C, lepkość 80 000 mPa·s (180°C). Granulat naturalny lub biały. Op. 3 / 20 kg.",
+      type: "Termotopliwe EVA",
+      image: "/products/7733.jpg",
+      details: {
+        body: "Kleiberit 773.3 to klej termotopliwy na bazie kopolimerów EVA, zaprojektowany do automatycznych okleiniarek z nanoszeniem walcowym, w tym maszyn BAZ i centrów obróbczych CNC. Wyróżnia się doskonałymi właściwościami topnienia, czystą obróbką i brakiem powstawania nitek – kluczowymi cechami przy szybkiej produkcji seryjnej. Dostępny w dwóch wariantach kolorystycznych: naturalnym (beżowo-transparentny, do dekorów drewnianych i CPL) oraz białym (do jasnych obrzeży ABS, PVC i melaminowych).",
+        keyFeature: "Dedykowany do automatycznych okleiniarek CNC i BAZ z nanoszeniem walcowym — brak powstawania nitek, czysta obróbka przy posuwach 10–30 m/min.",
+        specs: [
+          { label: "Baza", value: "Kopolimery EVA" },
+          { label: "Temperatura pracy", value: "170–200°C" },
+          { label: "Temperatura mięknienia", value: "105 ±5°C" },
+          { label: "Lepkość 180°C", value: "80 000 ±15 000 mPa·s" },
+          { label: "Lepkość 200°C", value: "50 000 ±10 000 mPa·s" },
+          { label: "MFI (150/2,16)", value: "50 ±10 g/10 min" },
+          { label: "Gęstość", value: "ok. 1,03 g/cm³" },
+          { label: "Prędkość posuwu", value: "10–30 m/min" },
+          { label: "Wilgotność drewna", value: "8–10%" },
+          { label: "Trwałość", value: "ok. 2 lata" },
+          { label: "Oznakowanie EU", value: "Niewymagane" },
+          { label: "Opakowania", value: "3 kg / 20 kg (granulat)" },
+        ],
+        applications: "Oklejanie obrzeży poliestrowych, CPL i melaminowo-żywicznych · PVC i ABS (z primerem) · żywiczne obrzeża papierowe · obrzeża masywne i fornirowe · automatyczne maszyny z nanoszeniem walcowym (CNC, BAZ).",
+        note: "Wariant naturalny (00) — beżowo-transparentny, do obrzeży w kolorach drewna i CPL. Wariant biały (10) — do białych i jasnych obrzeży ABS, PVC i melaminowych. Temperaturę kontrolować bezpośrednio przy systemie nanoszenia termometrem kontaktowym — wskazania termostatu mogą być błędne. Czyściwo: Kleiberit 827.0.",
+      },
     },
   },
   {
@@ -667,9 +746,21 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 743.6",
       code: "743.6",
       description:
-        "Termotopliwy klej EVA do okleinowania listw, profili i płyt MDF/wiórowych żywicznymi foliami dekoracyjnymi. Do maszyn profile wrapping. Wysoka wytrzymałość początkowa, czysta obróbka.",
+        "Kleiberit 743.6 – klej termotopliwy EVA do okleinowania profili, listw i płyt MDF/wiórowych żywicznymi foliami dekoracyjnymi na maszynach profile wrapping. Wysoka wytrzymałość początkowa, czysta obróbka.",
       type: "Termotopliwe EVA",
       image: "/placeholder.svg",
+      details: {
+        body: "Kleiberit 743.6 to klej termotopliwy na bazie kopolimerów EVA, przeznaczony do okleinowania profili i listw z drewna, płyt drobnowiórowych i MDF żywicznymi foliami dekoracyjnymi (papierowymi) na maszynach do profile wrapping. Zapewnia wysoką wytrzymałość początkową, co pozwala na natychmiastową dalszą obróbkę okleinowanych elementów. Sprawdza się przy produkcji listw ozdobnych, frontów profilowanych, elementów mebli i wykończeń wnętrz. Temperatura pracy 160–200°C — dobierana wg wymagań maszyny i rodzaju folii.",
+        keyFeature: "Wysoka wytrzymałość początkowa — okleinowane profile gotowe do dalszej obróbki natychmiast po wyjściu z maszyny.",
+        specs: [
+          { label: "Baza", value: "Kopolimery EVA" },
+          { label: "Temperatura pracy", value: "160–200°C" },
+          { label: "Zastosowanie", value: "Folie dekoracyjne żywicopapierowe" },
+          { label: "Metoda nanoszenia", value: "Dysza szczelinowa lub walec" },
+        ],
+        applications: "Okleinowanie listw profilowanych z drewna, płyt wiórowych i MDF dekoracyjnymi foliami żywicopapierowymi · okleinowanie wstępne płyt przed okleinowaniem powierzchniowym.",
+        note: "Kleiberit 743.6 dedykowany jest standardowym foliom dekoracyjnym, podczas gdy 743.7 zoptymalizowany jest pod bardzo cienkie folie papierowe i osiąga wyższe prędkości posuwu (do 50 m/min). Przed zastosowaniem zalecane własne sklejenia próbne z konkretnym rodzajem folii.",
+      },
     },
   },
   {
@@ -678,9 +769,28 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 743.7",
       code: "743.7",
       description:
-        "Wysoce płynny klej EVA do okleinowania profili cienkimi foliami papierowymi i kaszerowania pianek tekstyliami. Posuw do 50 m/min, lepkość 3500 mPa·s (180 °C). Op. 20 kg / 750 kg.",
+        "Kleiberit 743.7 – wysoce płynny klej EVA do profile wrapping cienkich folii papierowych i kaszerowania pianek tekstyliami. Posuw do 50 m/min, lepkość 3500 mPa·s (180°C). Op. 20 kg / 750 kg.",
       type: "Termotopliwe EVA",
       image: "/placeholder.svg",
+      details: {
+        body: "Kleiberit 743.7 to specjalistyczny klej termotopliwy EVA o wyjątkowo niskiej lepkości i bardzo wysokim współczynniku topnienia (MFI), przeznaczony do okleinowania profili cienkimi foliami papierowymi oraz kaszerowania materiałów piankowych tekstyliami. Doskonała jakość powierzchni nawet przy najcieńszych papierach, brak powstawania nitek na wałku nanoszącym i wysoka dopuszczalna prędkość posuwu do 50 m/min czynią go wyborem numer jeden do szybkich linii profile wrapping.",
+        keyFeature: "Lepkość 3 500 mPa·s przy 180°C — najniższa w serii EVA; posuw do 50 m/min; dedykowany do cienkich folii papierowych gdzie grubsze kleje EVA zostawiają ślady.",
+        specs: [
+          { label: "Baza", value: "Kopolimery EVA" },
+          { label: "Temperatura pracy", value: "160–200°C" },
+          { label: "Temperatura mięknienia", value: "95 ±5°C" },
+          { label: "Lepkość 160°C", value: "5 500 ±800 mPa·s" },
+          { label: "Lepkość 180°C", value: "3 500 ±500 mPa·s" },
+          { label: "Lepkość 200°C", value: "2 000 ±300 mPa·s" },
+          { label: "MFI (120/1,2)", value: "190 ±20 g/10 min" },
+          { label: "Gęstość", value: "ok. 1,04 g/cm³" },
+          { label: "Barwa", value: "Beżowy" },
+          { label: "Trwałość", value: "ok. 2 lata" },
+          { label: "Opakowania", value: "20 kg / big bag 750 kg" },
+        ],
+        applications: "Okleinowanie listw profilowych i płyt MDF żywicznymi foliami papierowymi · okleinowanie wstępne folii papierowych przed okleinowaniem powierzchniowym · kaszerowanie materiałów piankowych tekstyliami.",
+        note: "Parametry procesowe: okleinowanie profili 50–100 g/m², posuw 20–50 m/min, temp. wałków 160–200°C · cienkie folie (kaszerowanie) 30–50 g/m², posuw 15–25 m/min · tekstylia na pianki 5–20 g/m², posuw 15–25 m/min. Przy skomplikowanych profilach i długiej drodze nanoszenia (>2 m) zalecana dodatkowa aktywacja promiennikiem. Folie żywicopapierowe wykazują różną charakterystykę — zawsze wykonać sklejenia próbne. Czyściwo: Kleiberit 827.0.",
+      },
     },
   },
   // ── PUR (standalone) ──

@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import { motion } from "framer-motion";
-import { ArrowLeft, Leaf, RectangleVertical, ShieldCheck } from "lucide-react";
+import { ArrowLeft, ArrowRight, Leaf, RectangleVertical, ShieldCheck } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const ProductCategoryPage = () => {
@@ -117,41 +117,49 @@ const ProductCategoryPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.5, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
-                className="group bg-card rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-border"
               >
-                {product.image && (
-                  <div className="aspect-[4/3] bg-muted overflow-hidden">
-                    <img
-                      src={product.image}
-                      alt={`${product.name} — ${product.type}`}
-                      className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
-                    />
-                  </div>
-                )}
-                <div className="p-8">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="font-heading text-xl font-bold text-foreground">{product.name}</h3>
-                    <span className="text-xs font-heading font-semibold tracking-wider uppercase bg-secondary/10 text-secondary px-3 py-1 rounded-full">
-                      {product.type}
-                    </span>
-                  </div>
-                  {product.badge && (
-                    <Badge className={`mb-3 gap-1 ${
-                      product.badge === "Do luster"
-                        ? "bg-sky-600 hover:bg-sky-700 text-white"
-                        : product.badge === "EMICODE EC1"
-                        ? "bg-emerald-700 hover:bg-emerald-800 text-white"
-                        : product.badge === "Ognioodporny"
-                        ? "bg-red-600 hover:bg-red-700 text-white"
-                        : "bg-green-600 hover:bg-green-700 text-white"
-                    }`}>
-                      {product.badge === "Do luster" ? <RectangleVertical className="h-3 w-3" /> : product.badge === "Ognioodporny" ? <ShieldCheck className="h-3 w-3" /> : <Leaf className="h-3 w-3" />}
-                      {product.badge}
-                    </Badge>
+                <Link
+                  to={`/product/${product.code}`}
+                  className="group flex flex-col h-full bg-card rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-border"
+                >
+                  {product.image && (
+                    <div className="aspect-[4/3] bg-muted overflow-hidden">
+                      <img
+                        src={product.image}
+                        alt={`${product.name} — ${product.type}`}
+                        className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                      />
+                    </div>
                   )}
-                  <p className="text-muted-foreground leading-relaxed mb-4">{product.description}</p>
-                </div>
+                  <div className="flex flex-col flex-1 p-8">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="font-heading text-xl font-bold text-foreground">{product.name}</h3>
+                      <span className="text-xs font-heading font-semibold tracking-wider uppercase bg-secondary/10 text-secondary px-3 py-1 rounded-full">
+                        {product.type}
+                      </span>
+                    </div>
+                    {product.badge && (
+                      <Badge className={`mb-3 gap-1 w-fit ${
+                        product.badge === "Do luster"
+                          ? "bg-sky-600 hover:bg-sky-700 text-white"
+                          : product.badge === "EMICODE EC1"
+                          ? "bg-emerald-700 hover:bg-emerald-800 text-white"
+                          : product.badge === "Ognioodporny"
+                          ? "bg-red-600 hover:bg-red-700 text-white"
+                          : "bg-green-600 hover:bg-green-700 text-white"
+                      }`}>
+                        {product.badge === "Do luster" ? <RectangleVertical className="h-3 w-3" /> : product.badge === "Ognioodporny" ? <ShieldCheck className="h-3 w-3" /> : <Leaf className="h-3 w-3" />}
+                        {product.badge}
+                      </Badge>
+                    )}
+                    <p className="text-muted-foreground leading-relaxed flex-1">{product.description}</p>
+                    <div className="flex items-center gap-1 mt-6 text-secondary font-heading text-sm font-semibold group-hover:gap-2 transition-all">
+                      Szczegóły produktu
+                      <ArrowRight className="h-4 w-4" />
+                    </div>
+                  </div>
+                </Link>
               </motion.div>
             ))}
           </div>

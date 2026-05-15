@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useParams, Link } from "react-router-dom";
-import { getProductsByCategory } from "@/data/productCategories";
+import { getProductsByCategory, ProductCategorySubcategory } from "@/data/productCategories";
 import { useSeo } from "@/hooks/useSeo";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -8,6 +8,50 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, Leaf, RectangleVertical, ShieldCheck } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+
+type ProductWithSector = ReturnType<typeof getProductsByCategory>["products"][number];
+
+const ProductCard = ({ product, index }: { product: ProductWithSector; index: number }) => (
+  <motion.div
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, margin: "-60px" }}
+    transition={{ duration: 0.5, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
+  >
+    <Link
+      to={`/product/${product.code}`}
+      className="group flex flex-col h-full bg-card rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-border"
+    >
+      <div className="flex flex-col flex-1 p-8">
+        <div className="flex items-center justify-between mb-2">
+          <h3 className="font-heading text-xl font-bold text-foreground">{product.name}</h3>
+          <span className="text-xs font-heading font-semibold tracking-wider uppercase bg-secondary/10 text-secondary px-3 py-1 rounded-full">
+            {product.type}
+          </span>
+        </div>
+        {product.badge && (
+          <Badge className={`mb-3 gap-1 w-fit ${
+            product.badge === "Do luster"
+              ? "bg-sky-600 hover:bg-sky-700 text-white"
+              : product.badge === "EMICODE EC1"
+              ? "bg-emerald-700 hover:bg-emerald-800 text-white"
+              : product.badge === "Ognioodporny"
+              ? "bg-red-600 hover:bg-red-700 text-white"
+              : "bg-green-600 hover:bg-green-700 text-white"
+          }`}>
+            {product.badge === "Do luster" ? <RectangleVertical className="h-3 w-3" /> : product.badge === "Ognioodporny" ? <ShieldCheck className="h-3 w-3" /> : <Leaf className="h-3 w-3" />}
+            {product.badge}
+          </Badge>
+        )}
+        <p className="text-muted-foreground leading-relaxed flex-1">{product.description}</p>
+        <div className="flex items-center gap-1 mt-6 text-secondary font-heading text-sm font-semibold group-hover:gap-2 transition-all">
+          Szczegóły produktu
+          <ArrowRight className="h-4 w-4" />
+        </div>
+      </div>
+    </Link>
+  </motion.div>
+);
 
 const ProductCategoryPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -109,50 +153,35 @@ const ProductCategoryPage = () => {
             </h2>
           </ScrollReveal>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {products.map((product, i) => (
-              <motion.div
-                key={product.code}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.5, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
-              >
-                <Link
-                  to={`/product/${product.code}`}
-                  className="group flex flex-col h-full bg-card rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-border"
-                >
-                  <div className="flex flex-col flex-1 p-8">
-                    <div className="flex items-center justify-between mb-2">
-                      <h3 className="font-heading text-xl font-bold text-foreground">{product.name}</h3>
-                      <span className="text-xs font-heading font-semibold tracking-wider uppercase bg-secondary/10 text-secondary px-3 py-1 rounded-full">
-                        {product.type}
-                      </span>
-                    </div>
-                    {product.badge && (
-                      <Badge className={`mb-3 gap-1 w-fit ${
-                        product.badge === "Do luster"
-                          ? "bg-sky-600 hover:bg-sky-700 text-white"
-                          : product.badge === "EMICODE EC1"
-                          ? "bg-emerald-700 hover:bg-emerald-800 text-white"
-                          : product.badge === "Ognioodporny"
-                          ? "bg-red-600 hover:bg-red-700 text-white"
-                          : "bg-green-600 hover:bg-green-700 text-white"
-                      }`}>
-                        {product.badge === "Do luster" ? <RectangleVertical className="h-3 w-3" /> : product.badge === "Ognioodporny" ? <ShieldCheck className="h-3 w-3" /> : <Leaf className="h-3 w-3" />}
-                        {product.badge}
-                      </Badge>
+          {category.subcategories && category.subcategories.length > 0 ? (
+            category.subcategories.map((sub: ProductCategorySubcategory, si: number) => {
+              const subProducts = products.filter((p) => sub.matchTypes.includes(p.type));
+              if (subProducts.length === 0) return null;
+              return (
+                <div key={si} className="mb-16 last:mb-0">
+                  <ScrollReveal className="mb-8">
+                    <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-2">
+                      {sub.title}
+                    </h3>
+                    {sub.description && (
+                      <p className="text-muted-foreground">{sub.description}</p>
                     )}
-                    <p className="text-muted-foreground leading-relaxed flex-1">{product.description}</p>
-                    <div className="flex items-center gap-1 mt-6 text-secondary font-heading text-sm font-semibold group-hover:gap-2 transition-all">
-                      Szczegóły produktu
-                      <ArrowRight className="h-4 w-4" />
-                    </div>
+                  </ScrollReveal>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {subProducts.map((product, i) => (
+                      <ProductCard key={product.code} product={product} index={i} />
+                    ))}
                   </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
+                </div>
+              );
+            })
+          ) : (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {products.map((product, i) => (
+                <ProductCard key={product.code} product={product} index={i} />
+              ))}
+            </div>
+          )}
         </div>
       </section>
 

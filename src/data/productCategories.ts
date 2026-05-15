@@ -1,12 +1,19 @@
 import { Layers, Droplets, Flame, Package, Pipette, SprayCan, Sparkles, HandMetal, LucideIcon } from "lucide-react";
 import { sectors, Product } from "./sectors";
 
+export interface ProductCategorySubcategory {
+  title: string;
+  description?: string;
+  matchTypes: string[];
+}
+
 export interface ProductCategory {
   slug: string;
   title: string;
   icon: LucideIcon;
   description: string;
-  matchTypes: string[]; // product.type values that belong to this category
+  matchTypes: string[];
+  subcategories?: ProductCategorySubcategory[];
 }
 
 // Standalone products not tied to any sector
@@ -417,39 +424,6 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
   {
     categorySlug: "montage",
     product: {
-      name: "KLEIBERIT® 566.4",
-      code: "566.4",
-      description:
-        "Kleiberit 566 Supracraft – trwale elastyczny 1K PUR klej i uszczelniacz do metali, drewna, betonu, ceramiki i tworzyw. Shore A 45, rozciąganie >600%, odporność –40 do +90°C, IMO FTP, klasa E. Szary/czarny/biały. Op. 300 ml / 600 ml.",
-      type: "Montaż",
-      image: "/placeholder.svg",
-    },
-  },
-  {
-    categorySlug: "montage",
-    product: {
-      name: "KLEIBERIT® 566.5",
-      code: "566.5",
-      description:
-        "Kleiberit 566 Supracraft – trwale elastyczny 1K PUR klej i uszczelniacz do metali, drewna, betonu, ceramiki i tworzyw. Shore A 45, rozciąganie >600%, odporność –40 do +90°C, IMO FTP, klasa E. Szary/czarny/biały. Op. 300 ml / 600 ml.",
-      type: "Montaż",
-      image: "/placeholder.svg",
-    },
-  },
-  {
-    categorySlug: "montage",
-    product: {
-      name: "KLEIBERIT® 568.1",
-      code: "568.1",
-      description:
-        "Kleiberit 568 Supracon – ekstremalnie szybki 1K PUR klej montażowy D4 i WATT 91. Drewno, metal, beton, ceramika, PVC, GRP, styropian. Czas otwarty ok. 5 min, czas docisku 15–30 min, od +7°C. Bez rozpuszczalników. Kartusz 310/400 ml.",
-      type: "Montaż",
-      image: "/placeholder.svg",
-    },
-  },
-  {
-    categorySlug: "montage",
-    product: {
       name: "KLEIBERIT® 601.1",
       code: "601.1",
       description:
@@ -562,7 +536,19 @@ export const productCategories: ProductCategory[] = [
     icon: HandMetal,
     description:
       "Kleje oraz pianki do montażu i łączenia elementów w budownictwie i aranżacji wnętrz – trwałość i niezawodność.",
-    matchTypes: ["Montaż"],
+    matchTypes: ["Montaż", "Pianka montażowa"],
+    subcategories: [
+      {
+        title: "Pianki montażowe PUR",
+        description: "Dwu- i jednokomponentowe pianki PUR do montażu ościeżnic, schodów oraz uszczelnień ognioodpornych.",
+        matchTypes: ["Pianka montażowa"],
+      },
+      {
+        title: "Kleje montażowe",
+        description: "Elastyczne kleje STP i PUR do klejenia bez gwoździ – listwy, lustra, panele, ceramika, drewno i metal.",
+        matchTypes: ["Montaż"],
+      },
+    ],
   },
   {
     slug: "pur",

@@ -7,21 +7,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import { motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, Leaf, RectangleVertical, ShieldCheck } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-
-function getBadgeClass(badge: string) {
-  if (badge === "Do luster") return "bg-sky-600 hover:bg-sky-700 text-white";
-  if (badge === "Ognioodporny") return "bg-red-600 hover:bg-red-700 text-white";
-  if (badge === "EMICODE EC1") return "bg-emerald-700 hover:bg-emerald-800 text-white";
-  return "bg-green-600 hover:bg-green-700 text-white";
-}
-
-function getBadgeIcon(badge: string) {
-  if (badge === "Do luster") return <RectangleVertical className="h-3 w-3" />;
-  if (badge === "Ognioodporny") return <ShieldCheck className="h-3 w-3" />;
-  return <Leaf className="h-3 w-3" />;
-}
+import { getBadgeClass, getBadgeIcon } from "@/lib/badges";
 
 const ProductDetailPage = () => {
   const { code } = useParams<{ code: string }>();

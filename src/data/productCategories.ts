@@ -556,6 +556,34 @@ export interface ProductWithSector extends Product {
   sectorSlug: string;
 }
 
+export interface ProductSectorOccurrence {
+  product: Product;
+  sectorName: string;
+  sectorSlug: string;
+}
+
+export function getProductByCode(code: string): {
+  product: Product | undefined;
+  sectorOccurrences: ProductSectorOccurrence[];
+  standaloneEntry: { categorySlug: string; product: Product } | undefined;
+  category: ProductCategory | undefined;
+} {
+  const sectorOccurrences: ProductSectorOccurrence[] = [];
+  for (const sector of sectors) {
+    for (const p of sector.products) {
+      if (p.code === code) {
+        sectorOccurrences.push({ product: p, sectorName: sector.name, sectorSlug: sector.slug });
+      }
+    }
+  }
+  const standaloneEntry = standaloneProducts.find((e) => e.product.code === code);
+  const product = standaloneEntry?.product ?? sectorOccurrences[0]?.product;
+  const category = product
+    ? productCategories.find((c) => c.matchTypes.includes(product.type))
+    : undefined;
+  return { product, sectorOccurrences, standaloneEntry, category };
+}
+
 export function getProductsByCategory(slug: string): {
   category: ProductCategory | undefined;
   products: ProductWithSector[];

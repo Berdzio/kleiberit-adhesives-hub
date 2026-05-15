@@ -470,6 +470,42 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       image: "/placeholder.svg",
     },
   },
+  // ── Pianki montażowe (standalone) ──
+  {
+    categorySlug: "montage",
+    product: {
+      name: "KLEIBERIT® 535.0 SupraFoam",
+      code: "535.0",
+      description:
+        "Kleiberit 535.0 SupraFoam – dwukomponentowa pianka PUR do montażu ościeżnic drzwi i izolacji okien. Bez gazu napędowego, bez naddatku, utwardza się niezależnie od wilgoci w 15–20 min. Klejowalna po 1 min, tnalna po 3–5 min, rozporki po 20 min. EC1 plus R, B2. Op. 16×250 g.",
+      type: "Pianka montażowa",
+      badge: "EMICODE EC1",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "montage",
+    product: {
+      name: "KLEIBERIT® 536.0 StairMaster",
+      code: "536.0",
+      description:
+        "Kleiberit 536.0 StairMaster – ekspansywna 2K pianka klejąca PUR do montażu stopni schodowych, progów drzwi i parapetów z drewna, kamienia lub metalu. Obciążalna po 20 min, bez gazu napędowego, bez naddatku, B2. Op. 125 g / 250 g.",
+      type: "Pianka montażowa",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "montage",
+    product: {
+      name: "KLEIBERIT® 585.5",
+      code: "585.5",
+      description:
+        "Kleiberit 585.5 – trudnopalna 1K pianka PUR klasy B wg EN 13501-1 (różowa) do uszczelnień ognioodpornych między masywnym materiałem mineralnym lub metalowym. Gęstość 16 kg/m³, λ=0,036 W/mK, odporność –40 do +90°C, wydajność ok. 40–45 l (750 ml). Op. 12×750 ml.",
+      type: "Pianka montażowa",
+      badge: "Ognioodporny",
+      image: "/placeholder.svg",
+    },
+  },
   // ── Kontaktowe (standalone) ──
   {
     categorySlug: "contact",

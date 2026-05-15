@@ -30,21 +30,21 @@ export const sectors: Sector[] = [
     icon: "/icons/furnitures.png",
     headline: "Kleje do produkcji mebli",
     description:
-      "Kleje przemysłowe wspierające wszystkie etapy produkcji mebli — montaż paneli, okleinowanie krawędzi i laminowanie.",
+      "Kleje przemysłowe wspierające wszystkie etapy produkcji mebli — montaż korpusów, okleinowanie krawędzi i laminowanie powierzchni HPL.",
     subcategories: [
       {
         title: "Kleje białe",
-        description: "Kleje PVAc do montażu mebli i łączenia elementów drewnianych.",
+        description: "Kleje PVAc do montażu korpusów meblowych, fornirowania płyt i okleinowania HPL.",
         matchTypes: ["PVAc"],
       },
       {
         title: "Oklejanie obrzeży",
-        description: "Termotopliwe kleje EVA i PUR do okleinowania krawędzi płyt meblowych.",
+        description: "Termotopliwe kleje EVA i PUR do okleinowania krawędzi płyt meblowych w okleiniarce.",
         matchTypes: ["Termotopliwe EVA", "Termotopliwy PUR"],
       },
       {
         title: "Kleje kontaktowe",
-        description: "Kleje kontaktowe do laminowania HPL/CPL i klejenia powierzchniowego.",
+        description: "Kleje kontaktowe CR do laminowania blatów HPL, okleinowania postforming i tapicerowania pianek.",
         matchTypes: ["Klej kontaktowy"],
       },
     ],
@@ -52,22 +52,14 @@ export const sectors: Sector[] = [
       {
         name: "KLEIBERIT® 303.0",
         code: "303.0",
-        description: "Wielozadaniowy klej PVAc D3 (1K) / D4 (z utw. 303.5). Czas otwarty 6–10 min, żywotność mieszanki 24 h, certyfikaty IMO i FDA. Do okien, drzwi, HPL, schodów i sklejki. Op. 0,5–1000 kg.",
+        description: "Klej PVAc D3 (1K) lub D4 (z utwardzaczem 303.5) do montażu korpusów meblowych, klejenia obrzeży ręcznych i okleinowania HPL. Czas otwarty 6–10 min, certyfikaty IMO i FDA. Op. 0,5–1000 kg.",
         type: "PVAc",
         image: "/products/303.jpg",
-      },
-      {
-        name: "KLEIBERIT® 304.1",
-        code: "304.1",
-        description: "Klej PVAc D4 wyłącznie 2K z utwardzaczem 304.3. Żywotność mieszanki do 7 dni, czas otwarty 6–10 min. Do produkcji okien, drzwi, złączy klinowych i schodów. Atesty D4, WATT 91.",
-        type: "PVAc",
-        image: "/products/303.jpg",
-        badge: "D4",
       },
       {
         name: "KLEIBERIT® 314.3",
         code: "314.3",
-        description: "Jednokomponentowy klej PVAc klasy D4 bez konieczności dodawania utwardzacza. Certyfikaty D4, WATT 91, BRL 2339. Transparentna fuga, czas otwarty 4–7 min, min. temp. +15°C. Op. 4,5–1050 kg.",
+        description: "Jednokomponentowy klej PVAc D4 do mebli – bez konieczności dodawania utwardzacza. Transparentna fuga, czas otwarty 4–7 min, certyfikaty D4, WATT 91, BRL 2339. Min. temp. +15 °C. Op. 4,5–1050 kg.",
         type: "PVAc",
         image: "/products/314.jpg",
         badge: "D4",
@@ -75,7 +67,7 @@ export const sectors: Sector[] = [
       {
         name: "KLEIBERIT® 332.0",
         code: "332.0",
-        description: "Jednoskładnikowy klej PVAc D2 do fornirowania płyt i laminowania HPL. Czas otwarty do 25 min, ilość nanoszenia 80–150 g/m², certyfikat IMO. Gotowy do użycia. Op. 10–1000 kg.",
+        description: "Klej PVAc D2 do fornirowania płyt meblowych i laminowania HPL. Czas otwarty do 25 min, ilość nanoszenia 80–150 g/m², certyfikat IMO. Gotowy do użycia. Op. 10–1000 kg.",
         type: "PVAc",
         image: "/products/332.jpg",
         badge: "IMO",
@@ -83,21 +75,21 @@ export const sectors: Sector[] = [
       {
         name: "KLEIBERIT® 773.3",
         code: "773.3",
-        description: "Klej termotopliwy EVA do automatycznego oklejania obrzeży CPL, PVC, ABS, poliestru i forniru. Temp. pracy 170–200 °C, posuw 10–30 m/min. Granulat naturalny lub biały. Op. 3–20 kg.",
+        description: "Klej termotopliwy EVA do automatycznego okleinowania krawędzi płyt meblowych – CPL, PVC, ABS, poliester i fornir. Temp. pracy 170–200 °C, posuw 10–30 m/min. Granulat naturalny lub biały. Op. 3–20 kg.",
         type: "Termotopliwe EVA",
         image: "/products/7733.jpg",
       },
       {
         name: "KLEIBERIT® 788.3",
         code: "788.3",
-        description: "Klej termotopliwy EVA do ręcznego okleinowania obrzeży. Niska temperatura pracy od 130 °C, bardzo długi czas otwarty, odporność od –30 °C do +90 °C. Granulat 25 kg: biały, kość słoniowa, czarny.",
+        description: "Klej termotopliwy EVA do ręcznego okleinowania obrzeży mebli. Niska temperatura pracy od 130 °C, bardzo długi czas otwarty, odporność od –30 °C do +90 °C. Granulat 25 kg: biały, kość słoniowa, czarny.",
         type: "Termotopliwe EVA",
         image: "/products/7883.jpg",
       },
       {
         name: "KLEIBERIT® 707.9.50 ME",
         code: "707.9.50",
-        description: "Reaktywny klej PUR ME do okleinowania obrzeży ABS, PVC, HPL, CPL i forniru – wariant kość słoniowa. Odporność do +150 °C i –30 °C, stabilność w stapialniku min. 24 h. Op. 6×2 kg / 20 kg.",
+        description: "Reaktywny klej PUR ME do automatycznego okleinowania obrzeży płyt meblowych – ABS, PVC, HPL, CPL i fornir. Odporność do +150 °C i –30 °C, stabilność w stapialniku min. 24 h. Op. 6×2 kg / 20 kg.",
         type: "Termotopliwy PUR",
         image: "/products/707950.jpg",
         badge: "Mikroemisyjny",
@@ -105,7 +97,7 @@ export const sectors: Sector[] = [
       {
         name: "KLEIBERIT® 706.2.50 ME",
         code: "706.2.50",
-        description: "Mikroemisyjny klej PUR do kaszerowania płyt MDF i wiórowych foliami PVC, ABS, PET i PMMA. Średni czas otwarty poniżej 4 min, lepkość 12 000 mPa·s (120 °C), temp. pracy 120–140 °C. Kość słoniowa.",
+        description: "Mikroemisyjny klej PUR do kaszerowania frontów i płyt meblowych foliami PVC, ABS, PET i PMMA. Czas otwarty poniżej 4 min, lepkość 12 000 mPa·s (120 °C), temp. pracy 120–140 °C. Kość słoniowa.",
         type: "Termotopliwy PUR",
         image: "/placeholder.svg",
         badge: "Mikroemisyjny",
@@ -113,14 +105,14 @@ export const sectors: Sector[] = [
       {
         name: "KLEIBERIT® 114.5",
         code: "114.5",
-        description: "Kleiberit 114.5 – klej kontaktowy polychloroprenowy bez toluenu, do nanoszenia pędzlem. HPL, laminaty, guma, termoplasty, metale, drewno. Z utwardzaczem H801: odporność do ponad 100 °C, wytrzymałość końcowa po 3 dniach. Op. 0,7–25 kg.",
+        description: "Klej kontaktowy CR bez toluenu do laminowania blatów i frontów meblowych HPL. Z utwardzaczem H801: odporność do ponad 100 °C – idealny do blatów kuchennych. Czas odpowietrzania 10–20 min. Op. 0,7–25 kg.",
         type: "Klej kontaktowy",
         image: "/products/114.jpg",
       },
       {
         name: "KLEIBERIT® 152.0",
         code: "152.0",
-        description: "Kleiberit 152.5 – niskowiskozowy klej kontaktowy CR do natrysku (dysza 1,3–1,7 mm, 3–4 bar). Pianki, tkaniny, wykładziny PVC i linoleum, papier, postforming. Lepkość 600 mPa·s, –30 do +80°C. Z utwardzaczem 801.0: wytrzymałość po 3 dniach. Op. 4,5–170 kg.",
+        description: "Niskowiskozowy klej kontaktowy CR do natrysku – klejenie pianek tapicerskich i tkanin w produkcji mebli tapicerowanych oraz postforming. Dysza 1,3–1,7 mm, 3–4 bar. Lepkość 600 mPa·s. Op. 4,5–170 kg.",
         type: "Klej kontaktowy",
         image: "/products/152.jpg",
       },
@@ -132,14 +124,35 @@ export const sectors: Sector[] = [
     icon: "/icons/doors.png",
     headline: "Kleje do produkcji drzwi",
     description:
-      "Niezawodne rozwiązania klejowe do produkcji drzwi z drewna litego, inżynieryjnego i kompozytowego — montaż ram, klejenie płycin i wykończenie powierzchni.",
+      "Kleje do produkcji drzwi wewnętrznych i zewnętrznych — klejenie ram, ościeżnic i skrzydeł oraz okleinowanie obrzeży.",
     products: [
-    
-    
+      {
+        name: "KLEIBERIT® 303.0",
+        code: "303.0",
+        description: "Klej PVAc D3 (1K) lub D4 (z utwardzaczem 303.5) do produkcji ram drzwiowych – klejenie ościeżnic, skrzydeł i elementów drewnianych. Czas otwarty 6–10 min, certyfikaty IMO i FDA. Op. 0,5–1000 kg.",
+        type: "PVAc",
+        image: "/products/303.jpg",
+      },
+      {
+        name: "KLEIBERIT® 304.1",
+        code: "304.1",
+        description: "Klej PVAc D4 2K do produkcji drzwi zewnętrznych – klejenie ram, ościeżnic i złączy narażonych na wilgoć. Z utwardzaczem 304.3, żywotność mieszanki 7 dni, czas otwarty 6–10 min. Atesty D4, WATT 91.",
+        type: "PVAc",
+        image: "/products/303.jpg",
+        badge: "D4",
+      },
+      {
+        name: "KLEIBERIT® 501.0",
+        code: "501.0",
+        description: "Klej 1K PUR D4 do produkcji drzwi drewnianych – klejenie ram, płycin i złączy konstrukcyjnych. Czas otwarty 20–25 min, certyfikat IMO. D4, WATT 91.",
+        type: "PUR",
+        image: "/products/501.jpg",
+        badge: "IMO",
+      },
       {
         name: "KLEIBERIT® 707.9.50 ME",
         code: "707.9.50",
-        description: "Reaktywny klej PUR ME do okleinowania obrzeży skrzydeł drzwiowych – ABS, PVC, HPL, CPL, fornir. Odporność do +150 °C i –30 °C, stabilność w stapialniku min. 24 h, MDI <0,1%.",
+        description: "Reaktywny klej PUR ME do okleinowania obrzeży skrzydeł drzwiowych – ABS, PVC, HPL, CPL, fornir. Odporność do +150 °C i –30 °C, stabilność w stapialniku min. 24 h. MDI <0,1%.",
         type: "Termotopliwy PUR",
         image: "/products/707950.jpg",
         badge: "Mikroemisyjny",
@@ -152,12 +165,19 @@ export const sectors: Sector[] = [
     icon: "/icons/window.png",
     headline: "Kleje do produkcji okien",
     description:
-      "Kleje odporne na warunki atmosferyczne, zaprojektowane do produkcji okien drewnianych i kompozytowych, zapewniające trwałe połączenia w ekstremalnych warunkach.",
+      "Kleje D4 odporne na warunki atmosferyczne do produkcji okien drewnianych i drewniano-aluminiowych — złącza klinowe, klejenie ram i sklejeń powierzchniowych.",
     products: [
+      {
+        name: "KLEIBERIT® 303.0",
+        code: "303.0",
+        description: "Klej PVAc D3 (1K) lub D4 (z utwardzaczem 303.5) do produkcji ram okiennych i łączenia kantówek. Czas otwarty 6–10 min, certyfikaty IMO i FDA. Op. 0,5–1000 kg.",
+        type: "PVAc",
+        image: "/products/303.jpg",
+      },
       {
         name: "KLEIBERIT® 304.1",
         code: "304.1",
-        description: "Klej PVAc D4 wyłącznie 2K z utwardzaczem 304.3. Żywotność mieszanki do 7 dni, czas otwarty 6–10 min. Do produkcji okien, drzwi, złączy klinowych i schodów. Atesty D4, WATT 91.",
+        description: "Klej PVAc D4 2K do produkcji okien drewnianych i drewniano-aluminiowych – klejenie ram i złączy klinowych. Z utwardzaczem 304.3, żywotność mieszanki 7 dni, czas otwarty 6–10 min. Atesty D4, WATT 91.",
         type: "PVAc",
         image: "/products/303.jpg",
         badge: "D4",
@@ -165,7 +185,7 @@ export const sectors: Sector[] = [
       {
         name: "KLEIBERIT® 501.0",
         code: "501.0",
-        description: "Kleiberit seria 501 – jednokomponentowe kleje PUR klasy D4 do drewna, materiałów drewnopochodnych i mineralnych. Cztery warianty: 501.0 (klasyk, 20–25 min), 501.4 (montaż, 4 min), 501.6 (formowanie, 70 min), 501.8 (szybki, 10 min). Zgodne z WATT 91.",
+        description: "Klej 1K PUR D4 do produkcji okien drewnianych – klejenie ram, złączy klinowych i sklejeń powierzchniowych. Czas otwarty 20–25 min, certyfikat IMO. D4, WATT 91.",
         type: "PUR",
         image: "/products/501.jpg",
         badge: "IMO",
@@ -173,14 +193,14 @@ export const sectors: Sector[] = [
       {
         name: "KLEIBERIT® 501.6",
         code: "501.6",
-        description: "Kleiberit seria 501 – jednokomponentowe kleje PUR klasy D4 do drewna, materiałów drewnopochodnych i mineralnych. Cztery warianty: 501.0 (klasyk, 20–25 min), 501.4 (montaż, 4 min), 501.6 (formowanie, 70 min), 501.8 (szybki, 10 min). Zgodne z WATT 91.",
+        description: "Klej 1K PUR D4 o wydłużonym czasie otwartym (70 min) do formowania ram okiennych i sklejeń powierzchniowych dużych elementów stolarki okiennej. Czas docisku 6–7 h. D4, WATT 91.",
         type: "PUR",
         image: "/placeholder.svg",
       },
       {
         name: "KLEIBERIT® 501.8",
         code: "501.8",
-        description: "Kleiberit seria 501 – jednokomponentowe kleje PUR klasy D4 do drewna, materiałów drewnopochodnych i mineralnych. Cztery warianty: 501.0 (klasyk, 20–25 min), 501.4 (montaż, 4 min), 501.6 (formowanie, 70 min), 501.8 (szybki, 10 min). Zgodne z WATT 91.",
+        description: "Szybki klej 1K PUR D4 (czas otwarty 10 min) do produkcji okien – złącza klinowe i klejenie ram przy krótszym cyklu prasowania. Czas docisku od 30 min. D4, WATT 91.",
         type: "PUR",
         image: "/placeholder.svg",
       },
@@ -192,21 +212,29 @@ export const sectors: Sector[] = [
     icon: "/icons/half-products.png",
     headline: "Kleje do produkcji półfabrykatów",
     description:
-      "Kleje przemysłowe do produkcji płyt, paneli, laminatów i innych półfabrykatów stosowanych w branży meblarskiej i budowlanej.",
+      "Kleje przemysłowe do produkcji sklejki, płyt fornirowanych, okleinowanych i laminatów stosowanych w branży meblarskiej i budowlanej.",
     products: [
       {
         name: "KLEIBERIT® 303.0",
         code: "303.0",
-        description: "Wielozadaniowy klej PVAc D3 (1K) / D4 (z utw. 303.5). Czas otwarty 6–10 min, żywotność mieszanki 24 h, certyfikaty IMO i FDA. Do okien, drzwi, HPL, schodów i sklejki. Op. 0,5–1000 kg.",
+        description: "Klej PVAc D3 (1K) lub D4 (z utwardzaczem 303.5) do produkcji sklejki i łączenia warstw płyt drewnopochodnych. Czas otwarty 6–10 min, certyfikaty IMO i FDA. Op. 0,5–1000 kg.",
         type: "PVAc",
         image: "/products/303.jpg",
       },
       {
-        name: "KLEIBERIT® 435",
-        code: "435",
-        description: "Klej kontaktowy do laminowania powierzchni płyt laminatami HPL i CPL. Wysoka odporność termiczna i natychmiastowa przyczepność po dociśnięciu.",
+        name: "KLEIBERIT® 332.0",
+        code: "332.0",
+        description: "Klej PVAc D2 do fornirowania płyt wiórowych i stolarskich oraz okleinowania HPL i folii papierowych w produkcji półfabrykatów. Czas otwarty do 25 min, 80–150 g/m². Op. 10–1000 kg.",
+        type: "PVAc",
+        image: "/products/332.jpg",
+        badge: "IMO",
+      },
+      {
+        name: "KLEIBERIT® 114.5",
+        code: "114.5",
+        description: "Klej kontaktowy CR bez toluenu do laminowania półfabrykatów płytowych – klejenie HPL, CPL i laminatów warstwowych na płytach MDF i wiórowych. Z utwardzaczem H801: odporność do +100 °C. Op. 0,7–25 kg.",
         type: "Klej kontaktowy",
-        image: "/products/501.jpg",
+        image: "/products/114.jpg",
       },
     ],
   },
@@ -216,7 +244,7 @@ export const sectors: Sector[] = [
     icon: "/icons/montage.png",
     headline: "Kleje montażowe",
     description:
-      "Mocne, szybkowiążące kleje montażowe do profesjonalnego montażu, mocowania i instalacji na różnych podłożach.",
+      "Elastyczne kleje montażowe 1K PUR i STP do profesjonalnego montażu, uszczelniania i klejenia na drewnie, metalu, betonie i ceramice.",
     products: [
       {
         name: "KLEIBERIT® 566.0",
@@ -236,33 +264,41 @@ export const sectors: Sector[] = [
   },
   {
     slug: "floors",
-    name: "Podłogi ",
+    name: "Podłogi",
     icon: "/icons/floors.png",
-    headline: "Kleje do podłóg",
+    headline: "Kleje do podłóg i schodów",
     description:
-      "Profesjonalne kleje do układania i produkcji parkietu, paneli laminowanych, podłóg winylowych i drewna inżynieryjnego.",
+      "Profesjonalne kleje do układania parkietu, produkcji i montażu schodów drewnianych oraz klejenia elementów podłogowych z izolacją akustyczną.",
     products: [
       {
         name: "KLEIBERIT® 583",
         code: "583",
-        description: "Elastyczny klej STP do klejenia parkietu i podłóg drewnianych. Bezrozpuszczalnikowy, z doskonałą izolacją akustyczną – tłumi odgłosy kroków i redukuje przenoszenie dźwięków.",
+        description: "Elastyczny klej STP do klejenia parkietu i podłóg drewnianych bezpośrednio do podłoża. Bezrozpuszczalnikowy, z doskonałą izolacją akustyczną – tłumi odgłosy kroków i redukuje przenoszenie dźwięków.",
         type: "STP",
         image: "/products/501.jpg",
       },
       {
         name: "KLEIBERIT® 303.0",
         code: "303.0",
-        description: "Wielozadaniowy klej PVAc D3 (1K) / D4 (z utw. 303.5). Czas otwarty 6–10 min, żywotność mieszanki 24 h, certyfikaty IMO i FDA. Do okien, drzwi, HPL, schodów i sklejki. Op. 0,5–1000 kg.",
+        description: "Klej PVAc D3 (1K) lub D4 (z utwardzaczem 303.5) do produkcji i montażu stopni schodowych, policzków i elementów schodów drewnianych. Czas otwarty 6–10 min, certyfikaty IMO i FDA. Op. 0,5–1000 kg.",
         type: "PVAc",
         image: "/products/303.jpg",
       },
       {
         name: "KLEIBERIT® 304.1",
         code: "304.1",
-        description: "Klej PVAc D4 wyłącznie 2K z utwardzaczem 304.3. Żywotność mieszanki do 7 dni, czas otwarty 6–10 min. Do produkcji okien, drzwi, złączy klinowych i schodów. Atesty D4, WATT 91.",
+        description: "Klej PVAc D4 2K do produkcji schodów zewnętrznych i tarasowych – złącza narażone na wilgoć i zmienne warunki atmosferyczne. Z utwardzaczem 304.3, żywotność mieszanki 7 dni. Atesty D4, WATT 91.",
         type: "PVAc",
         image: "/products/304.jpg",
         badge: "D4",
+      },
+      {
+        name: "KLEIBERIT® 501.0",
+        code: "501.0",
+        description: "Klej 1K PUR D4 do montażu i produkcji schodów drewnianych – klejenie stopni, policzków i sklejeń z podłożem mineralnym. Czas otwarty 20–25 min, certyfikat IMO. D4, WATT 91.",
+        type: "PUR",
+        image: "/products/501.jpg",
+        badge: "IMO",
       },
     ],
   },

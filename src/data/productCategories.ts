@@ -339,7 +339,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 501.4",
       code: "501.4",
       description:
-        "Jednokomponentowy klej poliuretanowy do klejenia drewna i materiałów drewnopochodnych. Wodoodporna spoina o wysokiej wytrzymałości mechanicznej.",
+        "Kleiberit seria 501 – jednokomponentowe kleje PUR klasy D4 do drewna, materiałów drewnopochodnych i mineralnych. Cztery warianty: 501.0 (klasyk, 20–25 min), 501.4 (montaż, 4 min), 501.6 (formowanie, 70 min), 501.8 (szybki, 10 min). Zgodne z WATT 91.",
       type: "PUR",
       image: "/placeholder.svg",
     },
@@ -347,10 +347,10 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
   {
     categorySlug: "pur",
     product: {
-      name: "KLEIBERIT® 509.5",
-      code: "509.5",
+      name: "KLEIBERIT® 508.5",
+      code: "508.5",
       description:
-        "Klej PUR do produkcji paneli sandwiczowych i klejenia warstwowego. Wysoka wytrzymałość spoiny i doskonała przyczepność do różnych materiałów rdzeniowych.",
+        "Kleiberit 508.5 – jednokomponentowy klej izocyjanianowy do paneli sandwich (EPS, XPS, pianka PUR + blacha), materiałów drewnopochodnych i drzwi p-poż. PCS ok. 15 MJ/kg, lepkość 8500 mPa·s, czas docisku od 20 min (60°C). Op. 7–1400 kg.",
       type: "PUR",
       image: "/placeholder.svg",
     },
@@ -358,10 +358,46 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
   {
     categorySlug: "pur",
     product: {
-      name: "KLEIBERIT® 541",
-      code: "541",
+      name: "KLEIBERIT® 510.3.4",
+      code: "510.3.4",
       description:
-        "Dwukomponentowy klej poliuretanowy do klejenia konstrukcyjnego i laminowania. Wysoka wytrzymałość mechaniczna i odporność na warunki atmosferyczne.",
+        "Kleiberit seria 510.3 – certyfikowane kleje 1K PUR do nośnych elementów drewnianych: klejonki (BSH), drewna KVH i CLT wg EN 15425:2017. Trzy warianty czasu oczekiwania: .4 (4 min), .15 (15 min), .30 (30 min). D4, WATT 91. Op. 0,8–1100 kg.",
+      type: "PUR",
+      image: "/placeholder.svg",
+      badge: "EN 15425",
+    },
+  },
+  {
+    categorySlug: "pur",
+    product: {
+      name: "KLEIBERIT® 510.3.15",
+      code: "510.3.15",
+      description:
+        "Kleiberit seria 510.3 – certyfikowane kleje 1K PUR do nośnych elementów drewnianych: klejonki (BSH), drewna KVH i CLT wg EN 15425:2017. Trzy warianty czasu oczekiwania: .4 (4 min), .15 (15 min), .30 (30 min). D4, WATT 91. Op. 0,8–1100 kg.",
+      type: "PUR",
+      image: "/placeholder.svg",
+      badge: "EN 15425",
+    },
+  },
+  {
+    categorySlug: "pur",
+    product: {
+      name: "KLEIBERIT® 510.3.30",
+      code: "510.3.30",
+      description:
+        "Kleiberit seria 510.3 – certyfikowane kleje 1K PUR do nośnych elementów drewnianych: klejonki (BSH), drewna KVH i CLT wg EN 15425:2017. Trzy warianty czasu oczekiwania: .4 (4 min), .15 (15 min), .30 (30 min). D4, WATT 91. Op. 0,8–1100 kg.",
+      type: "PUR",
+      image: "/placeholder.svg",
+      badge: "EN 15425",
+    },
+  },
+  {
+    categorySlug: "pur",
+    product: {
+      name: "KLEIBERIT® 541.6",
+      code: "541.6",
+      description:
+        "Kleiberit 541.6 – 2K PUR do klejenia styropianu/pianki PUR z blachą, GRP i płytami sandwich. Do elementów izolacyjnych do +90 °C i filtrów olejowych/diesel. Mieszanka A:B = 4:1, żywotność 45 min, Shore D 80. Op. 10–250 kg.",
       type: "PUR",
       image: "/placeholder.svg",
     },

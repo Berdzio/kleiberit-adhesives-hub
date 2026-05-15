@@ -138,15 +138,6 @@ const ProductDetailPage = () => {
                 transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
                 className="bg-card rounded-lg p-8 shadow-card border border-border"
               >
-                {product.image && product.image !== "/placeholder.svg" && (
-                  <div className="aspect-[3/1] bg-muted rounded-md overflow-hidden mb-6">
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className="w-full h-full object-contain p-4"
-                    />
-                  </div>
-                )}
                 <p className="text-foreground text-lg leading-relaxed">{mainDescription}</p>
               </motion.div>
             </div>

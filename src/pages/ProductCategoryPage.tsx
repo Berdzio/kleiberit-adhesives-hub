@@ -122,16 +122,6 @@ const ProductCategoryPage = () => {
                   to={`/product/${product.code}`}
                   className="group flex flex-col h-full bg-card rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-border"
                 >
-                  {product.image && (
-                    <div className="aspect-[4/3] bg-muted overflow-hidden">
-                      <img
-                        src={product.image}
-                        alt={`${product.name} — ${product.type}`}
-                        className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
-                        loading="lazy"
-                      />
-                    </div>
-                  )}
                   <div className="flex flex-col flex-1 p-8">
                     <div className="flex items-center justify-between mb-2">
                       <h3 className="font-heading text-xl font-bold text-foreground">{product.name}</h3>

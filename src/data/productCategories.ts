@@ -61,10 +61,21 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
   {
     categorySlug: "cleaners",
     product: {
+      name: "KLEIBERIT® 760.3",
+      code: "760.3",
+      description:
+        "Kleiberit 760.3 – specjalistyczny płynny środek czyszczący do wałków i urządzeń nanoszących dyspersyjne kleje PVAc (303.0, 304.1, 322.1, 332.0 i inne). Czyszczenie po zakończeniu pracy lub przerwie produkcyjnej.",
+      type: "Czyściwo",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "cleaners",
+    product: {
       name: "KLEIBERIT® 761.6",
       code: "761.6",
       description:
-        "Czyściwo do konserwacji systemów klejowych – usuwa osady i zanieczyszczenia z dysz, walców i zbiorników klejowych.",
+        "Kleiberit 761.6 – czyściwo 2w1 do maszyn z termotopliwym PUR: łączy funkcję czyściwa płuczącego (761.7) i intensywnego (826.0). Niebieski granulat, 150–160°C, do zbiorników, pomp, węży i dysz szczelinowych. Op. 6×1,8 kg / 50 kg.",
       type: "Czyściwo",
       image: "/products/7616.jpg",
     },
@@ -75,7 +86,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 761.7",
       code: "761.7",
       description:
-        "Środek czyszczący w granulacie do usuwania resztek klejów termotopliwych EVA i PUR z maszyn i narzędzi. Skuteczny w podwyższonej temperaturze.",
+        "Kleiberit 761.7 – czyściwo do przepłukiwania systemów z klejami PUR i EVA HM. Neutralizuje reakcję izocyjanianu, zapobiega zatykaniu dysz. Ta sama temperatura pracy co klej PUR. Op. 12×0,25 kg / 1,5 kg / 15 kg / 20 kg.",
       type: "Czyściwo",
       image: "/products/7617.jpg",
     },
@@ -83,10 +94,10 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
   {
     categorySlug: "cleaners",
     product: {
-      name: "KLEIBERIT® 760.3",
-      code: "760.3",
+      name: "KLEIBERIT® 761.8",
+      code: "761.8",
       description:
-        "Granulat czyszczący do maszyn okleiniarskich i systemów hot melt. Usuwa zwęglone resztki kleju, przedłuża żywotność urządzeń.",
+        "Kleiberit 761.8 – specjalistyczny proszek do czyszczenia walców w maszynach flat lamination przetwarzających PUR HM. Proszek roztopić w zbiorniku, uruchomić bieg wsteczny walca – resztki kleju usuwane efektywnie. Op. wiadro 20 kg.",
       type: "Czyściwo",
       image: "/placeholder.svg",
     },
@@ -94,10 +105,10 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
   {
     categorySlug: "cleaners",
     product: {
-      name: "KLEIBERIT® 820",
-      code: "820",
+      name: "KLEIBERIT® 820.0",
+      code: "820.0",
       description:
-        "Środek czyszczący do usuwania utwardzonych resztek klejów PUR z maszyn i narzędzi. Skuteczne czyszczenie bez uszkadzania powierzchni.",
+        "Kleiberit 820.0 – płynny rozcieńczalnik i czyściwo PUR bez toluenu. Usuwa nieutwardzone ciekłe kleje PUR, CR i STP z narzędzi i urządzeń. Do wszystkich klejów PUR 1K i 2K. Op. 4,5 / 22 kg.",
       type: "Czyściwo",
       image: "/placeholder.svg",
     },
@@ -105,10 +116,10 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
   {
     categorySlug: "cleaners",
     product: {
-      name: "KLEIBERIT® 826.0",
-      code: "826.0",
+      name: "KLEIBERIT® 821.0",
+      code: "821.0",
       description:
-        "Środek czyszczący do systemów klejowych hot melt. Usuwa pozostałości klejów EVA i PUR, utrzymując maszyny w optymalnym stanie.",
+        "Kleiberit 821.0 – płynny środek czyszczący do urządzeń nanoszących dyspersje PVAc i kleje PUR. Do wałków, dysz i zbiorników nanoszących – alternatywa lub uzupełnienie 820.0.",
       type: "Czyściwo",
       image: "/placeholder.svg",
     },
@@ -119,7 +130,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 823.3",
       code: "823.3",
       description:
-        "Preparat czyszczący do maszyn okleiniarskich i aplikatorów klejowych. Rozpuszcza i usuwa utwardzone resztki kleju.",
+        "Kleiberit 823.3 – czyściwo PUR w aerozolu do pistoletów montażowych (pianki 535.0, 536.0, 585.5) i aplikatorów ciekłego PUR. Błyskawiczne czyszczenie zaciśniętych zaworów i dysz. Op. 12×500 ml.",
       type: "Czyściwo",
       image: "/placeholder.svg",
     },
@@ -127,10 +138,21 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
   {
     categorySlug: "cleaners",
     product: {
-      name: "KLEIBERIT® 827",
-      code: "827",
+      name: "KLEIBERIT® 826.0",
+      code: "826.0",
       description:
-        "Uniwersalny środek czyszczący do konserwacji urządzeń klejowych. Zapobiega zatykaniu dysz i zapewnia równomierną aplikację kleju.",
+        "Kleiberit 826.0 – intensywny środek czyszczący (niebieski) do usuwania nawet utwardzonych i zeszklałych pozostałości PUR HM ze zbiorników, dysz i pomp. Temp. 150–160°C. Działa tam, gdzie 761.7 nie wystarcza.",
+      type: "Czyściwo",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "cleaners",
+    product: {
+      name: "KLEIBERIT® 827.0",
+      code: "827.0",
+      description:
+        "Kleiberit 827.0 – specjalistyczny środek czyszczący do zbiorników okleiniarek i maszyn przetwarzających termotopliwe kleje EVA (773.3, 788.x, 743.x). Granulki do stopienia i przepłukania zbiornika. Op. 4,5 kg.",
       type: "Czyściwo",
       image: "/placeholder.svg",
     },
@@ -165,17 +187,6 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       code: "831.8",
       description:
         "Primer o podwyższonej reaktywności do przygotowania powierzchni przed klejeniem PUR. Szczególnie skuteczny na podłożach lakierowanych i foliowanych.",
-      type: "Primer",
-      image: "/placeholder.svg",
-    },
-  },
-  {
-    categorySlug: "primer",
-    product: {
-      name: "KLEIBERIT® 821.0",
-      code: "821.0",
-      description:
-        "Środek gruntujący do zwiększenia przyczepności klejów na powierzchniach metalowych, szklanych i z tworzyw sztucznych. Szybkoschnący i łatwy w aplikacji.",
       type: "Primer",
       image: "/placeholder.svg",
     },
@@ -456,6 +467,42 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       description:
         "Kleiberit 584.0 – elastyczny klej montażowy STP 1K bez izocyjanianów, ftalanów, silikonu i rozpuszczalników. Shore A 50, czas kożuszenia 25 min, bez obowiązkowego oznakowania EU. Listwy, panele, ceramika, drewno. Biały/czarny. Op. 300/600 ml.",
       type: "Montaż",
+      image: "/placeholder.svg",
+    },
+  },
+  // ── Pianki montażowe (standalone) ──
+  {
+    categorySlug: "montage",
+    product: {
+      name: "KLEIBERIT® 535.0 SupraFoam",
+      code: "535.0",
+      description:
+        "Kleiberit 535.0 SupraFoam – dwukomponentowa pianka PUR do montażu ościeżnic drzwi i izolacji okien. Bez gazu napędowego, bez naddatku, utwardza się niezależnie od wilgoci w 15–20 min. Klejowalna po 1 min, tnalna po 3–5 min, rozporki po 20 min. EC1 plus R, B2. Op. 16×250 g.",
+      type: "Pianka montażowa",
+      badge: "EMICODE EC1",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "montage",
+    product: {
+      name: "KLEIBERIT® 536.0 StairMaster",
+      code: "536.0",
+      description:
+        "Kleiberit 536.0 StairMaster – ekspansywna 2K pianka klejąca PUR do montażu stopni schodowych, progów drzwi i parapetów z drewna, kamienia lub metalu. Obciążalna po 20 min, bez gazu napędowego, bez naddatku, B2. Op. 125 g / 250 g.",
+      type: "Pianka montażowa",
+      image: "/placeholder.svg",
+    },
+  },
+  {
+    categorySlug: "montage",
+    product: {
+      name: "KLEIBERIT® 585.5",
+      code: "585.5",
+      description:
+        "Kleiberit 585.5 – trudnopalna 1K pianka PUR klasy B wg EN 13501-1 (różowa) do uszczelnień ognioodpornych między masywnym materiałem mineralnym lub metalowym. Gęstość 16 kg/m³, λ=0,036 W/mK, odporność –40 do +90°C, wydajność ok. 40–45 l (750 ml). Op. 12×750 ml.",
+      type: "Pianka montażowa",
+      badge: "Ognioodporny",
       image: "/placeholder.svg",
     },
   },

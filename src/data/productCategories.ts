@@ -532,51 +532,31 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
     },
   },
   // ── PUR termotopliwe (standalone) ──
+  // okleinowanie obrzeży PUR
   {
     categorySlug: "pur-hot-melts",
     product: {
-      name: "KLEIBERIT® 702.5.50 ME",
-      code: "702.5.50",
+      name: "KLEIBERIT® 707.9.50 ME",
+      code: "707.9.50",
       description:
-        "Mikroemisyjny klej PUR do okleinowania profili wewnętrznych foliami PVC i papierami dekoracyjnymi. MDI <0,1%, bez obowiązkowego oznakowania UE. Odporność do +140 °C i –40 °C. Posuw 20–50 m/min.",
+        "Kleiberit 707.9.50 ME – reaktywny klej PUR z technologią ME (MDI <0,1%) do okleiniarek PUR, wariant kość słoniowa. Duroplastyczna spoina odporna na wilgoć i temperaturę. Bez obowiązkowego oznakowania EU.",
       type: "Termotopliwy PUR",
       image: "/placeholder.svg",
       badge: "Mikroemisyjny",
-    },
-  },
-  {
-    categorySlug: "pur-hot-melts",
-    product: {
-      name: "KLEIBERIT® 702.8.49",
-      code: "702.8.49",
-      description:
-        "Reaktywny klej PUR do okleinowania profili z MDF i PVC foliami PVC i papierami dekoracyjnymi, w zastosowaniach wewnętrznych. Odporność do +150 °C i –30 °C, posuw 20–50 m/min, op. 20–190 kg.",
-      type: "Termotopliwy PUR",
-      image: "/placeholder.svg",
-    },
-  },
-  {
-    categorySlug: "pur-hot-melts",
-    product: {
-      name: "KLEIBERIT® 704.0 Supramelt PUR",
-      code: "704.0",
-      description:
-        "Reaktywny klej PUR do opłaszczowywania profili PVC i aluminium foliami PVC, akrylanowymi i fornirem. Odporność od –40 °C do +150 °C, atest RAL GZ 716/1. Temp. pracy 120–140 °C. Do zastosowań zewnętrznych.",
-      type: "Termotopliwy PUR",
-      image: "/placeholder.svg",
-      badge: "RAL GZ 716/1",
-    },
-  },
-  {
-    categorySlug: "pur-hot-melts",
-    product: {
-      name: "KLEIBERIT® 704.5",
-      code: "704.5",
-      description:
-        "Reaktywny PUR do opłaszczowywania profili PVC i aluminium foliami PVC, akrylowymi i fornirami. Atest RAL GZ 716, odporność –40 °C do +150 °C, temp. pracy 120–140 °C, posuw 5–40 m/min. Op. 0,3–200 kg.",
-      type: "Termotopliwy PUR",
-      image: "/placeholder.svg",
-      badge: "RAL GZ 716",
+      details: {
+        body: "Kleiberit 707.9.50 ME to reaktywny klej termotopliwy PUR z technologią Micro-Emission (MDI <0,1%) do okleinowania obrzeży na okleinarkach PUR. W odróżnieniu od klejów EVA, reaktywny PUR sieciuje chemicznie pod wpływem wilgoci, tworząc trwałą, duroplastyczną spoinę odporną na wysoką temperaturę, wilgoć i środki chemiczne. Wariant kość słoniowa (kód 50) przeznaczony do naturalnych dekorów drewna, fornirów i ciepłych kolorów. Dzięki technologii ME nie wymaga obowiązkowego oznakowania zagrożenia wg UE.",
+        keyFeature: "Reaktywny PUR vs EVA: spoina duroplastyczna nie odkształca się przy podgrzaniu, wyższa odporność na wilgoć i środki myjące. MDI <0,1% — bez obowiązkowego oznakowania EU.",
+        specs: [
+          { label: "Baza", value: "Reaktywny PUR (ME)" },
+          { label: "MDI", value: "<0,1% (Micro-Emission)" },
+          { label: "Kolor", value: "Kość słoniowa (.50)" },
+          { label: "Temperatura pracy", value: "120–160°C" },
+          { label: "Oznakowanie EU", value: "Niewymagane (ME)" },
+          { label: "Czyściwo", value: "Kleiberit 761.7" },
+        ],
+        applications: "Okleinowanie obrzeży PVC, ABS, HPL, CPL i fornirowych na okleinarkach PUR · naturalne dekory drewna, forniry, ciepłe kolory.",
+        note: "Seria 707.9 ME dostępna w 3 kolorach: 707.9.50 kość słoniowa · 707.9.51 biały · 707.9.58 transparentny. Dobór koloru spoiny do okleinowanego materiału eliminuje widoczność fugi.",
+      },
     },
   },
   {
@@ -585,10 +565,24 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 707.9.51 ME",
       code: "707.9.51",
       description:
-        "Reaktywny klej PUR ME do okleinowania obrzeży ABS, PVC, HPL, CPL i forniru – wariant biały. Odporność do +150 °C i –30 °C, stabilność w stapialniku min. 24 h. Idealny do białych i jasnych obrzeży.",
+        "Kleiberit 707.9.51 ME – reaktywny klej PUR z technologią ME (MDI <0,1%) do okleiniarek PUR, wariant biały. Duroplastyczna spoina odporna na wilgoć i temperaturę. Bez obowiązkowego oznakowania EU.",
       type: "Termotopliwy PUR",
       image: "/placeholder.svg",
       badge: "Mikroemisyjny",
+      details: {
+        body: "Kleiberit 707.9.51 ME to reaktywny klej termotopliwy PUR z technologią Micro-Emission (MDI <0,1%) do okleinowania obrzeży na okleinarkach PUR. Wariant biały (kód 51) przeznaczony do białych i jasnych frontów mebli oraz obrzeży PVC i ABS w białym kolorze. Duroplastyczna spoina PUR nie odkształca się przy podgrzaniu, w odróżnieniu od termoplastycznych klejów EVA.",
+        keyFeature: "Reaktywny PUR vs EVA: spoina duroplastyczna nie odkształca się przy podgrzaniu, wyższa odporność na wilgoć i środki myjące. MDI <0,1% — bez obowiązkowego oznakowania EU.",
+        specs: [
+          { label: "Baza", value: "Reaktywny PUR (ME)" },
+          { label: "MDI", value: "<0,1% (Micro-Emission)" },
+          { label: "Kolor", value: "Biały (.51)" },
+          { label: "Temperatura pracy", value: "120–160°C" },
+          { label: "Oznakowanie EU", value: "Niewymagane (ME)" },
+          { label: "Czyściwo", value: "Kleiberit 761.7" },
+        ],
+        applications: "Okleinowanie obrzeży PVC, ABS, HPL, CPL i fornirowych na okleinarkach PUR · białe i jasne fronty meblowe, obrzeża PVC/ABS biały.",
+        note: "Seria 707.9 ME dostępna w 3 kolorach: 707.9.50 kość słoniowa · 707.9.51 biały · 707.9.58 transparentny.",
+      },
     },
   },
   {
@@ -597,10 +591,180 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 707.9.58 ME",
       code: "707.9.58",
       description:
-        "Reaktywny klej PUR ME do okleinowania obrzeży ABS, PVC, HPL, CPL i forniru – wariant transparentny. Odporność do +150 °C i –30 °C. Uniwersalny – niewidoczna spoina pasuje do każdego koloru obrzeża.",
+        "Kleiberit 707.9.58 ME – reaktywny klej PUR z technologią ME (MDI <0,1%) do okleiniarek PUR, wariant transparentny. Universalny – niewidoczna spoina do każdego koloru obrzeża. Bez obowiązkowego oznakowania EU.",
       type: "Termotopliwy PUR",
       image: "/placeholder.svg",
       badge: "Mikroemisyjny",
+      details: {
+        body: "Kleiberit 707.9.58 ME to reaktywny klej termotopliwy PUR z technologią Micro-Emission (MDI <0,1%) do okleinowania obrzeży na okleinarkach PUR. Wariant transparentny (kód 58) – uniwersalny wybór gdy stosowane są obrzeża w różnych kolorach na jednej maszynie lub gdy wymagana jest absolutnie niewidoczna fuga niezależnie od koloru materiału.",
+        keyFeature: "Transparentna spoina — universalny wariant pasujący do każdego koloru obrzeża; eliminuje konieczność wymiany kleju przy zmianie koloru produkcji.",
+        specs: [
+          { label: "Baza", value: "Reaktywny PUR (ME)" },
+          { label: "MDI", value: "<0,1% (Micro-Emission)" },
+          { label: "Kolor", value: "Transparentny (.58)" },
+          { label: "Temperatura pracy", value: "120–160°C" },
+          { label: "Oznakowanie EU", value: "Niewymagane (ME)" },
+          { label: "Czyściwo", value: "Kleiberit 761.7" },
+        ],
+        applications: "Okleinowanie obrzeży PVC, ABS, HPL, CPL i fornirowych na okleinarkach PUR · wszystkie kolory dekorów gdy fuga ma być niewidoczna.",
+        note: "Seria 707.9 ME dostępna w 3 kolorach: 707.9.50 kość słoniowa · 707.9.51 biały · 707.9.58 transparentny.",
+      },
+    },
+  },
+  // profile wrapping zewnętrzny
+  {
+    categorySlug: "pur-hot-melts",
+    product: {
+      name: "KLEIBERIT® 704.0 Supramelt PUR",
+      code: "704.0",
+      description:
+        "Kleiberit 704.0 Supramelt – reaktywny klej PUR do opłaszczowywania profili PVC i aluminium do zastosowań zewnętrznych. Odporność –40°C do +150°C, certyfikaty RAL GZ 716, IMO, BRL 2339. Temp. pracy 120–150°C.",
+      type: "Termotopliwy PUR",
+      image: "/placeholder.svg",
+      badge: "RAL GZ 716/1",
+      details: {
+        body: "Kleiberit 704.0 Supramelt to reaktywny klej termotopliwy PUR do opłaszczowywania profili PVC i aluminium w zastosowaniach zewnętrznych — okna, drzwi, fasady. Spoina zachowuje właściwości w zakresie –40°C do +150°C. Posiada certyfikat RAL GZ 716 (Gütegemeinschaft Kunststoff-Fensterprofilsysteme), certyfikat IMO FTP do zastosowań stoczniowych oraz BRL 2339 do parkietu 2-warstwowego na rynek holenderski.",
+        keyFeature: "Certyfikat RAL GZ 716 + IMO + BRL 2339 — komplet dopuszczeń wymaganych przy produkcji okien, drzwi zewnętrznych i zastosowaniach stoczniowych. Odporność –40°C do +150°C.",
+        warning: "Produkt standardowy (nie ME) — zawiera MDI i wymaga obowiązkowego oznakowania wg UE. Wymagana wentylacja stanowiska pracy.",
+        specs: [
+          { label: "Baza", value: "Reaktywny PUR (standard)" },
+          { label: "Certyfikaty", value: "RAL GZ 716, IMO, BRL 2339" },
+          { label: "Temperatura pracy", value: "120–150°C" },
+          { label: "Odporność termiczna", value: "–40°C do +150°C" },
+          { label: "Oznakowanie EU", value: "Wymagane" },
+          { label: "Primer PVC", value: "Kleiberit 831.0 lub 842.0" },
+          { label: "Primer akryl (PMMA)", value: "Kleiberit 831.4" },
+          { label: "Czyściwo", value: "Kleiberit 761.7" },
+        ],
+        applications: "Opłaszczowywanie profili PVC i aluminium foliami PVC, foliami akrylowymi, papierami dekoracyjnymi i fornirami · okna, drzwi zewnętrzne, fasady, parapety zewnętrzne · przemysł stoczniowy (IMO) · parkiet 2-warstwowy (BRL 2339).",
+      },
+    },
+  },
+  {
+    categorySlug: "pur-hot-melts",
+    product: {
+      name: "KLEIBERIT® 704.5",
+      code: "704.5",
+      description:
+        "Kleiberit 704.5 – reaktywny PUR do opłaszczowywania profili zewnętrznych PVC i aluminium. Atest RAL GZ 716, odporność –40°C do +150°C, lepkość 33 000 mPa·s, posuw 5–40 m/min. Op. 0,3–200 kg.",
+      type: "Termotopliwy PUR",
+      image: "/placeholder.svg",
+      badge: "RAL GZ 716",
+      details: {
+        body: "Kleiberit 704.5 to reaktywny klej termotopliwy PUR do okleinowania profili PVC, wstępnie obrobionych profili aluminiowych i profili z materiałów drewnopochodnych foliami PVC, foliami akrylowymi, papierami dekoracyjnymi i fornirami w zastosowaniach zewnętrznych. Posiada atest RAL GZ 716. Cechuje się bardzo wysoką wytrzymałością początkową i bardzo szybkim wiązaniem. Niższa lepkość niż 704.0 Supramelt zapewnia lepszą aplikowalność przy systemach cienkodyszowych.",
+        keyFeature: "Atest RAL GZ 716 · lepkość 33 000 mPa·s (120°C) · czas otwarty <5 s · posuw 5–40 m/min. Bardzo wysoka wytrzymałość początkowa przy szybkich liniach produkcyjnych.",
+        warning: "Produkt standardowy (nie ME) — zawiera MDI i wymaga obowiązkowego oznakowania wg UE. Wymagana wentylacja stanowiska pracy.",
+        specs: [
+          { label: "Baza", value: "Reaktywny PUR (standard)" },
+          { label: "Certyfikat", value: "RAL GZ 716" },
+          { label: "Temperatura pracy", value: "120–140°C" },
+          { label: "Lepkość 120°C", value: "33 000 ±4 000 mPa·s" },
+          { label: "Lepkość 140°C", value: "17 000 ±3 000 mPa·s" },
+          { label: "Czas otwarty", value: "<5 s" },
+          { label: "Odporność termiczna", value: "–40°C do +150°C" },
+          { label: "Prędkość posuwu", value: "5–40 m/min" },
+          { label: "Gęstość", value: "ok. 1,1 g/cm³" },
+          { label: "Oznakowanie EU", value: "Wymagane" },
+          { label: "Opakowania", value: "12×0,3 kg · 6×2 kg · 20 kg · 200 kg" },
+          { label: "Czyściwo", value: "Kleiberit 761.7" },
+        ],
+        applications: "Opłaszczowywanie profili PVC i aluminium foliami PVC, akrylowymi, papierami dekoracyjnymi i fornirami · okna, drzwi zewnętrzne, fasady, parapety zewnętrzne.",
+        note: "Nanoszenie: folie PVC ogólne 30–50 g/m² · folie PVC okienne 45–60 g/m² · papiery dekoracyjne 30–70 g/m² · forniry 80–100 g/m². Primer do folii PVC: 831.0 lub 842.0. Primer do folii akrylowych (PMMA): wyłącznie 831.4.",
+      },
+    },
+  },
+  // profile wrapping wewnętrzny
+  {
+    categorySlug: "pur-hot-melts",
+    product: {
+      name: "KLEIBERIT® 702.5.50 ME",
+      code: "702.5.50",
+      description:
+        "Kleiberit 702.5.50 ME – mikroemisyjny klej PUR do wrapping profili wewnętrznych (parapety, ościeżnice, listwy). MDI <0,1%, bez obowiązkowego oznakowania EU. Odporność do +140°C i –40°C. Posuw 20–50 m/min.",
+      type: "Termotopliwy PUR",
+      image: "/placeholder.svg",
+      badge: "Mikroemisyjny",
+      details: {
+        body: "Kleiberit 702.5.50 ME to reaktywny klej termotopliwy PUR z technologią Micro-Emission (MDI <0,1%) do okleinowania profili z materiałów drewnopochodnych i PVC foliami PVC oraz papierami dekoracyjnymi w zastosowaniach wewnętrznych. Dzięki technologii ME nie wymaga obowiązkowego oznakowania zagrożenia wg UE. Cechuje się wyjątkowo wysoką wytrzymałością początkową oraz wyraźną kleistością. Wyższa lepkość niż 702.8.49 (60 000 vs 33 000 mPa·s) oznacza grubszy film klejowy — lepszy przy fornirach i papierach dekoracyjnych.",
+        keyFeature: "MDI <0,1% — bez obowiązkowego oznakowania EU. Bezpieczniejsze stanowisko pracy niż standardowy 702.8.49 przy zachowaniu tych samych właściwości użytkowych.",
+        specs: [
+          { label: "Baza", value: "Reaktywny PUR (ME, MDI <0,1%)" },
+          { label: "Temperatura pracy", value: "130–160°C" },
+          { label: "Lepkość 120°C", value: "60 000 ±15 000 mPa·s" },
+          { label: "Lepkość 140°C", value: "35 000 ±10 000 mPa·s" },
+          { label: "Czas otwarty", value: "<5 s" },
+          { label: "Odporność termiczna", value: "powyżej +140°C" },
+          { label: "Mrozoodporność", value: "do –40°C" },
+          { label: "Prędkość posuwu", value: "20–50 m/min" },
+          { label: "Nanoszenie (folie PVC)", value: "40–60 g/m²" },
+          { label: "Nanoszenie (papiery dek.)", value: "50–70 g/m²" },
+          { label: "Gęstość", value: "ok. 1,04 g/cm³" },
+          { label: "Oznakowanie EU", value: "Niewymagane (ME)" },
+          { label: "Opakowania", value: "20 kg · 200 kg" },
+          { label: "Czyściwo", value: "Kleiberit 761.7" },
+        ],
+        applications: "Okleinowanie profili i listw z MDF/wiórowej folią PVC i papierami dekoracyjnymi — parapety wewnętrzne, ościeżnice, listwy przypodłogowe, fronty szaf, elementy meblowe.",
+        note: "Vs 702.8.49: wyższa lepkość (60 000 vs 33 000 mPa·s) i wyższa temperatura pracy (do 160°C vs 150°C) — lepszy przy papierach dekoracyjnych i fornirach. 702.8.49 ma niższą lepkość — lepszą aplikowalność przy cienkodyszowych systemach nanoszenia, ale wymaga oznakowania EU.",
+      },
+    },
+  },
+  {
+    categorySlug: "pur-hot-melts",
+    product: {
+      name: "KLEIBERIT® 702.8.49",
+      code: "702.8.49",
+      description:
+        "Kleiberit 702.8.49 – reaktywny klej PUR do wrapping profili wewnętrznych foliami PVC, CPL i papierami dekoracyjnymi, kość słoniowa. Odporność do +150°C i –30°C, posuw 20–50 m/min. Op. 20 / 190 kg.",
+      type: "Termotopliwy PUR",
+      image: "/placeholder.svg",
+      details: {
+        body: "Kleiberit 702.8.49 to reaktywny klej termotopliwy PUR w wariancie kość słoniowa, przeznaczony do okleinowania profili z materiałów drewnopochodnych, PVC i aluminium foliami PVC i papierami dekoracyjnymi (w tym CPL) w zastosowaniach wewnętrznych. Niższa lepkość niż 702.5.50 ME (33 000 vs 60 000 mPa·s) zapewnia lepszą aplikowalność przy cienkodyszowych systemach nanoszenia i szybkich liniach produkcyjnych.",
+        keyFeature: "Niższa lepkość (33 000 mPa·s) vs ME — lepsza aplikowalność przy cienkodyszowych systemach nanoszenia i szybkich liniach. Wybór gdy nie ma wymogu środowiska bez oznakowania EU.",
+        warning: "Produkt standardowy (nie ME) — zawiera MDI i wymaga obowiązkowego oznakowania wg UE. Wymagana wentylacja stanowiska pracy. Gdy wymagane środowisko bez oznakowania EU — stosować 702.5.50 ME.",
+        specs: [
+          { label: "Baza", value: "Reaktywny PUR (standard)" },
+          { label: "Kolor", value: "Kość słoniowa (.49)" },
+          { label: "Temperatura pracy", value: "130–150°C" },
+          { label: "Lepkość 120°C", value: "33 000 ±5 000 mPa·s" },
+          { label: "Lepkość 140°C", value: "18 000 ±4 000 mPa·s" },
+          { label: "Czas otwarty", value: "<10 s" },
+          { label: "Odporność termiczna", value: "powyżej +150°C" },
+          { label: "Mrozoodporność", value: "do –30°C" },
+          { label: "Prędkość posuwu", value: "20–50 m/min" },
+          { label: "Nanoszenie (folie PVC)", value: "40–60 g/m²" },
+          { label: "Oznakowanie EU", value: "Wymagane" },
+          { label: "Opakowania", value: "20 kg · 190 kg" },
+          { label: "Czyściwo", value: "Kleiberit 761.7" },
+        ],
+        applications: "Okleinowanie profili i listw z MDF/wiórowej folią PVC, CPL i papierami dekoracyjnymi — parapety wewnętrzne, ościeżnice, listwy przypodłogowe, fronty szaf.",
+      },
+    },
+  },
+  // flat lamination
+  {
+    categorySlug: "pur-hot-melts",
+    product: {
+      name: "KLEIBERIT® 706.2.50 ME",
+      code: "706.2.50",
+      description:
+        "Kleiberit 706.2.50 ME – mikroemisyjny klej PUR do kaszerowania powierzchni płyt foliami PVC, ABS, PET i PMMA. MDI <0,1%, bez obowiązkowego oznakowania EU. Czas otwarty <4 min. Do maszyn flat lamination.",
+      type: "Termotopliwy PUR",
+      image: "/placeholder.svg",
+      badge: "Mikroemisyjny",
+      details: {
+        body: "Kleiberit 706.2.50 ME to reaktywny klej termotopliwy PUR z technologią ME (MDI <0,1%), przeznaczony do kaszerowania powierzchni płyt meblowych foliami z tworzyw sztucznych — PVC, ABS, PET i PMMA. Nie wymaga obowiązkowego oznakowania EU. Stosowany na maszynach flat lamination z nanoszeniem walcowym lub szczelinowym. Czas otwarty <4 min pozwala na sprawne zamknięcie prasy przy standardowych wymiarach płyt.",
+        keyFeature: "MDI <0,1% — bez obowiązkowego oznakowania EU. Standardowy wybór do flat lamination foliami PVC/ABS/PET/PMMA przy zachowaniu bezpiecznego środowiska pracy.",
+        specs: [
+          { label: "Baza", value: "Reaktywny PUR (ME, MDI <0,1%)" },
+          { label: "Temperatura pracy", value: "120–140°C" },
+          { label: "Czas otwarty", value: "<4 min" },
+          { label: "Folie kompatybilne", value: "PVC, ABS, PET, PMMA" },
+          { label: "Oznakowanie EU", value: "Niewymagane (ME)" },
+          { label: "Czyściwo (walce)", value: "Kleiberit 761.7 / 761.8" },
+        ],
+        applications: "Kaszerowanie frontów meblowych foliami PVC, ABS, PET i PMMA · płyty boczne i tylne mebli · na maszynach flat lamination z nanoszeniem walcowym lub szczelinowym.",
+        note: "Seria flat lamination ME: 706.2.50 ME — folie PVC/ABS/PET/PMMA, czas otwarty <4 min · 709.3.50 ME — folie high gloss/super-mat, ultra-gładka spoina · 711.0.02 ME — folie transparentne, maks. 130°C, UV-stabilny.",
+      },
     },
   },
   {
@@ -609,10 +773,24 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 709.3.50 ME",
       code: "709.3.50",
       description:
-        "Mikroemisyjny klej PUR do kaszerowania frontów foliami wysokopołyskowymi. Wyjątkowo niska lepkość (8 000 mPa·s), ultra-gładka spoina, czas otwarty <3 min, MDI <0,1%. Do frontów i płyt meblowych.",
+        "Kleiberit 709.3.50 ME – mikroemisyjny klej PUR do kaszerowania frontów foliami wysokopołyskowymi. Lepkość 8 000 mPa·s (120°C), ultra-gładka spoina, czas otwarty <3 min. MDI <0,1%, bez oznakowania EU.",
       type: "Termotopliwy PUR",
       image: "/placeholder.svg",
       badge: "Mikroemisyjny",
+      details: {
+        body: "Kleiberit 709.3.50 ME to reaktywny klej termotopliwy PUR z technologią ME, specjalnie zaprojektowany do kaszerowania powierzchni foliami wysokopołyskowymi (high gloss) i super-mat. Jego kluczowa cecha to ekstremalnie niska lepkość (8 000 mPa·s przy 120°C), która zapewnia perfekcyjnie gładkie przeniesienie spoiny — każda nierówność w filmie klejowym jest widoczna przez cienką, błyszczącą folię. Niska lepkość = minimalna grubość filmu = brak widocznych nierówności przez folię lustrzaną.",
+        keyFeature: "Lepkość 8 000 mPa·s (120°C) — jedyna techniczna droga do uzyskania efektu Piano Black czy folii lustrzanej bez pęcherzy i wgłębień widocznych przez folię.",
+        specs: [
+          { label: "Baza", value: "Reaktywny PUR (ME, MDI <0,1%)" },
+          { label: "Temperatura pracy", value: "120–140°C" },
+          { label: "Lepkość 120°C", value: "8 000 mPa·s" },
+          { label: "Lepkość 140°C", value: "4 000 mPa·s" },
+          { label: "Czas otwarty", value: "<3 min" },
+          { label: "Oznakowanie EU", value: "Niewymagane (ME)" },
+          { label: "Czyściwo (walce)", value: "Kleiberit 761.7 / 761.8" },
+        ],
+        applications: "Fronty meblowe high gloss i super-mat · płyty boczne i tylne mebli · półki — wszędzie tam, gdzie wymagana jest lustrzana jakość powierzchni (Piano Black, efekt chromu).",
+      },
     },
   },
   {
@@ -621,9 +799,20 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 711.0",
       code: "711.0",
       description:
-        "Reaktywny klej PUR do kaszerowania płyt meblowych foliami z tworzyw sztucznych ABS, PET i innymi materiałami trudnymi do zwilżenia. Wysoka wytrzymałość, odporność na wilgoć i ciepło. Do maszyn flat lamination.",
+        "Kleiberit 711.0 – reaktywny klej PUR do kaszerowania płyt meblowych foliami z tworzyw sztucznych ABS, PET i materiałami trudnymi do zwilżenia. Wysoka wytrzymałość, odporność na wilgoć i ciepło. Do maszyn flat lamination.",
       type: "Termotopliwy PUR",
       image: "/placeholder.svg",
+      details: {
+        body: "Kleiberit 711.0 to reaktywny klej termotopliwy PUR przeznaczony do kaszerowania powierzchni płyt meblowych foliami z tworzyw sztucznych — ABS, PET i innymi materiałami trudnymi do zwilżenia. Stosowany na maszynach flat lamination. Reaktywna spoina PUR zapewnia wysoką wytrzymałość mechaniczną, odporność na wilgoć i ciepło.",
+        specs: [
+          { label: "Baza", value: "Reaktywny PUR" },
+          { label: "Zastosowanie", value: "Flat lamination" },
+          { label: "Folie kompatybilne", value: "ABS, PET i in." },
+          { label: "Czyściwo (walce)", value: "Kleiberit 761.8" },
+        ],
+        applications: "Kaszerowanie frontów i płyt meblowych foliami ABS, PET · na maszynach flat lamination.",
+        note: "Wariant z funkcją ME i stabilnością UV do folii transparentnych: 711.0.02 ME (maks. 130°C, wymaga oznakowania EU mimo ME).",
+      },
     },
   },
   {
@@ -632,10 +821,29 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 711.0.02 ME",
       code: "711.0.02",
       description:
-        "Reaktywny klej PUR do kaszerowania powierzchni transparentnymi foliami z tworzyw sztucznych. Temp. pracy 110–130 °C (maks.!), stabilność UV, MDI <0,1%. Lepkość 8 000 mPa·s. Op. 20–50 kg.",
+        "Kleiberit 711.0.02 ME – reaktywny klej PUR do kaszerowania powierzchni transparentnymi foliami (PET, akryl, PP). Temp. pracy 110–130°C (maks.!), stabilność UV, MDI <0,1%. Lepkość 8 000 mPa·s. Op. 20 / 50 kg.",
       type: "Termotopliwy PUR",
       image: "/placeholder.svg",
       badge: "Mikroemisyjny",
+      details: {
+        body: "Kleiberit 711.0.02 ME to reaktywny klej termotopliwy PUR z technologią ME (MDI <0,1%), stworzony specjalnie do kaszerowania powierzchni transparentnymi foliami z tworzyw sztucznych (PET, akryl, PP) na maszynach flat lamination. Wyróżnia się wyjątkowo niską temperaturą pracy (110–130°C) oraz stabilnością UV — spoina nie żółknie pod wpływem światła, co jest kluczowe przy transparentnych foliach widocznych przez cały czas użytkowania produktu.",
+        keyFeature: "UV-stabilna spoina — nie żółknie pod transparentną folią. Najniższa temperatura pracy w klasie (110–130°C). Jedyny wybór do folii transparentnych PET/akryl/PP.",
+        warning: "Temperatura stopionego kleju w urządzeniu nie może przekraczać 130°C! Przekroczenie limitu powoduje degradację kleju. Wskazania termostatu mogą być błędne — zawsze weryfikować termometrem kontaktowym. UWAGA: mimo technologii ME (MDI <0,1%) produkt nadal wymaga obowiązkowego oznakowania wg UE — wyjątek wśród produktów ME!",
+        specs: [
+          { label: "Baza", value: "Reaktywny PUR (ME, MDI <0,1%)" },
+          { label: "Temperatura pracy", value: "110–130°C (maks. 130°C!)" },
+          { label: "Lepkość 120°C", value: "8 000 ±1 500 mPa·s" },
+          { label: "Lepkość 140°C", value: "4 000 ±1 000 mPa·s" },
+          { label: "Czas otwarty", value: "<1 min (100 g/m², 120°C)" },
+          { label: "Gęstość", value: "ok. 1,1 g/cm³" },
+          { label: "Stabilność UV", value: "Tak — spoina nie żółknie" },
+          { label: "Oznakowanie EU", value: "Wymagane (mimo ME!)" },
+          { label: "Opakowania", value: "Gilza 20 kg · beczka 50 kg" },
+          { label: "Czyściwo walców", value: "Kleiberit 761.8 (proszek!)" },
+        ],
+        applications: "Kaszerowanie powierzchni transparentnymi foliami PET, akryl, PP · fronty meblowe z efektem przezroczystości · wszędzie gdzie wymagana UV-stabilna, nieżółknąca spoina.",
+        note: "Czyściwo walców: Kleiberit 761.8 (proszek) — roztopić i wrzucić bieg wsteczny walca. Urządzenia: zbiorniki tankowe z zabezpieczeniem azotowym, stapialniki na opakowania 200 l, urządzenia walcowe.",
+      },
     },
   },
   // ── EVA termotopliwe (standalone) ──

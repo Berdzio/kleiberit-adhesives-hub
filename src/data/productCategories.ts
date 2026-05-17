@@ -1055,7 +1055,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       image: "/placeholder.svg",
       badge: "D4",
       details: {
-        body: "Kleiberit 501.6 to jednokomponentowy klej poliuretanowy serii 501 z najdłuższym czasem otwarcia – ok. 70 minut. Przeznaczony do formowania i gięcia drewna na mokro (ang. „bent wood"), klejenia dużych laminowanych powierzchni lub elementów wymagających długiego czasu montażu przed zamknięciem prasy. Klasa D4 wg DIN EN 204 i WATT 91. Mrozoodporny do –25°C.",
+        body: "Kleiberit 501.6 to jednokomponentowy klej poliuretanowy serii 501 z najdłuższym czasem otwarcia – ok. 70 minut. Przeznaczony do formowania i gięcia drewna na mokro (ang. bent wood), klejenia dużych laminowanych powierzchni lub elementów wymagających długiego czasu montażu przed zamknięciem prasy. Klasa D4 wg DIN EN 204 i WATT 91. Mrozoodporny do –25°C.",
         keyFeature: "Czas otwarty ok. 70 min — najdłuższy w serii 501; umożliwia ręczne klejenie dużych i złożonych elementów bez presji czasowej.",
         specs: [
           { label: "Baza", value: "1K PUR" },

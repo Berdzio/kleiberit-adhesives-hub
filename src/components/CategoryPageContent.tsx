@@ -1,7 +1,4 @@
-import { useMemo } from "react";
-import { useParams, Link } from "react-router-dom";
 import { getProductsByCategory, ProductCategorySubcategory } from "@/data/productCategories";
-import { useSeo } from "@/hooks/useSeo";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -19,8 +16,8 @@ const ProductCard = ({ product, index }: { product: ProductWithSector; index: nu
     viewport={{ once: true, margin: "-60px" }}
     transition={{ duration: 0.5, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
   >
-    <Link
-      to={`/product/${product.code}`}
+    <a
+      href={`/product/${product.code}`}
       className="group flex flex-col h-full bg-card rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-border"
     >
       <div className="flex flex-col flex-1 p-8">
@@ -42,56 +39,16 @@ const ProductCard = ({ product, index }: { product: ProductWithSector; index: nu
           <ArrowRight className="h-4 w-4" />
         </div>
       </div>
-    </Link>
+    </a>
   </motion.div>
 );
 
-const ProductCategoryPage = () => {
-  const { slug } = useParams<{ slug: string }>();
-  const { category, products } = getProductsByCategory(slug || "");
+interface Props {
+  slug: string;
+}
 
-  const jsonLd = useMemo(() => {
-    if (!category) return undefined;
-    return {
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      name: `${category.title} KLEIBERIT® — Klejber`,
-      description: category.description,
-      url: `https://klejeme.pl/products/${slug}`,
-      breadcrumb: {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Strona główna", item: "https://klejeme.pl/" },
-          { "@type": "ListItem", position: 2, name: "Produkty", item: "https://klejeme.pl/#products" },
-          { "@type": "ListItem", position: 3, name: category.title, item: `https://klejeme.pl/products/${slug}` },
-        ],
-      },
-      mainEntity: {
-        "@type": "ItemList",
-        itemListElement: products.map((p, i) => ({
-          "@type": "ListItem",
-          position: i + 1,
-          item: {
-            "@type": "Product",
-            name: p.name,
-            description: p.description,
-            brand: { "@type": "Brand", name: "KLEIBERIT" },
-          },
-        })),
-      },
-    };
-  }, [category, products, slug]);
-
-  useSeo({
-    title: category
-      ? `${category.title} KLEIBERIT® — kleje przemysłowe | Klejber`
-      : "Nie znaleziono kategorii | Klejber kleje przemysłowe",
-    description: category
-      ? `${category.description} Autoryzowany dystrybutor KLEIBERIT® w Polsce.`
-      : "Kategoria produktów nie została znaleziona.",
-    canonical: category ? `https://klejeme.pl/products/${slug}` : undefined,
-    jsonLd,
-  });
+const CategoryPageContent = ({ slug }: Props) => {
+  const { category, products } = getProductsByCategory(slug);
 
   if (!category) {
     return (
@@ -99,7 +56,7 @@ const ProductCategoryPage = () => {
         <Header />
         <div className="container mx-auto px-4 py-32 text-center">
           <h1 className="font-heading text-4xl font-bold text-foreground mb-4">Nie znaleziono kategorii</h1>
-          <Link to="/" className="text-secondary hover:underline">← Strona główna</Link>
+          <a href="/" className="text-secondary hover:underline">← Strona główna</a>
         </div>
         <Footer />
       </div>
@@ -114,13 +71,13 @@ const ProductCategoryPage = () => {
 
       <section className="pt-32 pb-16 bg-primary">
         <div className="container mx-auto px-4">
-          <Link
-            to="/"
+          <a
+            href="/"
             className="inline-flex items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors mb-8 font-heading text-sm tracking-wide"
           >
             <ArrowLeft className="h-4 w-4" />
             Strona główna
-          </Link>
+          </a>
           <ScrollReveal>
             <div className="w-16 h-16 rounded-lg gradient-accent flex items-center justify-center mb-4">
               <Icon className="h-8 w-8 text-accent-foreground" />
@@ -128,9 +85,7 @@ const ProductCategoryPage = () => {
             <h1 className="font-heading text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
               {category.title}
             </h1>
-            <p className="text-primary-foreground/80 text-lg max-w-2xl">
-              {category.description}
-            </p>
+            <p className="text-primary-foreground/80 text-lg max-w-2xl">{category.description}</p>
           </ScrollReveal>
         </div>
       </section>
@@ -187,12 +142,12 @@ const ProductCategoryPage = () => {
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
               Dopasujemy odpowiednie produkty KLEIBERIT® do Twoich potrzeb.
             </p>
-            <Link
-              to="/#contact"
+            <a
+              href="/#contact"
               className="inline-block bg-secondary text-secondary-foreground font-heading font-bold px-8 py-3 rounded-lg hover:bg-secondary/90 transition-colors"
             >
               Wyślij zapytanie
-            </Link>
+            </a>
           </ScrollReveal>
         </div>
       </section>
@@ -202,4 +157,4 @@ const ProductCategoryPage = () => {
   );
 };
 
-export default ProductCategoryPage;
+export default CategoryPageContent;

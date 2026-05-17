@@ -1,6 +1,5 @@
 import ScrollReveal from "./ScrollReveal";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { productCategories } from "@/data/productCategories";
 
 const ProductsSection = () => {
@@ -28,8 +27,8 @@ const ProductsSection = () => {
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
             >
-              <Link
-                to={`/products/${cat.slug}`}
+              <a
+                href={`/products/${cat.slug}`}
                 className="group flex flex-col h-full bg-card rounded-lg p-8 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-border"
               >
                 <div className="w-14 h-14 rounded-lg gradient-accent flex items-center justify-center mb-6">
@@ -37,7 +36,7 @@ const ProductsSection = () => {
                 </div>
                 <h3 className="font-heading text-xl font-bold text-foreground mb-3">{cat.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{cat.description}</p>
-              </Link>
+              </a>
             </motion.div>
           ))}
         </div>

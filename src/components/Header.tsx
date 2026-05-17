@@ -1,6 +1,6 @@
+import klejberLogo from "@/assets/Klejber_logo.png";
 import { Phone, Mail, Menu, X } from "lucide-react";
 import { useState, useRef } from "react";
-import { useLocation, useNavigate, Link } from "react-router-dom";
 import { productCategories } from "@/data/productCategories";
 import { sectors } from "@/data/sectors";
 
@@ -8,20 +8,14 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const location = useLocation();
-  const navigate = useNavigate();
-  const isHome = location.pathname === "/";
 
   const handleNavClick = (hash: string) => {
     setMenuOpen(false);
     setOpenDropdown(null);
-    if (isHome) {
+    if (window.location.pathname === "/") {
       document.querySelector(hash)?.scrollIntoView({ behavior: "smooth" });
     } else {
-      navigate("/");
-      setTimeout(() => {
-        document.querySelector(hash)?.scrollIntoView({ behavior: "smooth" });
-      }, 100);
+      window.location.href = `/${hash}`;
     }
   };
 
@@ -52,12 +46,14 @@ const Header = () => {
           </a>
         </div>
       </div>
+
       {/* Main nav */}
       <nav className="bg-card/95 backdrop-blur-md border-b border-border">
         <div className="container mx-auto flex items-center justify-between px-4 py-4">
-          <button onClick={() => (isHome ? undefined : navigate("/"))} className="flex items-center">
-            <img src="/src/assets/Klejber_logo.png" alt="Klejber" className="max-h-14 w-auto" />
-          </button>
+          <a href="/" className="flex items-center">
+            <img src={klejberLogo.src} alt="Klejber" className="max-h-14 w-auto" />
+          </a>
+
           <div className="hidden md:flex items-center gap-8">
             {/* Produkty dropdown */}
             <div
@@ -75,14 +71,14 @@ const Header = () => {
                 <div className="absolute top-full left-0 pt-2 w-64 z-50">
                   <div className="bg-card border border-border rounded-lg shadow-lg py-2">
                     {productCategories.map((cat) => (
-                      <Link
+                      <a
                         key={cat.slug}
-                        to={`/products/${cat.slug}`}
+                        href={`/products/${cat.slug}`}
                         onClick={() => setOpenDropdown(null)}
                         className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-accent/50 transition-colors"
                       >
                         {cat.title}
-                      </Link>
+                      </a>
                     ))}
                   </div>
                 </div>
@@ -105,15 +101,15 @@ const Header = () => {
                 <div className="absolute top-full left-0 pt-2 w-56 z-50">
                   <div className="bg-card border border-border rounded-lg shadow-lg py-2">
                     {sectors.map((sector) => (
-                      <Link
+                      <a
                         key={sector.slug}
-                        to={`/sector/${sector.slug}`}
+                        href={`/sector/${sector.slug}`}
                         onClick={() => setOpenDropdown(null)}
                         className="flex items-center gap-3 px-4 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-accent/50 transition-colors"
                       >
                         <img src={sector.icon} alt="" className="h-5 w-5 object-contain" />
                         {sector.name}
-                      </Link>
+                      </a>
                     ))}
                   </div>
                 </div>
@@ -129,6 +125,7 @@ const Header = () => {
                 {item.label}
               </button>
             ))}
+
             <button
               onClick={() => handleNavClick("#contact")}
               className="gradient-accent text-accent-foreground font-semibold px-5 py-2.5 rounded-md hover:opacity-90 transition-opacity"
@@ -136,13 +133,14 @@ const Header = () => {
               Zapytaj o ofertę
             </button>
           </div>
+
           <button className="md:hidden text-foreground" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
+
         {menuOpen && (
           <div className="md:hidden bg-card border-t border-border px-4 pb-4 space-y-1">
-            {/* Mobile: Produkty */}
             <button
               onClick={() => setOpenDropdown(openDropdown === "products" ? null : "products")}
               className="block w-full text-left text-muted-foreground font-medium hover:text-foreground cursor-pointer py-2"
@@ -152,18 +150,18 @@ const Header = () => {
             {openDropdown === "products" && (
               <div className="pl-4 space-y-1">
                 {productCategories.map((cat) => (
-                  <Link
+                  <a
                     key={cat.slug}
-                    to={`/products/${cat.slug}`}
+                    href={`/products/${cat.slug}`}
                     onClick={() => { setMenuOpen(false); setOpenDropdown(null); }}
                     className="block text-sm text-muted-foreground hover:text-foreground py-1.5"
                   >
                     {cat.title}
-                  </Link>
+                  </a>
                 ))}
               </div>
             )}
-            {/* Mobile: Branże */}
+
             <button
               onClick={() => setOpenDropdown(openDropdown === "industries" ? null : "industries")}
               className="block w-full text-left text-muted-foreground font-medium hover:text-foreground cursor-pointer py-2"
@@ -173,17 +171,18 @@ const Header = () => {
             {openDropdown === "industries" && (
               <div className="pl-4 space-y-1">
                 {sectors.map((sector) => (
-                  <Link
+                  <a
                     key={sector.slug}
-                    to={`/sector/${sector.slug}`}
+                    href={`/sector/${sector.slug}`}
                     onClick={() => { setMenuOpen(false); setOpenDropdown(null); }}
                     className="block text-sm text-muted-foreground hover:text-foreground py-1.5"
                   >
                     {sector.name}
-                  </Link>
+                  </a>
                 ))}
               </div>
             )}
+
             {navItems.map((item) => (
               <button
                 key={item.label}

@@ -48,18 +48,23 @@ export const sectors: Sector[] = [
       "Kleje przemysłowe wspierające wszystkie etapy produkcji mebli — montaż korpusów, okleinowanie krawędzi i laminowanie powierzchni HPL.",
     subcategories: [
       {
-        title: "Kleje białe",
-        description: "Kleje PVAc do montażu korpusów meblowych, fornirowania płyt i okleinowania HPL.",
+        title: "Klejenie strukturalne i fornirowanie",
+        description: "Kleje PVAc do montażu korpusów meblowych, klejenia połączeń i ręcznego fornirowania płyt.",
         matchTypes: ["PVAc"],
       },
       {
-        title: "Oklejanie obrzeży",
-        description: "Termotopliwe kleje EVA i PUR do okleinowania krawędzi płyt meblowych w okleiniarce.",
-        matchTypes: ["Termotopliwe EVA", "Termotopliwy PUR"],
+        title: "Okleinowanie obrzeży",
+        description: "Termotopliwe kleje EVA i reaktywne PUR do automatycznego okleinowania krawędzi płyt w okleiniarce.",
+        matchTypes: ["Termotopliwe EVA", "Termotopliwy PUR (obrzeża)"],
       },
       {
-        title: "Kleje kontaktowe",
-        description: "Kleje kontaktowe CR do laminowania blatów HPL, okleinowania postforming i tapicerowania pianek.",
+        title: "Kaszerowanie powierzchni",
+        description: "Reaktywne kleje PUR do flat lamination — naklejanie folii PVC, ABS, PET i PMMA na fronty i płyty meblowe.",
+        matchTypes: ["Termotopliwy PUR (flat lam)"],
+      },
+      {
+        title: "Laminowanie HPL i tapicerka",
+        description: "Kleje kontaktowe CR do laminowania blatów HPL, postforming oraz tapicerowania pianek meblowych.",
         matchTypes: ["Klej kontaktowy"],
       },
     ],
@@ -104,8 +109,8 @@ export const sectors: Sector[] = [
       {
         name: "KLEIBERIT® 707.9.50 ME",
         code: "707.9.50",
-        description: "Reaktywny klej PUR ME do automatycznego okleinowania obrzeży płyt meblowych – ABS, PVC, HPL, CPL i fornir. Odporność do +150 °C i –30 °C, stabilność w stapialniku min. 24 h. Op. 6×2 kg / 20 kg.",
-        type: "Termotopliwy PUR",
+        description: "Reaktywny klej PUR ME do automatycznego okleinowania obrzeży płyt meblowych – ABS, PVC, HPL, CPL i fornir. Odporność do +150 °C i –30 °C, stabilność w stapialniku min. 24 h. MDI <0,1%.",
+        type: "Termotopliwy PUR (obrzeża)",
         image: "/products/707950.jpg",
         badge: "Mikroemisyjny",
       },
@@ -113,7 +118,7 @@ export const sectors: Sector[] = [
         name: "KLEIBERIT® 706.2.50 ME",
         code: "706.2.50",
         description: "Mikroemisyjny klej PUR do kaszerowania frontów i płyt meblowych foliami PVC, ABS, PET i PMMA. Czas otwarty poniżej 4 min, lepkość 12 000 mPa·s (120 °C), temp. pracy 120–140 °C. Kość słoniowa.",
-        type: "Termotopliwy PUR",
+        type: "Termotopliwy PUR (flat lam)",
         image: "/placeholder.svg",
         badge: "Mikroemisyjny",
       },
@@ -140,6 +145,23 @@ export const sectors: Sector[] = [
     headline: "Kleje do produkcji drzwi",
     description:
       "Kleje do produkcji drzwi wewnętrznych i zewnętrznych — klejenie ram, ościeżnic i skrzydeł oraz okleinowanie obrzeży.",
+    subcategories: [
+      {
+        title: "Klejenie ram i ościeżnic",
+        description: "Kleje PVAc do montażu ram drzwiowych, klejenia ościeżnic i złączy drewnianych drzwi wewnętrznych i zewnętrznych.",
+        matchTypes: ["PVAc"],
+      },
+      {
+        title: "Klejenie konstrukcyjne PUR",
+        description: "Jednoskładnikowe kleje PUR D4 do klejenia konstrukcji drzwiowych narażonych na wilgoć i zmienne warunki atmosferyczne.",
+        matchTypes: ["PUR"],
+      },
+      {
+        title: "Okleinowanie obrzeży PUR",
+        description: "Reaktywny klej PUR ME do okleinowania krawędzi skrzydeł drzwiowych foliami PVC, ABS, HPL i fornirami.",
+        matchTypes: ["Termotopliwy PUR"],
+      },
+    ],
     products: [
       {
         name: "KLEIBERIT® 303.0",
@@ -180,7 +202,24 @@ export const sectors: Sector[] = [
     icon: "/icons/window.png",
     headline: "Kleje do produkcji okien",
     description:
-      "Kleje D4 odporne na warunki atmosferyczne do produkcji okien drewnianych i drewniano-aluminiowych — złącza klinowe, klejenie ram i sklejeń powierzchniowych.",
+      "Kleje D4 odporne na warunki atmosferyczne do produkcji okien drewnianych i drewniano-aluminiowych — złącza klinowe, klejenie ram i okleinowanie profili PVC.",
+    subcategories: [
+      {
+        title: "Klejenie ram i złączy klinowych",
+        description: "Kleje PVAc D4 do produkcji ram okiennych, łączenia kantówek i złączy klinowych — wymagana odporność na wilgoć.",
+        matchTypes: ["PVAc"],
+      },
+      {
+        title: "Klejenie konstrukcyjne PUR",
+        description: "Jednoskładnikowe kleje PUR D4 do klejenia ram i złączy okiennych z różnym czasem otwartym — od szybkich złączy klinowych po duże sklejenia powierzchniowe.",
+        matchTypes: ["PUR"],
+      },
+      {
+        title: "Okleinowanie profili PVC",
+        description: "Reaktywne kleje PUR z certyfikatem RAL GZ 716 do okleinowania profili okiennych PVC foliami w różnych kolorach.",
+        matchTypes: ["Termotopliwy PUR"],
+      },
+    ],
     products: [
       {
         name: "KLEIBERIT® 303.0",
@@ -244,6 +283,18 @@ export const sectors: Sector[] = [
     headline: "Kleje do produkcji półfabrykatów",
     description:
       "Kleje przemysłowe do produkcji sklejki, płyt fornirowanych, okleinowanych i laminatów stosowanych w branży meblarskiej i budowlanej.",
+    subcategories: [
+      {
+        title: "Sklejanie i fornirowanie płyt",
+        description: "Kleje PVAc do produkcji sklejki, fornirowania płyt MDF i wiórowych oraz klejenia laminatów warstwowych w prasie.",
+        matchTypes: ["PVAc"],
+      },
+      {
+        title: "Laminowanie HPL i CPL",
+        description: "Kleje kontaktowe CR do nakładania okładzin HPL i CPL na płyty nośne półfabrykatów meblowych i budowlanych.",
+        matchTypes: ["Klej kontaktowy"],
+      },
+    ],
     products: [
       {
         name: "KLEIBERIT® 303.0",
@@ -275,7 +326,19 @@ export const sectors: Sector[] = [
     icon: "/icons/montage.png",
     headline: "Kleje montażowe",
     description:
-      "Elastyczne kleje montażowe 1K PUR i STP do profesjonalnego montażu, uszczelniania i klejenia na drewnie, metalu, betonie i ceramice.",
+      "Elastyczne kleje montażowe i uszczelniacze 1K PUR oraz pianki poliuretanowe do profesjonalnego montażu stolarki, uszczelniania i klejenia na drewnie, metalu, betonie i ceramice.",
+    subcategories: [
+      {
+        title: "Kleje montażowe PUR",
+        description: "Elastyczne kleje i uszczelniacze 1K PUR do klejenia i uszczelniania połączeń na różnych podłożach — drewno, metal, beton, ceramika, PVC.",
+        matchTypes: ["Montaż"],
+      },
+      {
+        title: "Pianki montażowe PUR",
+        description: "Ekspansywne pianki poliuretanowe do uszczelniania i mocowania stolarki okiennej i drzwiowej w otworach.",
+        matchTypes: ["Pianka PUR"],
+      },
+    ],
     products: [
       {
         name: "KLEIBERIT® 566.0",
@@ -291,6 +354,13 @@ export const sectors: Sector[] = [
         type: "Montaż",
         image: "/products/568.jpg",
       },
+      {
+        name: "KLEIBERIT® 601.1",
+        code: "601.1",
+        description: "Kleiberit 601.1 – ekspansywna pianka montażowa PUR do uszczelniania i wypełniania szczelin przy montażu okien i drzwi. Wysoka izolacyjność termiczna i akustyczna, klasa ognioodporności B2.",
+        type: "Pianka PUR",
+        image: "/placeholder.svg",
+      },
     ],
   },
   {
@@ -299,7 +369,24 @@ export const sectors: Sector[] = [
     icon: "/icons/floors.png",
     headline: "Kleje do podłóg i schodów",
     description:
-      "Profesjonalne kleje do układania parkietu, produkcji i montażu schodów drewnianych oraz klejenia elementów podłogowych z izolacją akustyczną.",
+      "Profesjonalne kleje do układania parkietu, przemysłowej produkcji parkietu warstwowego oraz montażu schodów drewnianych.",
+    subcategories: [
+      {
+        title: "Układanie parkietu i podłóg",
+        description: "Elastyczne kleje STP do klejenia parkietu i podłóg drewnianych bezpośrednio do podłoża — z izolacją akustyczną.",
+        matchTypes: ["STP"],
+      },
+      {
+        title: "Produkcja parkietu warstwowego",
+        description: "Reaktywne kleje PUR do przemysłowej produkcji parkietu 2-warstwowego (engineered flooring) — klejenie warstwy ścieralnej do podkładu HDF/LVL.",
+        matchTypes: ["Termotopliwy PUR"],
+      },
+      {
+        title: "Klejenie schodów drewnianych",
+        description: "Kleje PVAc i PUR D4 do produkcji i montażu schodów drewnianych — stopnie, policzki i sklejenia z podłożem mineralnym.",
+        matchTypes: ["PVAc", "PUR"],
+      },
+    ],
     products: [
       {
         name: "KLEIBERIT® 583",
@@ -307,6 +394,13 @@ export const sectors: Sector[] = [
         description: "Elastyczny klej STP do klejenia parkietu i podłóg drewnianych bezpośrednio do podłoża. Bezrozpuszczalnikowy, z doskonałą izolacją akustyczną – tłumi odgłosy kroków i redukuje przenoszenie dźwięków.",
         type: "STP",
         image: "/products/501.jpg",
+      },
+      {
+        name: "KLEIBERIT® 705.7.00",
+        code: "705.7.00",
+        description: "Reaktywny klej PUR do produkcji parkietu 2-warstwowego (engineered flooring). Łączy warstwę ścieralną z drewna litego z podkładem HDF/LVL/sklejką. Certyfikat BRL 2339.",
+        type: "Termotopliwy PUR",
+        image: "/placeholder.svg",
       },
       {
         name: "KLEIBERIT® 303.0",
@@ -330,13 +424,6 @@ export const sectors: Sector[] = [
         type: "PUR",
         image: "/products/501.jpg",
         badge: "IMO",
-      },
-      {
-        name: "KLEIBERIT® 705.7.00",
-        code: "705.7.00",
-        description: "Reaktywny klej PUR do produkcji parkietu 2-warstwowego (engineered flooring). Łączy warstwę ścieralną z drewna litego z podkładem HDF/LVL/sklejką. Certyfikat BRL 2339.",
-        type: "Termotopliwy PUR",
-        image: "/placeholder.svg",
       },
     ],
   },

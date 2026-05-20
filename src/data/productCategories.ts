@@ -1649,7 +1649,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       image: "/placeholder.svg",
       details: {
         body: "Kleiberit 535.0 SupraFoam to dwukomponentowa pianka PUR w podwójnej kartuszy, utwardzająca się w ciągu 15–20 minut niezależnie od wilgoci powietrza. To fundamentalna przewaga nad piankami 1K: nie wymaga zwilżania podłoża, działa pewnie nawet w bardzo suchych warunkach i nie wykazuje naddatku po utwardzeniu. Posiada certyfikat GEV Emicode EC1 plus R (bardzo niska emisja LZO) oraz klasę VOC A+.",
-        keyFeature: "Kluczowe zalety 2K vs 1K: utwardza się bez wilgoci · brak naddatku (kein Nachtrieb) · pełne utwardzenie w 15–20 min (vs kilkanaście godzin dla 1K) · można zdejmować rozporki po ok. 20 min · nie wymaga zwilżania muru.",
+        keyFeature: "Kluczowe zalety 2K vs 1K: utwardza się bez wilgoci · brak naddatku · pełne utwardzenie w 15–20 min (vs kilkanaście godzin dla 1K) · można zdejmować rozporki po ok. 20 min · nie wymaga zwilżania muru.",
         specs: [
           { label: "Typ", value: "2K PUR, bez gazu prop." },
           { label: "Brak kleistości", value: "po ok. 1 min" },
@@ -1682,7 +1682,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
         specs: [
           { label: "Typ", value: "2K PUR, ekspansywny" },
           { label: "Obciążalność", value: "po ok. 20 min" },
-          { label: "Naddatek", value: "Brak (kein Nachtrieb)" },
+          { label: "Naddatek", value: "Brak" },
           { label: "Utwardzanie", value: "Niezależnie od wilgoci" },
           { label: "Klasa pożarowa", value: "B2 / DIN 4102" },
           { label: "Temp. pracy", value: "+10 °C do +30 °C" },

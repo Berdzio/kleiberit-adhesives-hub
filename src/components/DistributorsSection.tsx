@@ -4,7 +4,7 @@ import ScrollReveal from "./ScrollReveal";
 const distributors = [
   {
     name: "KLEJBER Kleje Przemysłowe S.C.",
-    fullName: "",
+    fullName: "Mikołaj Bernaszuk",
     address: "ul. Bukowiecka 92/155, 03-893 Warszawa",
     phones: ["+48 512 825 215"],
     email: "info@klejeme.pl",

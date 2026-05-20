@@ -6,6 +6,7 @@ import ProductsSection from "@/components/ProductsSection";
 import AboutSection from "@/components/AboutSection";
 import IndustriesSection from "@/components/IndustriesSection";
 import ContactSection from "@/components/ContactSection";
+import DistributorsSection from "@/components/DistributorsSection";
 import Footer from "@/components/Footer";
 
 const jsonLd = {
@@ -40,6 +41,7 @@ const jsonLd = {
     <AboutSection client:visible />
     <IndustriesSection client:visible />
     <ContactSection client:load />
+    <DistributorsSection client:visible />
     <Footer />
   </div>
 </BaseLayout>

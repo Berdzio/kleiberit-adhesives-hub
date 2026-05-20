@@ -306,9 +306,9 @@ export const sectors: Sector[] = [
         matchTypes: ["PVAc"],
       },
       {
-        title: "Prasa próżniowa",
-        description: "Klej PVAc z wydłużonym czasem otwartym do fornirowania i okleinowania płyt w prasie próżniowej — duże powierzchnie i złożone geometrie.",
-        matchTypes: ["Prasa próżniowa"],
+        title: "Prasa membranowa",
+        description: "Dyspersyjne kleje PUR 1K i 1K/2K do klejenia folii meblowych 3D (PVC, ABS, CPL) na MDF w prasach membranowych i wielokształtowych. Reaktywacja od 50°C.",
+        matchTypes: ["Prasa membranowa"],
       },
       {
         title: "Okleinowanie obrzeży",
@@ -330,12 +330,19 @@ export const sectors: Sector[] = [
         image: "/products/303.jpg",
       },
       {
-        name: "KLEIBERIT® 332.0",
-        code: "332.0",
-        description: "Klej PVAc D2 do fornirowania płyt w prasie próżniowej i ciągłej — wydłużony czas otwarty do 25 min umożliwia klejenie dużych powierzchni i złożonych geometrii. Ilość nanoszenia 80–150 g/m², certyfikat IMO. Op. 10–1000 kg.",
-        type: "Prasa próżniowa",
-        image: "/products/332.jpg",
-        badge: "IMO",
+        name: "KLEIBERIT® 431.7 Supratherm",
+        code: "431.7",
+        description: "Dyspersyjny klej PUR 1K do prasy membranowej i deep-draw — klejenie trójwymiarowe folii meblowych PVC i ABS na MDF. Reaktywacja do 72 h od 50°C. Certyfikat FIRA BS 6222. Natrysk 40–80 g/m². Op. 4,5–1000 kg.",
+        type: "Prasa membranowa",
+        image: "/placeholder.svg",
+        badge: "FIRA",
+      },
+      {
+        name: "KLEIBERIT® Supratherm 436",
+        code: "436.2",
+        description: "Jedno- lub dwuskładnikowy klej PUR do prasy membranowej i kaszerowania 3D folii meblowych na MDF. 7 wariantów (436.2–436.8). 2K z utwardzaczem 807.0: odporność do 120°C. Reaktywacja (1K) do 24 h. Bez oznakowania EU. Op. 10–120 kg.",
+        type: "Prasa membranowa",
+        image: "/placeholder.svg",
       },
       {
         name: "KLEIBERIT® 773.3",

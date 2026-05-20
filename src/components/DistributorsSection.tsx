@@ -3,18 +3,13 @@ import ScrollReveal from "./ScrollReveal";
 
 const distributors = [
   {
-    name: "KLEJBER",
-    fullName: "Wojciech Bernaszuk",
-    address: "ul. Gardzienicka 32, 21-050 Piaski k. Lublina",
-    phones: ["+48 81 582 28 64", "+48 501 049 598"],
-    email: "klejber@provider.pl",
-  },
-  {
-    name: "KLEJDOM",
-    fullName: "Sp. Jawna",
-    address: "ul. Starojaworska 29B, 59-400 Jawor",
-    phones: ["+48 76 870 22 19", "+48 602 496 208"],
-    email: "leszek.klejdom@interia.pl",
+    name: "KLEJBER Kleje Przemysłowe S.C.",
+    fullName: "",
+    address: "ul. Bukowiecka 92/155, 03-893 Warszawa",
+    phones: ["+48 512 825 215"],
+    email: "info@klejeme.pl",
+    regions: ["mazowieckie", "podlaskie", "kujawsko-pomorskie"],
+    highlight: true,
   },
   {
     name: "KLEJ-DREW",
@@ -22,20 +17,8 @@ const distributors = [
     address: "ul. Domańskiego 3, 77-430 Krajenka",
     phones: ["+48 67 263 86 32", "+48 604 504 962"],
     email: "info@klejdrew.pl",
-  },
-  {
-    name: "KLEJSTOL",
-    fullName: "Dariusz Chojnacki",
-    address: "ul. Niedźwiady 2, 62-800 Kalisz",
-    phones: ["+48 62 760 32 46", "+48 605 310 785"],
-    email: "info@klejstol.pl",
-  },
-  {
-    name: "KLEJMEB-STOLMAT",
-    fullName: "Radosław Kowal, Magdalena Kałużna",
-    address: "ul. Wspólna 9, 45-831 Opole",
-    phones: ["+48 77 474 28 97", "+48 601 966 101"],
-    email: "klejmeb@op.pl",
+    regions: ["zachodniopomorskie"],
+    highlight: false,
   },
   {
     name: "F.P.H. WEKTOR",
@@ -43,6 +26,35 @@ const distributors = [
     address: "ul. Budowlanych 2D, 84-200 Wejherowo",
     phones: ["+48 58 677 10 77", "+48 501 397 873"],
     email: "biuro@fphwektor.com.pl",
+    regions: ["pomorskie", "warmińsko-mazurskie"],
+    highlight: false,
+  },
+  {
+    name: "KLEJSTOL",
+    fullName: "Dariusz Chojnacki",
+    address: "ul. Niedźwiady 2, 62-800 Kalisz",
+    phones: ["+48 62 760 32 46", "+48 605 310 785"],
+    email: "info@klejstol.pl",
+    regions: ["wielkopolskie", "łódzkie"],
+    highlight: false,
+  },
+  {
+    name: "KLEJDOM",
+    fullName: "Leszek Kwiatkowski",
+    address: "ul. Starojaworska 29B, 59-400 Jawor",
+    phones: ["+48 76 870 22 19", "+48 602 496 208"],
+    email: "leszek.klejdom@interia.pl",
+    regions: ["dolnośląskie", "lubuskie"],
+    highlight: false,
+  },
+  {
+    name: "KLEJMEB-STOLMAT S.C.",
+    fullName: "Radosław Kowal, Magdalena Kałużna",
+    address: "ul. Wspólna 9, 45-831 Opole",
+    phones: ["+48 77 474 28 97", "+48 601 966 101"],
+    email: "klejmeb@op.pl",
+    regions: ["opolskie", "śląskie"],
+    highlight: false,
   },
   {
     name: "KLEJTECH",
@@ -50,6 +62,17 @@ const distributors = [
     address: "Świnna Poręba 124, 34-106 Mucharz k. Wadowic",
     phones: ["+48 33 876 12 28", "+48 600 417 523"],
     email: "info@klejtech.pl",
+    regions: ["małopolskie", "podkarpackie"],
+    highlight: false,
+  },
+  {
+    name: "KLEJBER",
+    fullName: "Wojciech Bernaszuk",
+    address: "ul. Gardzienicka 32, 21-050 Piaski k. Lublina",
+    phones: ["+48 81 582 28 64", "+48 501 049 598"],
+    email: "klejber@provider.pl",
+    regions: ["lubelskie", "świętokrzyskie"],
+    highlight: false,
   },
 ];
 
@@ -71,9 +94,13 @@ const DistributorsSection = () => (
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 max-w-7xl mx-auto">
         {distributors.map((d, i) => (
           <ScrollReveal key={d.name} delay={i * 0.05}>
-            <div className="bg-card border border-border rounded-xl p-5 h-full flex flex-col gap-4 hover:shadow-md transition-shadow">
+            <div className={`rounded-xl p-5 h-full flex flex-col gap-4 hover:shadow-md transition-shadow border ${
+              d.highlight
+                ? "bg-secondary/5 border-secondary/40 ring-1 ring-secondary/20"
+                : "bg-card border-border"
+            }`}>
               <div>
-                <p className="font-heading font-bold text-foreground text-lg leading-tight">
+                <p className={`font-heading font-bold text-lg leading-tight ${d.highlight ? "text-secondary" : "text-foreground"}`}>
                   {d.name}
                 </p>
                 {d.fullName && (
@@ -112,6 +139,19 @@ const DistributorsSection = () => (
                   </a>
                 </div>
               </div>
+
+              {d.regions.length > 0 && (
+                <div className="flex flex-wrap gap-1.5 pt-1 border-t border-border">
+                  {d.regions.map((r) => (
+                    <span
+                      key={r}
+                      className="text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground capitalize"
+                    >
+                      {r}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
           </ScrollReveal>
         ))}

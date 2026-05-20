@@ -59,8 +59,8 @@ export const sectors: Sector[] = [
       },
       {
         title: "Kaszerowanie powierzchni",
-        description: "Reaktywne kleje PUR do flat lamination — naklejanie folii PVC, ABS, PET i PMMA na fronty i płyty meblowe.",
-        matchTypes: ["Termotopliwy PUR (flat lam)"],
+        description: "Reaktywne kleje PUR do laminowania szerokich powierzchni — naklejanie folii PVC, ABS, PET i PMMA na fronty i płyty meblowe.",
+        matchTypes: ["Termotopliwy PUR (laminowanie płaskie)"],
       },
       {
         title: "Laminowanie HPL i tapicerka",
@@ -118,7 +118,7 @@ export const sectors: Sector[] = [
         name: "KLEIBERIT® 706.2.50 ME",
         code: "706.2.50",
         description: "Mikroemisyjny klej PUR do kaszerowania frontów i płyt meblowych foliami PVC, ABS, PET i PMMA. Czas otwarty poniżej 4 min, lepkość 12 000 mPa·s (120 °C), temp. pracy 120–140 °C. Kość słoniowa.",
-        type: "Termotopliwy PUR (flat lam)",
+        type: "Termotopliwy PUR (laminowanie płaskie)",
         image: "/placeholder.svg",
         badge: "Mikroemisyjny",
       },

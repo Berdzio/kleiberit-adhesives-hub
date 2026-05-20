@@ -298,12 +298,22 @@ export const sectors: Sector[] = [
     icon: "/icons/half-products.png",
     headline: "Kleje do produkcji półfabrykatów",
     description:
-      "Kleje przemysłowe do produkcji sklejki, płyt fornirowanych, okleinowanych i laminatów stosowanych w branży meblarskiej i budowlanej.",
+      "Kleje przemysłowe do produkcji sklejki, płyt fornirowanych i okleinowanych — fornirowanie w prasie, okleinowanie obrzeży EVA i PUR oraz laminowanie HPL i CPL.",
     subcategories: [
       {
         title: "Sklejanie i fornirowanie płyt",
-        description: "Kleje PVAc do produkcji sklejki, fornirowania płyt MDF i wiórowych oraz klejenia laminatów warstwowych w prasie.",
+        description: "Kleje PVAc do produkcji sklejki i fornirowania płyt MDF i wiórowych w prasach stałociśnieniowych.",
         matchTypes: ["PVAc"],
+      },
+      {
+        title: "Prasa membranowa",
+        description: "Dyspersyjne kleje PUR 1K i 1K/2K do klejenia folii meblowych 3D (PVC, ABS, CPL) na MDF w prasach membranowych i wielokształtowych. Reaktywacja od 50°C.",
+        matchTypes: ["Prasa membranowa"],
+      },
+      {
+        title: "Okleinowanie obrzeży",
+        description: "Termotopliwe kleje EVA i reaktywne PUR do automatycznego i ręcznego okleinowania krawędzi płyt meblowych obrzeżami PVC, ABS, CPL i fornirami.",
+        matchTypes: ["Termotopliwe EVA", "Termotopliwy PUR (obrzeża)"],
       },
       {
         title: "Laminowanie HPL i CPL",
@@ -320,12 +330,41 @@ export const sectors: Sector[] = [
         image: "/products/303.jpg",
       },
       {
-        name: "KLEIBERIT® 332.0",
-        code: "332.0",
-        description: "Klej PVAc D2 do fornirowania płyt wiórowych i stolarskich oraz okleinowania HPL i folii papierowych w produkcji półfabrykatów. Czas otwarty do 25 min, 80–150 g/m². Op. 10–1000 kg.",
-        type: "PVAc",
-        image: "/products/332.jpg",
-        badge: "IMO",
+        name: "KLEIBERIT® 431.7 Supratherm",
+        code: "431.7",
+        description: "Dyspersyjny klej PUR 1K do prasy membranowej i deep-draw — klejenie trójwymiarowe folii meblowych PVC i ABS na MDF. Reaktywacja do 72 h od 50°C. Certyfikat FIRA BS 6222. Natrysk 40–80 g/m². Op. 4,5–1000 kg.",
+        type: "Prasa membranowa",
+        image: "/placeholder.svg",
+        badge: "FIRA",
+      },
+      {
+        name: "KLEIBERIT® Supratherm 436",
+        code: "436.2",
+        description: "Jedno- lub dwuskładnikowy klej PUR do prasy membranowej i kaszerowania 3D folii meblowych na MDF. 7 wariantów (436.2–436.8). 2K z utwardzaczem 807.0: odporność do 120°C. Reaktywacja (1K) do 24 h. Bez oznakowania EU. Op. 10–120 kg.",
+        type: "Prasa membranowa",
+        image: "/placeholder.svg",
+      },
+      {
+        name: "KLEIBERIT® 773.3",
+        code: "773.3",
+        description: "Klej termotopliwy EVA do automatycznego okleinowania krawędzi płyt w centrach CNC i okleinarkach BAZ — CPL, PVC, ABS, poliester i fornir. Temp. pracy 170–200 °C, posuw 10–30 m/min. Op. 3–20 kg.",
+        type: "Termotopliwe EVA",
+        image: "/products/7733.jpg",
+      },
+      {
+        name: "KLEIBERIT® 788.3 ME",
+        code: "788.3",
+        description: "Niskotopliwy klej EVA do ręcznych okleiniarek obrzeży z technologią Micro-Emission. Temperatura pracy od 130 °C, dostępny w 3 kolorach: biały, kość słoniowa, transparentny. Op. 1–15 kg.",
+        type: "Termotopliwe EVA",
+        image: "/products/7883.jpg",
+      },
+      {
+        name: "KLEIBERIT® 707.9.50 ME",
+        code: "707.9.50",
+        description: "Reaktywny klej PUR ME do automatycznego okleinowania obrzeży — ABS, PVC, HPL, CPL i fornir. Spoina odporna do +150 °C i na wilgoć; trwalsza niż EVA. Stabilność w stapialniku min. 24 h. MDI <0,1%.",
+        type: "Termotopliwy PUR (obrzeża)",
+        image: "/products/707950.jpg",
+        badge: "Mikroemisyjny",
       },
       {
         name: "KLEIBERIT® 114.5",

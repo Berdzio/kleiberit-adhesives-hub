@@ -539,12 +539,12 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 707.9.50 ME",
       code: "707.9.50",
       description:
-        "Kleiberit 707.9.50 ME – reaktywny klej PUR z technologią ME (MDI <0,1%) do okleiniarek PUR, wariant kość słoniowa. Duroplastyczna spoina odporna na wilgoć i temperaturę. Bez obowiązkowego oznakowania EU.",
+        "Kleiberit 707.9.50 ME – reaktywny klej PUR z technologią ME (MDI <0,1%) do okleiniarek PUR, wariant kość słoniowa. Duroplastyczna spoina odporna na wilgoć i temperaturę. Bez obowiązkowego oznakowania EU. Dostępny również w kolorze białym (707.9.51) i transparentnym (707.9.58).",
       type: "Termotopliwy PUR",
       image: "/placeholder.svg",
       badge: "Mikroemisyjny",
       details: {
-        body: "Kleiberit 707.9.50 ME to reaktywny klej termotopliwy PUR z technologią Micro-Emission (MDI <0,1%) do okleinowania obrzeży na okleinarkach PUR. W odróżnieniu od klejów EVA, reaktywny PUR sieciuje chemicznie pod wpływem wilgoci, tworząc trwałą, duroplastyczną spoinę odporną na wysoką temperaturę, wilgoć i środki chemiczne. Wariant kość słoniowa (kód 50) przeznaczony do naturalnych dekorów drewna, fornirów i ciepłych kolorów. Dzięki technologii ME nie wymaga obowiązkowego oznakowania zagrożenia wg UE.",
+        body: "Kleiberit 707.9.50 ME to reaktywny klej termotopliwy PUR z technologią Micro-Emission (MDI <0,1%) do okleinowania obrzeży na okleinarkach PUR. W odróżnieniu od klejów EVA, reaktywny PUR sieciuje chemicznie pod wpływem wilgoci, tworząc trwałą, duroplastyczną spoinę odporną na wysoką temperaturę, wilgoć i środki chemiczne. Wariant kość słoniowa (kod 50) przeznaczony do naturalnych dekorów drewna, fornirów i ciepłych kolorów. Dzięki technologii ME nie wymaga obowiązkowego oznakowania zagrożenia wg UE. Produkt dostępny jest również w wariancie białym (707.9.51 — do białych i jasnych frontów) oraz transparentnym (707.9.58 — uniwersalny do wszystkich kolorów obrzeży).",
         keyFeature: "Reaktywny PUR vs EVA: spoina duroplastyczna nie odkształca się przy podgrzaniu, wyższa odporność na wilgoć i środki myjące. MDI <0,1% — bez obowiązkowego oznakowania EU.",
         specs: [
           { label: "Baza", value: "Reaktywny PUR (ME)" },
@@ -556,58 +556,6 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
         ],
         applications: "Okleinowanie obrzeży PVC, ABS, HPL, CPL i fornirowych na okleinarkach PUR · naturalne dekory drewna, forniry, ciepłe kolory.",
         note: "Seria 707.9 ME dostępna w 3 kolorach: 707.9.50 kość słoniowa · 707.9.51 biały · 707.9.58 transparentny. Dobór koloru spoiny do okleinowanego materiału eliminuje widoczność fugi.",
-      },
-    },
-  },
-  {
-    categorySlug: "pur-hot-melts",
-    product: {
-      name: "KLEIBERIT® 707.9.51 ME",
-      code: "707.9.51",
-      description:
-        "Kleiberit 707.9.51 ME – reaktywny klej PUR z technologią ME (MDI <0,1%) do okleiniarek PUR, wariant biały. Duroplastyczna spoina odporna na wilgoć i temperaturę. Bez obowiązkowego oznakowania EU.",
-      type: "Termotopliwy PUR",
-      image: "/placeholder.svg",
-      badge: "Mikroemisyjny",
-      details: {
-        body: "Kleiberit 707.9.51 ME to reaktywny klej termotopliwy PUR z technologią Micro-Emission (MDI <0,1%) do okleinowania obrzeży na okleinarkach PUR. Wariant biały (kód 51) przeznaczony do białych i jasnych frontów mebli oraz obrzeży PVC i ABS w białym kolorze. Duroplastyczna spoina PUR nie odkształca się przy podgrzaniu, w odróżnieniu od termoplastycznych klejów EVA.",
-        keyFeature: "Reaktywny PUR vs EVA: spoina duroplastyczna nie odkształca się przy podgrzaniu, wyższa odporność na wilgoć i środki myjące. MDI <0,1% — bez obowiązkowego oznakowania EU.",
-        specs: [
-          { label: "Baza", value: "Reaktywny PUR (ME)" },
-          { label: "MDI", value: "<0,1% (Micro-Emission)" },
-          { label: "Kolor", value: "Biały (.51)" },
-          { label: "Temperatura pracy", value: "120–160°C" },
-          { label: "Oznakowanie EU", value: "Niewymagane (ME)" },
-          { label: "Czyściwo", value: "Kleiberit 761.7" },
-        ],
-        applications: "Okleinowanie obrzeży PVC, ABS, HPL, CPL i fornirowych na okleinarkach PUR · białe i jasne fronty meblowe, obrzeża PVC/ABS biały.",
-        note: "Seria 707.9 ME dostępna w 3 kolorach: 707.9.50 kość słoniowa · 707.9.51 biały · 707.9.58 transparentny.",
-      },
-    },
-  },
-  {
-    categorySlug: "pur-hot-melts",
-    product: {
-      name: "KLEIBERIT® 707.9.58 ME",
-      code: "707.9.58",
-      description:
-        "Kleiberit 707.9.58 ME – reaktywny klej PUR z technologią ME (MDI <0,1%) do okleiniarek PUR, wariant transparentny. Universalny – niewidoczna spoina do każdego koloru obrzeża. Bez obowiązkowego oznakowania EU.",
-      type: "Termotopliwy PUR",
-      image: "/placeholder.svg",
-      badge: "Mikroemisyjny",
-      details: {
-        body: "Kleiberit 707.9.58 ME to reaktywny klej termotopliwy PUR z technologią Micro-Emission (MDI <0,1%) do okleinowania obrzeży na okleinarkach PUR. Wariant transparentny (kód 58) – uniwersalny wybór gdy stosowane są obrzeża w różnych kolorach na jednej maszynie lub gdy wymagana jest absolutnie niewidoczna fuga niezależnie od koloru materiału.",
-        keyFeature: "Transparentna spoina — universalny wariant pasujący do każdego koloru obrzeża; eliminuje konieczność wymiany kleju przy zmianie koloru produkcji.",
-        specs: [
-          { label: "Baza", value: "Reaktywny PUR (ME)" },
-          { label: "MDI", value: "<0,1% (Micro-Emission)" },
-          { label: "Kolor", value: "Transparentny (.58)" },
-          { label: "Temperatura pracy", value: "120–160°C" },
-          { label: "Oznakowanie EU", value: "Niewymagane (ME)" },
-          { label: "Czyściwo", value: "Kleiberit 761.7" },
-        ],
-        applications: "Okleinowanie obrzeży PVC, ABS, HPL, CPL i fornirowych na okleinarkach PUR · wszystkie kolory dekorów gdy fuga ma być niewidoczna.",
-        note: "Seria 707.9 ME dostępna w 3 kolorach: 707.9.50 kość słoniowa · 707.9.51 biały · 707.9.58 transparentny.",
       },
     },
   },
@@ -1107,7 +1055,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       image: "/placeholder.svg",
       badge: "D4",
       details: {
-        body: "Kleiberit 501.6 to jednokomponentowy klej poliuretanowy serii 501 z najdłuższym czasem otwarcia – ok. 70 minut. Przeznaczony do formowania i gięcia drewna na mokro (ang. „bent wood"), klejenia dużych laminowanych powierzchni lub elementów wymagających długiego czasu montażu przed zamknięciem prasy. Klasa D4 wg DIN EN 204 i WATT 91. Mrozoodporny do –25°C.",
+        body: "Kleiberit 501.6 to jednokomponentowy klej poliuretanowy serii 501 z najdłuższym czasem otwarcia – ok. 70 minut. Przeznaczony do formowania i gięcia drewna na mokro (ang. bent wood), klejenia dużych laminowanych powierzchni lub elementów wymagających długiego czasu montażu przed zamknięciem prasy. Klasa D4 wg DIN EN 204 i WATT 91. Mrozoodporny do –25°C.",
         keyFeature: "Czas otwarty ok. 70 min — najdłuższy w serii 501; umożliwia ręczne klejenie dużych i złożonych elementów bez presji czasowej.",
         specs: [
           { label: "Baza", value: "1K PUR" },

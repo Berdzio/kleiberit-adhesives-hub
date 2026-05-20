@@ -1,7 +1,4 @@
-import React, { useMemo } from "react";
-import { useParams, Link } from "react-router-dom";
-import { sectors, Product, ProductSubcategory } from "@/data/sectors";
-import { useSeo } from "@/hooks/useSeo";
+import { sectors, Product } from "@/data/sectors";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -15,8 +12,8 @@ const ProductCard = ({ product, index }: { product: Product; index: number }) =>
     viewport={{ once: true, margin: "-60px" }}
     transition={{ duration: 0.5, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
   >
-    <Link
-      to={`/product/${product.code}`}
+    <a
+      href={`/product/${product.code}`}
       className="group flex flex-col h-full bg-card rounded-lg p-8 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border border-border"
     >
       <div className="flex items-center justify-between mb-4">
@@ -30,71 +27,24 @@ const ProductCard = ({ product, index }: { product: Product; index: number }) =>
         Szczegóły produktu
         <ArrowRight className="h-4 w-4" />
       </div>
-    </Link>
+    </a>
   </motion.div>
 );
 
-const SectorPage = () => {
-  const { slug } = useParams<{ slug: string }>();
+interface Props {
+  slug: string;
+}
 
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [slug]);
-
+const SectorPageContent = ({ slug }: Props) => {
   const sector = sectors.find((s) => s.slug === slug);
-
-  const jsonLd = useMemo(() => {
-    if (!sector) return undefined;
-    return {
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      name: `Kleje przemysłowe do branży: ${sector.name} — Klejber`,
-      description: sector.description,
-      url: `https://klejeme.pl/sector/${slug}`,
-      breadcrumb: {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Strona główna", item: "https://klejeme.pl/" },
-          { "@type": "ListItem", position: 2, name: "Branże", item: "https://klejeme.pl/#industries" },
-          { "@type": "ListItem", position: 3, name: sector.name, item: `https://klejeme.pl/sector/${slug}` },
-        ],
-      },
-      mainEntity: {
-        "@type": "ItemList",
-        itemListElement: sector.products.map((p, i) => ({
-          "@type": "ListItem",
-          position: i + 1,
-          item: {
-            "@type": "Product",
-            name: p.name,
-            description: p.description,
-            brand: { "@type": "Brand", name: "KLEIBERIT" },
-          },
-        })),
-      },
-    };
-  }, [sector, slug]);
-
-  useSeo({
-    title: sector
-      ? `Kleje do ${sector.name.toLowerCase()} KLEIBERIT® — kleje przemysłowe | Klejber`
-      : "Nie znaleziono branży | Klejber kleje przemysłowe",
-    description: sector
-      ? `${sector.description} Autoryzowany dystrybutor klejów przemysłowych KLEIBERIT® w Polsce.`
-      : "Branża nie została znaleziona.",
-    canonical: sector ? `https://klejeme.pl/sector/${slug}` : undefined,
-    jsonLd,
-  });
 
   if (!sector) {
     return (
       <div className="min-h-screen bg-background">
-        <Header />
+        <Header client:load />
         <div className="container mx-auto px-4 py-32 text-center">
           <h1 className="font-heading text-4xl font-bold text-foreground mb-4">Nie znaleziono</h1>
-          <Link to="/" className="text-secondary hover:underline">
-            ← Strona główna
-          </Link>
+          <a href="/" className="text-secondary hover:underline">← Strona główna</a>
         </div>
         <Footer />
       </div>
@@ -107,21 +57,19 @@ const SectorPage = () => {
 
       <section className="pt-32 pb-16 bg-primary">
         <div className="container mx-auto px-4">
-          <Link
-            to="/"
+          <a
+            href="/"
             className="inline-flex items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors mb-8 font-heading text-sm tracking-wide"
           >
             <ArrowLeft className="h-4 w-4" />
             Strona główna
-          </Link>
+          </a>
           <ScrollReveal>
             <img src={sector.icon} alt={sector.name} className="w-16 h-16 mb-4 object-contain" />
             <h1 className="font-heading text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
               {sector.headline}
             </h1>
-            <p className="text-primary-foreground/80 text-lg max-w-2xl">
-              {sector.description}
-            </p>
+            <p className="text-primary-foreground/80 text-lg max-w-2xl">{sector.description}</p>
           </ScrollReveal>
         </div>
       </section>
@@ -139,9 +87,7 @@ const SectorPage = () => {
 
           {sector.subcategories && sector.subcategories.length > 0 ? (
             sector.subcategories.map((sub, si) => {
-              const subProducts = sector.products.filter((p) =>
-                sub.matchTypes.includes(p.type)
-              );
+              const subProducts = sector.products.filter((p) => sub.matchTypes.includes(p.type));
               if (subProducts.length === 0) return null;
               return (
                 <div key={si} className="mb-16 last:mb-0">
@@ -178,12 +124,12 @@ const SectorPage = () => {
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
               Dopasujemy odpowiedni produkt do Twoich wymagań.
             </p>
-            <Link
-              to="/#contact"
+            <a
+              href="/#contact"
               className="inline-block bg-secondary text-secondary-foreground font-heading font-bold px-8 py-3 rounded-lg hover:bg-secondary/90 transition-colors"
             >
               Wyślij zapytanie
-            </Link>
+            </a>
           </ScrollReveal>
         </div>
       </section>
@@ -193,4 +139,4 @@ const SectorPage = () => {
   );
 };
 
-export default SectorPage;
+export default SectorPageContent;

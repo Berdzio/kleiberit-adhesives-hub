@@ -1,0 +1,44 @@
+---
+import { productCategories, getProductsByCategory, standaloneProducts, getProductByCode } from "@/data/productCategories";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import ProductDetailContent from "@/components/ProductDetailContent";
+
+export function getStaticPaths() {
+  const codes = new Set<string>();
+  for (const cat of productCategories) {
+    const { products } = getProductsByCategory(cat.slug);
+    products.forEach((p) => codes.add(p.code));
+  }
+  for (const entry of standaloneProducts) {
+    codes.add(entry.product.code);
+  }
+  return Array.from(codes).map((code) => ({ params: { code } }));
+}
+
+const { code } = Astro.params;
+const { product, standaloneEntry, sectorOccurrences } = getProductByCode(code!);
+
+const mainDescription =
+  standaloneEntry?.product.description ?? sectorOccurrences[0]?.product.description ?? "";
+
+const title = product
+  ? `${product.name} — klej przemysłowy KLEIBERIT® | Klejber`
+  : "Nie znaleziono produktu | Klejber kleje przemysłowe";
+const description = mainDescription || "Produkt KLEIBERIT® – autoryzowany dystrybutor w Polsce.";
+const canonical = `https://klejeme.pl/product/${code}`;
+
+const jsonLd = product
+  ? {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      name: product.name,
+      description: mainDescription,
+      brand: { "@type": "Brand", name: "KLEIBERIT" },
+      url: canonical,
+    }
+  : undefined;
+---
+
+<BaseLayout {title} {description} {canonical} jsonLd={jsonLd}>
+  <ProductDetailContent code={code!} client:load />
+</BaseLayout>

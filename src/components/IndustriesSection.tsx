@@ -1,6 +1,5 @@
 import ScrollReveal from "./ScrollReveal";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { sectors } from "@/data/sectors";
 
 const IndustriesSection = () => {
@@ -24,13 +23,13 @@ const IndustriesSection = () => {
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.45, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
             >
-              <Link
-                to={`/sector/${sector.slug}`}
+              <a
+                href={`/sector/${sector.slug}`}
                 className="block bg-primary-foreground/10 backdrop-blur-sm rounded-lg p-6 hover:bg-primary-foreground/20 transition-colors border border-primary-foreground/10"
               >
                 <img src={sector.icon} alt={sector.name} className="w-10 h-10 mb-3 mx-auto object-contain" />
                 <p className="text-primary-foreground font-heading font-semibold text-sm">{sector.name}</p>
-              </Link>
+              </a>
             </motion.div>
           ))}
         </div>

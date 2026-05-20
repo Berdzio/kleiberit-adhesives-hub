@@ -621,6 +621,62 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       },
     },
   },
+  {
+    categorySlug: "pur-hot-melts",
+    product: {
+      name: "KLEIBERIT® 704.3.50",
+      code: "704.3.50",
+      description:
+        "Kleiberit 704.3.50 – reaktywny klej PUR do okleinowania profili okiennych PVC foliami PVC w kolorze kość słoniowej. Certyfikat RAL GZ 716, odporność –40°C do +120°C, posuw 5–20 m/min. Dedykowany do systemów profilowych okna białe/kość słoniowa.",
+      type: "Termotopliwy PUR",
+      image: "/placeholder.svg",
+      badge: "RAL GZ 716",
+      details: {
+        body: "Kleiberit 704.3.50 to reaktywny klej termotopliwy PUR przeznaczony do okleinowania profili okiennych PVC foliami PVC w kolorze kość słoniowej (kod .50). Produkt z serii 704 przeznaczonej do zewnętrznych zastosowań okiennych — spoina wytrzymuje warunki atmosferyczne, różnice temperatur i promieniowanie UV. Klej posiada certyfikat RAL GZ 716 potwierdzający przydatność do systemów okiennych PVC. Stosowany do profili okiennych białych i kość słoniowej na opłaszczowarkach profilowych.",
+        keyFeature: "Certyfikat RAL GZ 716 — wymagany przez większość systemodawców okiennych przy homologacji technologii klejenia folii na profilach PVC.",
+        specs: [
+          { label: "Baza", value: "Reaktywny PUR" },
+          { label: "Kolor kleju", value: "Kość słoniowa (.50)" },
+          { label: "Temperatura pracy", value: "130–160°C" },
+          { label: "Odporność termiczna", value: "do +120°C" },
+          { label: "Mrozoodporność", value: "do –40°C" },
+          { label: "Prędkość posuwu", value: "5–20 m/min" },
+          { label: "Certyfikat", value: "RAL GZ 716" },
+          { label: "Czyściwo", value: "Kleiberit 761.7" },
+        ],
+        applications: "Okleinowanie profili okiennych PVC foliami PVC · kolory białe i kość słoniowa · opłaszczowarki profilowe zewnętrzne.",
+        note: "Seria 704.3: 704.3.50 kość słoniowa · 704.3.57 szary/antracyt. Dobór koloru kleju do folii eliminuje widoczność spoiny na profilu okiennym.",
+      },
+    },
+  },
+  {
+    categorySlug: "pur-hot-melts",
+    product: {
+      name: "KLEIBERIT® 704.3.57",
+      code: "704.3.57",
+      description:
+        "Kleiberit 704.3.57 – reaktywny klej PUR do okleinowania profili okiennych PVC foliami PVC w kolorze szary/antracyt. Certyfikat RAL GZ 716, odporność –40°C do +120°C, posuw 5–20 m/min. Dedykowany do ciemnych systemów profilowych okiennych.",
+      type: "Termotopliwy PUR",
+      image: "/placeholder.svg",
+      badge: "RAL GZ 716",
+      details: {
+        body: "Kleiberit 704.3.57 to reaktywny klej termotopliwy PUR przeznaczony do okleinowania profili okiennych PVC foliami PVC w kolorze szary/antracyt (kod .57). Produkt z serii 704 przeznaczonej do zewnętrznych zastosowań okiennych. Ciemny odcień kleju sprawia, że spoina jest niewidoczna przy szarych, antracytowych i ciemnobrązowych foliach okiennych. Klej posiada certyfikat RAL GZ 716 potwierdzający przydatność do systemów okiennych PVC.",
+        keyFeature: "Ciemny pigment (.57) eliminuje widoczność spoiny przy szarych i antracytowych foliach — kluczowe przy nowoczesnych oknach w ciemnych kolorach.",
+        specs: [
+          { label: "Baza", value: "Reaktywny PUR" },
+          { label: "Kolor kleju", value: "Szary/antracyt (.57)" },
+          { label: "Temperatura pracy", value: "130–160°C" },
+          { label: "Odporność termiczna", value: "do +120°C" },
+          { label: "Mrozoodporność", value: "do –40°C" },
+          { label: "Prędkość posuwu", value: "5–20 m/min" },
+          { label: "Certyfikat", value: "RAL GZ 716" },
+          { label: "Czyściwo", value: "Kleiberit 761.7" },
+        ],
+        applications: "Okleinowanie profili okiennych PVC foliami PVC · kolory szare, antracyt, ciemnobrązowe · opłaszczowarki profilowe zewnętrzne.",
+        note: "Seria 704.3: 704.3.50 kość słoniowa · 704.3.57 szary/antracyt. Dobór koloru kleju do folii eliminuje widoczność spoiny na profilu okiennym.",
+      },
+    },
+  },
   // profile wrapping wewnętrzny
   {
     categorySlug: "pur-hot-melts",
@@ -685,6 +741,33 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
           { label: "Czyściwo", value: "Kleiberit 761.7" },
         ],
         applications: "Okleinowanie profili i listw z MDF/wiórowej folią PVC, CPL i papierami dekoracyjnymi — parapety wewnętrzne, ościeżnice, listwy przypodłogowe, fronty szaf.",
+      },
+    },
+  },
+  // produkcja parkietu 2-warstwowego
+  {
+    categorySlug: "pur-hot-melts",
+    product: {
+      name: "KLEIBERIT® 705.7.00",
+      code: "705.7.00",
+      description:
+        "Kleiberit 705.7.00 – reaktywny klej PUR do produkcji parkietu 2-warstwowego (engineered flooring). Łączy warstwę ścieralną z drewna litego z podkładem HDF/LVL/sklejką. Certyfikat BRL 2339. Odporność na wilgoć, temp. pracy 120–150°C.",
+      type: "Termotopliwy PUR",
+      image: "/placeholder.svg",
+      details: {
+        body: "Kleiberit 705.7.00 to reaktywny klej termotopliwy PUR przeznaczony do przemysłowej produkcji parkietu 2-warstwowego (engineered wood flooring). Klej łączy warstwę ścieralną z drewna litego (dąb, jesion, orzech) z podkładem z HDF, LVL lub sklejki na liniach produkcyjnych z prasą membranową lub walcową. Reaktywna spoina PUR zapewnia trwałe połączenie odporne na zmienne warunki wilgotnościowe i temperatury typowe dla zastosowań podłogowych. Posiada certyfikat BRL 2339 wymagany na rynku niderlandzkim. Klej charakteryzuje się wysoką wytrzymałością początkową umożliwiającą szybkie przejście na kolejny etap produkcji.",
+        keyFeature: "Certyfikat BRL 2339 — wymagany przy sprzedaży parkietu na rynki Beneluksu. Reaktywna spoina PUR zapewnia stabilność wymiarową gotowego elementu w zmiennych warunkach wilgotnościowych.",
+        specs: [
+          { label: "Baza", value: "Reaktywny PUR" },
+          { label: "Zastosowanie", value: "Parkiet 2-warstwowy (engineered)" },
+          { label: "Temperatura pracy", value: "120–150°C" },
+          { label: "Podkład", value: "HDF / LVL / sklejka" },
+          { label: "Warstwa ścieralna", value: "Drewno lite" },
+          { label: "Certyfikat", value: "BRL 2339" },
+          { label: "Czyściwo", value: "Kleiberit 761.7" },
+        ],
+        applications: "Produkcja parkietu 2-warstwowego (engineered flooring) · klejenie warstwy ścieralnej do podkładu HDF/LVL/sklejka · linie produkcyjne z prasą membranową lub walcową.",
+        note: "Do przemysłowej produkcji parkietu. Nie stosować do układania parkietu na budowie — w tym zastosowaniu używać elastycznych klejów STP.",
       },
     },
   },

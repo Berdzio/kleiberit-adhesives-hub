@@ -965,7 +965,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 774.4",
       code: "774.4",
       description:
-        "Kleiberit 774.4 – klej termotopliwy EVA do ręcznych i półautomatycznych okleiniarek obrzeży. Dobra przyczepność do obrzeży PVC, ABS i melaninowych. Temperatura pracy 150–180°C. Gotowy do użycia.",
+        "Kleiberit 774.4 – klej termotopliwy EVA do ręcznych i półautomatycznych okleiniarek obrzeży. Dobra przyczepność do obrzeży PVC, ABS i melaninowych. Temperatura pracy 150–180°C.",
       type: "Termotopliwe EVA",
       image: "/placeholder.svg",
       details: {
@@ -1012,20 +1012,30 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 788.7",
       code: "788.7",
       description:
-        "Kleiberit 788.7 – klej termotopliwy EVA do ręcznych i wolnobieżnych okleiniarek. Dobra przyczepność do szerokiego zakresu obrzeży: PVC, ABS, CPL, fornir, melamin. Temperatura pracy 150–185°C.",
+        "Kleiberit 788.7 – klej termotopliwy EVA do ręcznych i wolnobieżnych okleiniarek. Obrzeża ABS, PVC, poliester, papier, żywica melaminowa i fornir. Temperatura pracy 160–200°C, posuw 5–20 m/min. Granulat biały lub kość słoniowa. Op. 25 kg.",
       type: "Termotopliwe EVA",
       image: "/placeholder.svg",
       details: {
-        body: "Kleiberit 788.7 to klej termotopliwy EVA do ręcznych i wolnobieżnych okleiniarek obrzeży, wyróżniający się dobrą przyczepnością do szerokiego zakresu materiałów obrzeżowych. Dedykowany dla zakładów stosujących różne typy obrzeży (PVC, ABS, CPL, fornir) na jednej maszynie, gdzie liczy się elastyczność zastosowania bez konieczności wymiany kleju.",
-        keyFeature: "Kompatybilność z szerokim zakresem obrzeży: PVC, ABS, CPL, fornir, melamin — jeden klej do wszystkich typów obrzeży na maszynie.",
+        body: "Kleiberit 788.7 to klej termotopliwy na bazie kopolimerów EVA do ręcznych i wolnobieżnych okleiniarek obrzeży. Wyróżnia się bardzo dobrymi właściwościami topnienia i długim czasem otwartym (wysoką lepkością roboczą), co zapewnia równomierne wypełnienie szczeliny i stabilną jakość klejenia przy posuwach 5–20 m/min. Odporność termiczna spoiny do ok. 100°C oraz bardzo dobra odporność na niskie temperatury do ok. –30°C (zależnie od rodzaju obrzeża). Dostępny w dwóch kolorach granulatu: kość słoniowa (20) — do ciepłych dekorów i forniru, biały (10) — do obrzeży białych i melaninowych.",
+        keyFeature: "Bardzo dobre właściwości topnienia i długi czas otwarty — stabilna jakość klejenia na ręcznych i wolnobieżnych okleinarkach przy posuwach 5–20 m/min.",
         specs: [
           { label: "Baza", value: "Kopolimery EVA" },
-          { label: "Temperatura pracy", value: "150–185°C" },
-          { label: "Przyczepność do", value: "PVC, ABS, CPL, fornir, melamin" },
-          { label: "Metoda nanoszenia", value: "Wałek" },
+          { label: "Gęstość", value: "ok. 1,2 g/cm³" },
+          { label: "Lepkość 160°C", value: "120 000 ±20 000 mPa·s" },
+          { label: "Lepkość 180°C", value: "60 000 ±15 000 mPa·s" },
+          { label: "Lepkość 200°C", value: "40 000 ±10 000 mPa·s" },
+          { label: "MFI (150/1,2)", value: "40 ±15 g/10 min" },
+          { label: "Temp. mięknienia", value: "ok. 90°C" },
+          { label: "Temperatura pracy", value: "160–200°C" },
+          { label: "Prędkość posuwu", value: "5–20 m/min" },
+          { label: "Barwa", value: "Kość słoniowa (20) / Biały (10)" },
           { label: "Wilgotność drewna", value: "8–10%" },
+          { label: "Min. temp. pomieszczenia", value: "18°C" },
+          { label: "Trwałość", value: "ok. 2 lata" },
+          { label: "Opakowania", value: "25 kg (worek, granulat)" },
         ],
-        applications: "Ręczne i wolnobieżne okleiniarki obrzeży · obrzeża PVC, ABS, CPL, fornirowe i melaninowe · zakłady stosujące wiele typów obrzeży na jednej maszynie.",
+        applications: "Okleinowanie obrzeży ABS, PVC, poliestru, papieru, żywicy melaminowej i forniru · ręczne i wolnobieżne okleiniarki obrzeży · produkcja meblarska i stolarska.",
+        note: "Kość słoniowa (20) — do ciepłych dekorów drewna i forniru · biały (10) — do obrzeży białych i melaninowych. Temperaturę kontrolować bezpośrednio przy systemie nanoszenia. Czyściwo: Kleiberit 827.0.",
       },
     },
   },
@@ -1035,7 +1045,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 773.3",
       code: "773.3",
       description:
-        "Kleiberit 773.3 – klej termotopliwy EVA do automatycznych okleiniarek CNC i BAZ. Prędkość posuwu 10–30 m/min, temperatura pracy 170–200°C, lepkość 80 000 mPa·s (180°C). Granulat naturalny lub biały. Op. 3 / 20 kg.",
+        "Kleiberit 773.3 – klej termotopliwy EVA niewypełniony do automatycznych okleiniarek CNC i BAZ. Prędkość posuwu 10–30 m/min, temperatura pracy 170–200°C, lepkość 80 000 mPa·s (180°C). Granulat naturalny lub biały.",
       type: "Termotopliwe EVA",
       image: "/products/7733.jpg",
       details: {
@@ -1053,7 +1063,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
           { label: "Wilgotność drewna", value: "8–10%" },
           { label: "Trwałość", value: "ok. 2 lata" },
           { label: "Oznakowanie EU", value: "Niewymagane" },
-          { label: "Opakowania", value: "3 kg / 20 kg (granulat)" },
+          { label: "Opakowania", value: "20 kg (granulat)" },
         ],
         applications: "Oklejanie obrzeży poliestrowych, CPL i melaminowo-żywicznych · PVC i ABS (z primerem) · żywiczne obrzeża papierowe · obrzeża masywne i fornirowe · automatyczne maszyny z nanoszeniem walcowym (CNC, BAZ).",
         note: "Wariant naturalny (00) — beżowo-transparentny, do obrzeży w kolorach drewna i CPL. Wariant biały (10) — do białych i jasnych obrzeży ABS, PVC i melaminowych. Temperaturę kontrolować bezpośrednio przy systemie nanoszenia termometrem kontaktowym — wskazania termostatu mogą być błędne. Czyściwo: Kleiberit 827.0.",
@@ -1410,7 +1420,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 566.0 Supracraft",
       code: "566.0",
       description:
-        "Kleiberit 566.0 Supracraft – trwale elastyczny 1K PUR klej i uszczelniacz, wariant szary. Shore A 45, rozciąganie >600%, odporność –40 do +90°C, certyfikat IMO FTP, klasa ogniowa E. Op. 300 ml / 600 ml.",
+        "Kleiberit 566.0 Supracraft – trwale elastyczny 1K PUR klej i uszczelniacz do metali, drewna, betonu i ceramiki. Odporny na drgania i odkształcenia termiczne. Certyfikat IMO FTP. Kolor szary. Op. 300/600 ml.",
       type: "Montaż",
       image: "/products/566.jpg",
       badge: "IMO",
@@ -1445,7 +1455,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 566.4 Supracraft",
       code: "566.4",
       description:
-        "Kleiberit 566.4 Supracraft – trwale elastyczny 1K PUR klej i uszczelniacz, wariant czarny. Shore A 45, rozciąganie >600%, odporność –40 do +90°C, certyfikat IMO FTP, klasa ogniowa E. Op. 300 ml / 600 ml.",
+        "Kleiberit 566.4 Supracraft – trwale elastyczny 1K PUR klej i uszczelniacz do metali, drewna, betonu i ceramiki. Odporny na drgania i odkształcenia termiczne. Certyfikat IMO FTP. Kolor czarny. Op. 300/600 ml.",
       type: "Montaż",
       image: "/products/566.jpg",
       badge: "IMO",
@@ -1475,7 +1485,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 566.5 Supracraft",
       code: "566.5",
       description:
-        "Kleiberit 566.5 Supracraft – trwale elastyczny 1K PUR klej i uszczelniacz, wariant biały. Shore A 45, rozciąganie >600%, odporność –40 do +90°C, certyfikat IMO FTP, klasa ogniowa E. Op. 300 ml / 600 ml.",
+        "Kleiberit 566.5 Supracraft – trwale elastyczny 1K PUR klej i uszczelniacz do metali, drewna, betonu i ceramiki. Odporny na drgania i odkształcenia termiczne. Certyfikat IMO FTP. Kolor biały. Op. 300/600 ml.",
       type: "Montaż",
       image: "/products/566.jpg",
       badge: "IMO",
@@ -1505,7 +1515,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 568.0 Supracon",
       code: "568.0",
       description:
-        "Kleiberit 568.0 Supracon – ekstremalnie szybki 1K PUR klej montażowy D4 i WATT 91. Drewno, metal, beton, ceramika, PVC, GRP, styropian. Czas otwarty ok. 5 min, czas docisku 15–30 min, od +7°C. Kartusz 310 ml.",
+        "Kleiberit 568.0 Supracon – szybki 1K PUR klej montażowy D4 i WATT 91 do drewna, metalu, betonu, ceramiki i PVC. Obciążalność po 15–30 min, skuteczny od +7°C. Kartusz 310 ml.",
       type: "Montaż",
       image: "/products/568.jpg",
       badge: "D4",
@@ -1536,7 +1546,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 568.1 Supracon",
       code: "568.1",
       description:
-        "Kleiberit 568.1 Supracon – ekstremalnie szybki 1K PUR klej montażowy D4 i WATT 91. Drewno, metal, beton, ceramika, PVC, GRP, styropian. Czas otwarty ok. 5 min, czas docisku 15–30 min, od +7°C. Kartusz 400 ml.",
+        "Kleiberit 568.1 Supracon – szybki 1K PUR klej montażowy D4 i WATT 91 do drewna, metalu, betonu, ceramiki i PVC. Obciążalność po 15–30 min, skuteczny od +7°C. Kartusz 400 ml.",
       type: "Montaż",
       image: "/products/568.jpg",
       badge: "D4",
@@ -1567,7 +1577,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 601.1",
       code: "601.1",
       description:
-        "Kleiberit 601.1 – elastyczny klej STP 1K do montażu luster (DIN EN 1036), szkła, drewna i metali wewnątrz i na zewnątrz. Shore A 73, czas kożuszenia ok. 8 min, VOC A+, EC1 plus R. 4 kolory. Op. 12×280 ml.",
+        "Kleiberit 601.1 – elastyczny klej STP 1K do klejenia luster (DIN EN 1036), szkła, drewna i metali wewnątrz i na zewnątrz. Certyfikat EC1 plus R, klasa VOC A+. Dostępny w 4 kolorach. Op. 12×280 ml.",
       type: "Montaż",
       image: "/placeholder.svg",
       badge: "EC1 plus R",
@@ -1601,7 +1611,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 584.0",
       code: "584.0",
       description:
-        "Kleiberit 584.0 – elastyczny klej montażowy STP 1K bez izocyjanianów, ftalanów, silikonu i rozpuszczalników. Shore A 50, czas kożuszenia 25 min, bez obowiązkowego oznakowania EU. Listwy, panele, ceramika, drewno. Biały/czarny. Op. 300/600 ml.",
+        "Kleiberit 584.0 – elastyczny klej montażowy STP 1K bez izocyjanianów, ftalanów i silikonu. Bez obowiązkowego oznakowania EU. Do listew, paneli, ceramiki i drewna. Biały/czarny. Op. 300/600 ml.",
       type: "Montaż",
       image: "/placeholder.svg",
       details: {
@@ -1633,7 +1643,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 535.0 SupraFoam",
       code: "535.0",
       description:
-        "Kleiberit 535.0 SupraFoam – dwukomponentowa pianka PUR do montażu ościeżnic drzwi i izolacji okien. Bez gazu napędowego, bez naddatku, utwardza się niezależnie od wilgoci w 15–20 min. Klejowalna po 1 min, tnalna po 3–5 min, rozporki po 20 min. EC1 plus R, B2. Op. 16×250 g.",
+        "Kleiberit 535.0 SupraFoam – dwukomponentowa pianka PUR do montażu ościeżnic i izolacji okien. Bez naddatku, utwardza się bez wilgoci — rozporki zdejmować już po 20 min. Certyfikat EC1 plus R, klasa B2. Op. 16×250 g.",
       type: "Pianka montażowa",
       badge: "EMICODE EC1",
       image: "/placeholder.svg",
@@ -1664,7 +1674,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 536.0 StairMaster",
       code: "536.0",
       description:
-        "Kleiberit 536.0 StairMaster – ekspansywna 2K pianka klejąca PUR do montażu stopni schodowych, progów drzwi i parapetów z drewna, kamienia lub metalu. Obciążalna po 20 min, bez gazu napędowego, bez naddatku, B2. Op. 125 g / 250 g.",
+        "Kleiberit 536.0 StairMaster – ekspansywna 2K pianka klejąca PUR do montażu stopni schodowych, progów i parapetów z drewna, kamienia lub metalu. Obciążalna po 20 min, klasa B2. Op. 125/250 g.",
       type: "Pianka montażowa",
       image: "/placeholder.svg",
       details: {
@@ -1690,7 +1700,7 @@ export const standaloneProducts: { categorySlug: string; product: Product }[] = 
       name: "KLEIBERIT® 585.5",
       code: "585.5",
       description:
-        "Kleiberit 585.5 – trudnopalna 1K pianka PUR klasy B wg EN 13501-1 (różowa) do uszczelnień ognioodpornych między masywnym materiałem mineralnym lub metalowym. Gęstość 16 kg/m³, λ=0,036 W/mK, odporność –40 do +90°C, wydajność ok. 40–45 l (750 ml). Op. 12×750 ml.",
+        "Kleiberit 585.5 – trudnopalna 1K pianka PUR klasy B (EN 13501-1, różowa) do uszczelnień ognioodpornych między materiałem mineralnym lub metalowym. Izoluje termicznie i akustycznie. Op. 12×750 ml.",
       type: "Pianka montażowa",
       badge: "Ognioodporny",
       image: "/placeholder.svg",

@@ -1,5 +1,6 @@
 import { MapPin, Phone, Mail } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
+import PolandDistributorMap from "./PolandDistributorMap";
 
 const distributors = [
   {
@@ -39,7 +40,7 @@ const distributors = [
     highlight: false,
   },
   {
-    name: "KLEJDOM",
+    name: "KLEJDOM Sp. Jawna",
     fullName: "Leszek Kwiatkowski",
     address: "ul. Starojaworska 29B, 59-400 Jawor",
     phones: ["+48 76 870 22 19", "+48 602 496 208"],
@@ -87,8 +88,12 @@ const DistributorsSection = () => (
           Autoryzowani dystrybutorzy KLEIBERIT®
         </h2>
         <p className="text-muted-foreground">
-          Znajdź dystrybutora w swoim regionie i zamów bezpośrednio.
+          Najedź kursorem na region, aby zobaczyć dane kontaktowe dystrybutora.
         </p>
+      </ScrollReveal>
+
+      <ScrollReveal className="mb-14">
+        <PolandDistributorMap />
       </ScrollReveal>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 max-w-7xl mx-auto">
@@ -113,45 +118,34 @@ const DistributorsSection = () => (
                   <MapPin className="h-4 w-4 text-secondary shrink-0 mt-0.5" />
                   <span className="text-muted-foreground leading-snug">{d.address}</span>
                 </div>
-
                 <div className="flex gap-2.5 items-start">
                   <Phone className="h-4 w-4 text-secondary shrink-0 mt-0.5" />
                   <div className="flex flex-col gap-0.5">
                     {d.phones.map((p) => (
-                      <a
-                        key={p}
-                        href={`tel:${p.replace(/\s/g, "")}`}
-                        className="text-foreground hover:text-secondary transition-colors"
-                      >
+                      <a key={p} href={`tel:${p.replace(/\s/g, "")}`}
+                        className="text-foreground hover:text-secondary transition-colors">
                         {p}
                       </a>
                     ))}
                   </div>
                 </div>
-
                 <div className="flex gap-2.5 items-center">
                   <Mail className="h-4 w-4 text-secondary shrink-0" />
-                  <a
-                    href={`mailto:${d.email}`}
-                    className="text-foreground hover:text-secondary transition-colors break-all"
-                  >
+                  <a href={`mailto:${d.email}`}
+                    className="text-foreground hover:text-secondary transition-colors break-all">
                     {d.email}
                   </a>
                 </div>
               </div>
 
-              {d.regions.length > 0 && (
-                <div className="flex flex-wrap gap-1.5 pt-1 border-t border-border">
-                  {d.regions.map((r) => (
-                    <span
-                      key={r}
-                      className="text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground capitalize"
-                    >
-                      {r}
-                    </span>
-                  ))}
-                </div>
-              )}
+              <div className="flex flex-wrap gap-1.5 pt-1 border-t border-border">
+                {d.regions.map((r) => (
+                  <span key={r}
+                    className="text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground">
+                    {r}
+                  </span>
+                ))}
+              </div>
             </div>
           </ScrollReveal>
         ))}

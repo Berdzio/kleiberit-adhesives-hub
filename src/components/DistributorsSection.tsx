@@ -1,6 +1,5 @@
 import { MapPin, Phone, Mail } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
-import PolandDistributorMap from "./PolandDistributorMap";
 
 const distributors = [
   {
@@ -9,7 +8,6 @@ const distributors = [
     address: "ul. Bukowiecka 92/155, 03-893 Warszawa",
     phones: ["+48 512 825 215"],
     email: "info@klejeme.pl",
-    regions: ["mazowieckie", "podlaskie", "kujawsko-pomorskie"],
     highlight: true,
   },
   {
@@ -18,7 +16,6 @@ const distributors = [
     address: "ul. Domańskiego 3, 77-430 Krajenka",
     phones: ["+48 67 263 86 32", "+48 604 504 962"],
     email: "info@klejdrew.pl",
-    regions: ["zachodniopomorskie"],
     highlight: false,
   },
   {
@@ -27,7 +24,6 @@ const distributors = [
     address: "ul. Budowlanych 2D, 84-200 Wejherowo",
     phones: ["+48 58 677 10 77", "+48 501 397 873"],
     email: "biuro@fphwektor.com.pl",
-    regions: ["pomorskie", "warmińsko-mazurskie"],
     highlight: false,
   },
   {
@@ -36,7 +32,6 @@ const distributors = [
     address: "ul. Niedźwiady 2, 62-800 Kalisz",
     phones: ["+48 62 760 32 46", "+48 605 310 785"],
     email: "info@klejstol.pl",
-    regions: ["wielkopolskie", "łódzkie"],
     highlight: false,
   },
   {
@@ -45,7 +40,6 @@ const distributors = [
     address: "ul. Starojaworska 29B, 59-400 Jawor",
     phones: ["+48 76 870 22 19", "+48 602 496 208"],
     email: "leszek.klejdom@interia.pl",
-    regions: ["dolnośląskie", "lubuskie"],
     highlight: false,
   },
   {
@@ -54,7 +48,6 @@ const distributors = [
     address: "ul. Wspólna 9, 45-831 Opole",
     phones: ["+48 77 474 28 97", "+48 601 966 101"],
     email: "klejmeb@op.pl",
-    regions: ["opolskie", "śląskie"],
     highlight: false,
   },
   {
@@ -63,7 +56,6 @@ const distributors = [
     address: "Świnna Poręba 124, 34-106 Mucharz k. Wadowic",
     phones: ["+48 33 876 12 28", "+48 600 417 523"],
     email: "info@klejtech.pl",
-    regions: ["małopolskie", "podkarpackie"],
     highlight: false,
   },
   {
@@ -72,7 +64,6 @@ const distributors = [
     address: "ul. Gardzienicka 32, 21-050 Piaski k. Lublina",
     phones: ["+48 81 582 28 64", "+48 501 049 598"],
     email: "klejber@provider.pl",
-    regions: ["lubelskie", "świętokrzyskie"],
     highlight: false,
   },
 ];
@@ -88,12 +79,8 @@ const DistributorsSection = () => (
           Autoryzowani dystrybutorzy KLEIBERIT®
         </h2>
         <p className="text-muted-foreground">
-          Najedź kursorem na region, aby zobaczyć dane kontaktowe dystrybutora.
+          Znajdź dystrybutora w swoim regionie i zamów bezpośrednio.
         </p>
-      </ScrollReveal>
-
-      <ScrollReveal className="mb-14">
-        <PolandDistributorMap />
       </ScrollReveal>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 max-w-7xl mx-auto">
@@ -136,15 +123,6 @@ const DistributorsSection = () => (
                     {d.email}
                   </a>
                 </div>
-              </div>
-
-              <div className="flex flex-wrap gap-1.5 pt-1 border-t border-border">
-                {d.regions.map((r) => (
-                  <span key={r}
-                    className="text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground">
-                    {r}
-                  </span>
-                ))}
               </div>
             </div>
           </ScrollReveal>

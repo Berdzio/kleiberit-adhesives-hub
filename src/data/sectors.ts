@@ -403,9 +403,9 @@ export const sectors: Sector[] = [
         image: "/products/566.jpg",
       },
       {
-        name: "KLEIBERIT® 568.0",
-        code: "568.0",
-        description: "Kleiberit 568 Supracon – szybki 1K PUR klej montażowy D4 i WATT 91 do drewna, metalu, betonu, ceramiki i PVC. Obciążalność po 15–30 min, skuteczny od +7°C. Kartusz 310/400 ml.",
+        name: "KLEIBERIT® 568.1 Supracon",
+        code: "568.1",
+        description: "Kleiberit 568.1 Supracon – 1K PUR klej montażowy D4 i WATT 91 do drewna, metalu, betonu, ceramiki i PVC. Obciążalność po 15–30 min, skuteczny od +7°C. Kartusz 400 ml.",
         type: "Montaż",
         image: "/products/568.jpg",
       },

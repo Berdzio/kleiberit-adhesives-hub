@@ -1,23 +1,13 @@
 <?php
 declare(strict_types=1);
 
-// ============================================================
-//  KONFIGURACJA — uzupełnij przed wdrożeniem na OVH
-// ============================================================
-const TO_EMAIL    = 'info@klejeme.pl';
-const FROM_DOMAIN = 'klejeme.pl';
-
-// Wysyłka przez SMTP OVH (zalecane — lepsza dostarczalność)
-// Odkomentuj i uzupełnij danymi konta pocztowego OVH:
-// const USE_SMTP   = true;
-// const SMTP_HOST  = 'ssl0.ovh.net';  // serwer SMTP OVH
-// const SMTP_PORT  = 465;             // SSL; alternatywnie 587 (TLS)
-// const SMTP_USER  = 'info@klejeme.pl';
-// const SMTP_PASS  = 'TwojeHaslo';
-
-// Fallback: PHP mail() — działa na hostingu OVH bez konfiguracji
-const USE_SMTP = false;
-// ============================================================
+// Wczytaj konfigurację (hasła, SMTP) — plik nie jest w git
+$configFile = __DIR__ . '/config.php';
+if (!file_exists($configFile)) {
+    http_response_code(500);
+    exit(json_encode(['success' => false, 'error' => 'Server misconfigured']));
+}
+require $configFile;
 
 header('Content-Type: application/json; charset=UTF-8');
 
@@ -84,7 +74,7 @@ $body .= "E-mail          : $email\n";
 if ($phone) $body .= "Telefon         : $phone\n";
 $body .= "\nWiadomość:\n$message\n";
 
-$sent = USE_SMTP
+$sent = (MAIL_DRIVER === 'smtp')
     ? sendSmtp($subject, $body, $name, $email)
     : sendMail($subject, $body, $name, $email);
 
@@ -106,7 +96,7 @@ function sendMail(string $subject, string $body, string $fromName, string $reply
     return mail(TO_EMAIL, $subject, base64_encode($body), $headers);
 }
 
-// ---- Wysyłka przez SMTP (OVH ssl0.ovh.net) ----
+// ---- Wysyłka przez SMTP OVH (ssl0.ovh.net:465) ----
 function sendSmtp(string $subject, string $body, string $fromName, string $replyTo): bool
 {
     $ctx  = stream_context_create(['ssl' => ['verify_peer' => true, 'verify_peer_name' => true]]);
@@ -119,7 +109,7 @@ function sendSmtp(string $subject, string $body, string $fromName, string $reply
         $out = '';
         while ($line = fgets($sock, 512)) {
             $out .= $line;
-            if (isset($line[3]) && $line[3] === ' ') break; // last line of response
+            if (isset($line[3]) && $line[3] === ' ') break;
         }
         return $out;
     };
@@ -128,7 +118,7 @@ function sendSmtp(string $subject, string $body, string $fromName, string $reply
         return $recv();
     };
 
-    $recv(); // 220 banner
+    $recv();
     $send('EHLO ' . FROM_DOMAIN);
     $send('AUTH LOGIN');
     $send(base64_encode(SMTP_USER));

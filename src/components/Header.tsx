@@ -1,7 +1,6 @@
 import klejberLogo from "@/assets/logo.svg";
 import { Phone, Mail, Menu, X } from "lucide-react";
 import { useState, useRef } from "react";
-import ProductSearch from "@/components/ProductSearch";
 import { productCategories } from "@/data/productCategories";
 import { sectors } from "@/data/sectors";
 
@@ -126,8 +125,6 @@ const Header = () => {
                 {item.label}
               </button>
             ))}
-
-            <ProductSearch />
 
             <button
               onClick={() => handleNavClick("#contact")}

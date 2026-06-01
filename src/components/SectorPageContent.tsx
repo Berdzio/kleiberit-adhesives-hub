@@ -1,6 +1,4 @@
 import { sectors, Product } from "@/data/sectors";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -41,20 +39,16 @@ const SectorPageContent = ({ slug }: Props) => {
   if (!sector) {
     return (
       <div className="min-h-screen bg-background">
-        <Header client:load />
         <div className="container mx-auto px-4 py-32 text-center">
           <h1 className="font-heading text-4xl font-bold text-foreground mb-4">Nie znaleziono</h1>
           <a href="/" className="text-secondary hover:underline">← Strona główna</a>
         </div>
-        <Footer />
       </div>
     );
   }
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-
       <section className="pt-32 pb-16 bg-primary">
         <div className="container mx-auto px-4">
           <a
@@ -134,7 +128,6 @@ const SectorPageContent = ({ slug }: Props) => {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 };

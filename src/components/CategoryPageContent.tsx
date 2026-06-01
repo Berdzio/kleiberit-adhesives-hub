@@ -1,6 +1,4 @@
 import { getProductsByCategory, ProductCategorySubcategory } from "@/data/productCategories";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -53,12 +51,10 @@ const CategoryPageContent = ({ slug }: Props) => {
   if (!category) {
     return (
       <div className="min-h-screen bg-background">
-        <Header />
         <div className="container mx-auto px-4 py-32 text-center">
           <h1 className="font-heading text-4xl font-bold text-foreground mb-4">Nie znaleziono kategorii</h1>
           <a href="/" className="text-secondary hover:underline">← Strona główna</a>
         </div>
-        <Footer />
       </div>
     );
   }
@@ -67,8 +63,6 @@ const CategoryPageContent = ({ slug }: Props) => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-
       <section className="pt-32 pb-16 bg-primary">
         <div className="container mx-auto px-4">
           <a
@@ -152,7 +146,6 @@ const CategoryPageContent = ({ slug }: Props) => {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import klejberLogo from "@/assets/logo.svg";
 import { Phone, Mail, Menu, X } from "lucide-react";
 import { useState, useRef } from "react";
+import ProductSearch from "@/components/ProductSearch";
 import { productCategories } from "@/data/productCategories";
 import { sectors } from "@/data/sectors";
 
@@ -107,7 +108,7 @@ const Header = () => {
                         onClick={() => setOpenDropdown(null)}
                         className="flex items-center gap-3 px-4 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-accent/50 transition-colors"
                       >
-                        <img src={sector.icon} alt="" className="h-5 w-5 object-contain" />
+                        <img src={sector.icon} alt="" className="h-5 w-5 object-contain" loading="lazy" />
                         {sector.name}
                       </a>
                     ))}
@@ -125,6 +126,8 @@ const Header = () => {
                 {item.label}
               </button>
             ))}
+
+            <ProductSearch />
 
             <button
               onClick={() => handleNavClick("#contact")}

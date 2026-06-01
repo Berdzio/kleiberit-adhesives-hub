@@ -31,22 +31,19 @@ const ContactSection = () => {
   const onSubmit = async (data: FormData) => {
     setStatus("sending");
     try {
-      const res = await fetch("https://formsubmit.co/ajax/info@klejeme.pl", {
+      const res = await fetch("/api/contact.php", {
         method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          _subject: `Zapytanie od ${data.name}${data.company ? ` (${data.company})` : ""}`,
-          _replyto: data.email,
-          _template: "table",
           name: data.name,
-          company: data.company || "—",
+          company: data.company || "",
           email: data.email,
-          phone: data.phone || "—",
+          phone: data.phone || "",
           message: data.message,
         }),
       });
       const json = await res.json().catch(() => null);
-      if (res.ok && json?.success === "true") {
+      if (res.ok && json?.success === true) {
         setStatus("success");
         reset();
       } else {

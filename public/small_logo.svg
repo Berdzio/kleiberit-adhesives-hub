@@ -1,5 +1,50 @@
-<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-  <rect width="40" height="40" rx="7" fill="#142B4D"/>
-  <text x="7" y="29" font-family="Montserrat, Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">K</text>
-  <rect x="7" y="32" width="26" height="3.5" fill="#F2B705"/>
+<svg viewBox="0 0 255 200" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Złota głowa psa (profil, zwrócony w prawo) -->
+  <path d="
+    M 85,16
+    L 185,6
+    C 212,5 222,20 220,43
+    C 222,58 218,68 210,74
+    C 216,77 224,79 230,78
+    C 238,78 242,86 240,95
+    C 238,103 232,108 224,110
+    C 212,115 198,118 188,122
+    C 174,132 158,146 145,157
+    C 136,165 130,173 128,178
+    L 135,151
+    L 106,124
+    L 122,97
+    L 93,70
+    L 108,43
+    Z
+  " fill="#F2B705"/>
+
+  <!-- Granatowy korpus / obroża (lewa strona) -->
+  <path d="
+    M 0,0
+    L 85,16
+    L 108,43
+    L 93,70
+    L 122,97
+    L 106,124
+    L 135,151
+    L 128,178
+    L 110,200
+    L 0,200
+    Z
+  " fill="#142B4D"/>
+
+  <!-- Biały zygzak -->
+  <polyline
+    points="85,16 108,43 93,70 122,97 106,124 135,151 128,178"
+    stroke="white" stroke-width="5" fill="none"
+    stroke-linejoin="miter" stroke-linecap="butt"/>
+
+  <!-- Oko (granatowy trójkąt) -->
+  <path d="M 168,48 L 181,40 L 184,57 Z" fill="#142B4D"/>
+
+  <!-- Nos (na końcu pyska) -->
+  <ellipse cx="238" cy="95" rx="8" ry="7" fill="#142B4D"/>
+
 </svg>

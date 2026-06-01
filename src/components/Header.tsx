@@ -1,4 +1,4 @@
-import klejberLogo from "@/assets/Klejber_logo.png";
+import klejberLogo from "@/assets/logo.svg";
 import { Phone, Mail, Menu, X } from "lucide-react";
 import { useState, useRef } from "react";
 import { productCategories } from "@/data/productCategories";

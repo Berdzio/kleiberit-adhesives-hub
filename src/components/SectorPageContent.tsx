@@ -65,7 +65,7 @@ const SectorPageContent = ({ slug }: Props) => {
             Strona główna
           </a>
           <ScrollReveal>
-            <img src={sector.icon} alt={sector.name} className="w-16 h-16 mb-4 object-contain" />
+            <img src={sector.icon} alt={sector.name} className="w-16 h-16 mb-4 object-contain" loading="eager" />
             <h1 className="font-heading text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
               {sector.headline}
             </h1>

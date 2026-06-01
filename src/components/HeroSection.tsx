@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={heroBg} alt="Industrial adhesive application" className="w-full h-full object-cover" />
+        <img src={heroBg} alt="Industrial adhesive application" className="w-full h-full object-cover" loading="eager" fetchpriority="high" />
         <div className="absolute inset-0 gradient-hero opacity-85" />
       </div>
       

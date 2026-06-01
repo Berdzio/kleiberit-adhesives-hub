@@ -36,15 +36,17 @@ const ContactSection = () => {
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
           _subject: `Zapytanie od ${data.name}${data.company ? ` (${data.company})` : ""}`,
+          _replyto: data.email,
+          _template: "table",
           name: data.name,
           company: data.company || "—",
           email: data.email,
           phone: data.phone || "—",
           message: data.message,
-          _template: "table",
         }),
       });
-      if (res.ok) {
+      const json = await res.json().catch(() => null);
+      if (res.ok && json?.success === "true") {
         setStatus("success");
         reset();
       } else {

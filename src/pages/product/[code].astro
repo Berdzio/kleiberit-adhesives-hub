@@ -2,6 +2,8 @@
 import { productCategories, getProductsByCategory, standaloneProducts, getProductByCode } from "@/data/productCategories";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import ProductDetailContent from "@/components/ProductDetailContent";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer.astro";
 
 export function getStaticPaths() {
   const codes = new Set<string>();
@@ -40,5 +42,7 @@ const jsonLd = product
 ---
 
 <BaseLayout {title} {description} {canonical} jsonLd={jsonLd}>
+  <Header client:load />
   <ProductDetailContent code={code!} client:load />
+  <Footer />
 </BaseLayout>

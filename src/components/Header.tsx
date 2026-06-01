@@ -51,7 +51,7 @@ const Header = () => {
       <nav className="bg-card/95 backdrop-blur-md border-b border-border">
         <div className="container mx-auto flex items-center justify-between px-4 py-4">
           <a href="/" className="flex items-center">
-            <img src={klejberLogo.src} alt="Klejber" className="max-h-14 w-auto" />
+            <img src={klejberLogo.src} alt="Klejber" className="max-h-14 w-auto" fetchpriority="high" />
           </a>
 
           <div className="hidden md:flex items-center gap-8">

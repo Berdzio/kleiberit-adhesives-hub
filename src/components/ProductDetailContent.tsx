@@ -1,7 +1,5 @@
 import { getProductByCode } from "@/data/productCategories";
 import { sectors } from "@/data/sectors";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, Zap, TriangleAlert } from "lucide-react";
@@ -23,12 +21,10 @@ const ProductDetailContent = ({ code }: Props) => {
   if (!product) {
     return (
       <div className="min-h-screen bg-background">
-        <Header />
         <div className="container mx-auto px-4 py-32 text-center">
           <h1 className="font-heading text-4xl font-bold text-foreground mb-4">Nie znaleziono produktu</h1>
           <a href="/" className="text-secondary hover:underline">← Strona główna</a>
         </div>
-        <Footer />
       </div>
     );
   }
@@ -40,8 +36,6 @@ const ProductDetailContent = ({ code }: Props) => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-
       {/* Hero */}
       <section className="pt-32 pb-16 bg-primary">
         <div className="container mx-auto px-4">
@@ -261,7 +255,6 @@ const ProductDetailContent = ({ code }: Props) => {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 };

@@ -2,6 +2,8 @@
 import { sectors } from "@/data/sectors";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import SectorPageContent from "@/components/SectorPageContent";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer.astro";
 
 export function getStaticPaths() {
   return sectors.map((sector) => ({ params: { slug: sector.slug } }));
@@ -51,5 +53,7 @@ const jsonLd = sector
 ---
 
 <BaseLayout {title} {description} {canonical} jsonLd={jsonLd}>
+  <Header client:load />
   <SectorPageContent slug={slug!} client:load />
+  <Footer />
 </BaseLayout>

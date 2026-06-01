@@ -2,6 +2,8 @@
 import { productCategories, getProductsByCategory } from "@/data/productCategories";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import CategoryPageContent from "@/components/CategoryPageContent";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer.astro";
 
 export function getStaticPaths() {
   return productCategories.map((cat) => ({ params: { slug: cat.slug } }));
@@ -51,5 +53,7 @@ const jsonLd = category
 ---
 
 <BaseLayout {title} {description} {canonical} jsonLd={jsonLd}>
+  <Header client:load />
   <CategoryPageContent slug={slug!} client:load />
+  <Footer />
 </BaseLayout>
